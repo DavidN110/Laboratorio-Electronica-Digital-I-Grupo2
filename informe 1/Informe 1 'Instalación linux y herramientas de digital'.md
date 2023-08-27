@@ -138,5 +138,7 @@ Para realizar la instalación de Digital en su sistema podrá seguir estos 3 pas
 
 ## Referencias
 
+[Repositorio de la guia para instalación de linux y miniconda](https://github.com/johnnycubides/digital-electronic-1-101/tree/main/installTools#complementos-para-digital)
 
+[Repositorio del proyecto digital en github](https://github.com/hneemann/Digital)
 
