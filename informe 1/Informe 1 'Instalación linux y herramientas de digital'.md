@@ -1,5 +1,17 @@
 # Instalación de Linux mint y Herramientas para digital 
-1. [Introducción](#Introducción)
+* [Introducción](#Introducción)
+* [Objetivos](#Objetivos)
+* [Marco teórico](#Marco-Teórico)
+* [Procedimeinto](#Procedimeinto)
+    * [Descarga e instalación Virtualbox](#Descarga-e-instalación-Virtualbox)
+    * [Descarga e instalación linux mint](#Descarga-e-instalación-linux-mint)
+    * [Descarga e instalación minianaconda y complementos](#Descarga-e-instalación-minianaconda-y-complementos)
+    * [Descarga e instalación digital y complementos](#Descarga-e-instalación-digital-y-complementos)
+* [Análisis y Resultados](#Análisis-y-Resultados)
+* [Discusión](#Discusión)
+* [Conclusiones](#Conclusiones)
+* [Referencias](#Referencias)
+
 ## Resumen
 
 ----
@@ -8,77 +20,116 @@
 
 Se desarrollara un paso a paso de como se instaló linux mint mate en una maquina virtual en este caso VirtualBox como alternativa para no instalar nativamente linux mint, y luego se descargaron e instalaron algunas herramientas que se utilizaran a lo largo del curso de electronica digital 1.
 
-## 2. Objetivos
+## Objetivos
 
 Instalar linux mint y herramientas como minianaconda (Iverilog y Yosys en miniconda) y digital(como complementos para digital)
 
-## 3. Marco Teórico
+## Marco Teórico
 
 ....
 
-## 4. Procedimiento
+## Procedimiento
 
-1. Descarga e instalación de VirtualBox.
-VirtualBox es un software gratuito que permite crear y ejecutar máquinas virtuales en un ordenador personal. Puede descargarse desde la web oficial de VirtualBox.
-
-Una vez descargado, el instalador de VirtualBox guiará al usuario a través del proceso de instalación.
-
-Creación de una máquina virtual.
-Una vez instalado VirtualBox, el usuario debe crear una máquina virtual para instalar el sistema operativo Linux. Para ello, debe seguir estos pasos:
-
-Abrir VirtualBox.
-En el menú principal, hacer clic en "Nueva".
-En la ventana "Crear una nueva máquina virtual", introducir los siguientes datos:
-Nombre: nombre de la máquina virtual.
-Tipo: sistema operativo que se va a instalar.
-Versión: versión del sistema operativo que se va a instalar.
-Hacer clic en "Siguiente".
-Asignación de memoria RAM y espacio en disco duro a la máquina virtual.
-En la siguiente ventana, el usuario debe asignar memoria RAM y espacio en disco duro a la máquina virtual.
-
-Memoria RAM: la cantidad de memoria RAM que se asigna a la máquina virtual determinará el rendimiento de la misma. Se recomienda asignar al menos 2 GB de memoria RAM.
-Espacio en disco duro: la cantidad de espacio en disco duro que se asigna a la máquina virtual determinará el tamaño del sistema operativo que se instalará. Se recomienda asignar al menos 20 GB de espacio en disco duro.
-Hacer clic en "Siguiente".
-Configuración de la red de la máquina virtual.
-En la siguiente ventana, el usuario puede configurar la red de la máquina virtual.
-
-Selección de la red: el usuario puede elegir si la máquina virtual se conecta a una red interna, a una red externa o no se conecta a ninguna red.
-Configuración de la red interna: si la máquina virtual se conecta a una red interna, el usuario puede configurar la dirección IP, la máscara de subred y la puerta de enlace de la máquina virtual.
-Configuración de la red externa: si la máquina virtual se conecta a una red externa, el usuario debe configurar la configuración de red del ordenador anfitrión.
-Hacer clic en "Siguiente".
-Configuración de la unidad óptica de la máquina virtual.
-En la siguiente ventana, el usuario puede configurar la unidad óptica de la máquina virtual.
-
-Selección de la unidad óptica: el usuario puede elegir si la máquina virtual tiene una unidad óptica.
-Carga de una imagen ISO: si la máquina virtual tiene una unidad óptica, el usuario puede cargar una imagen ISO del sistema operativo que se va a instalar.
-Hacer clic en "Siguiente".
-Resumen de la máquina virtual.
-En la siguiente ventana, el usuario puede ver un resumen de los parámetros de la máquina virtual.
-
-Hacer clic en "Crear".
-Instalación del sistema operativo Linux.
-Una vez creada la máquina virtual, el usuario puede iniciarla.
-
-Cuando la máquina virtual se inicie, se mostrará el instalador del sistema operativo Linux. El usuario debe seguir las instrucciones del instalador para instalar el sistema operativo.
-
-## 5. Análisis y Resultados
+### Descarga e instalación de VirtualBox.
 
 
+Instalar VirtualBox
+
+1. Visita el sitio web de VirtualBox: [virtualbox.org](https://www.virtualbox.org/)
+2. Descarga e instala VirtualBox según tu sistema operativo.
+
+Crear una Nueva Máquina Virtual en VirtualBox
+
+1. Abre VirtualBox y haz clic en "Nuevo".
+2. Sigue el asistente, elige "Linux" como tipo y "Ubuntu (64 bits)" como versión.
+
+Configurar la Máquina Virtual
+
+1. Asigna al menos 2 GB de RAM.
+2. Crea un disco duro virtual con la opción "Dinámicamente asignado".
+
+Configurar la Unidad Óptica
+
+1. Selecciona la máquina virtual, haz clic en "Configuración".
+2. En la pestaña "Almacenamiento", elige el controlador "IDE".
+3. Selecciona "Elegir un archivo de disco óptico virtual" y carga el archivo ISO.
+
+### Descarga e instalación linux mint
+Descargar los Archivos
+
+1. Visita el sitio web oficial de Linux Mint: [linuxmint.com](https://linuxmint.com/)
+2. Selecciona la edición que deseas descargar y haz clic en "Descargar".
+3. Elige la arquitectura (32 bits o 64 bits) y descarga el archivo ISO.
+4. Inicia la máquina virtual y selecciona "Start Linux Mint".
+5. Sigue las instrucciones en pantalla para instalar Linux Mint.
+
+Completar la Instalación y Configuración
+
+1. Completa la instalación seleccionando idioma, zona horaria, usuario, etc.
+2. Reinicia la máquina virtual.
+
+### Descarga e instalación minianaconda y complementos
+
+```bash
+$ cd Downloads
+$ wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh
+$ bash Miniconda3-latest-Linux-x86_64.sh # Seguir las instrucciones y reiniciar la terminal
+```
+
+```bash
+(base) $ conda update conda # Actualizar conda
+(base) $ conda create -n digital python=3.10 # Configurar digital como variable de entorno y python3.10
+(base) $ conda activate digital  # Activar la variable de entorno de conda denominada digital
+(digital) $ python --version # Debe presentarse la version 3.10 para poder continuar
+```
+> Recuerde que para activar el entorno **digital** deberá hacer uso del comando `$ conda activate digital`.
+> Para desactivar la variable de entorno **digital** en conda ejecutar `$ conda deactivate`
 
 
-## 6. Discusión
+### Instalación de herramientas desde miniconda
+
+```bash
+(digital) $ conda install -c conda-forge gtkwave 
+(digital) $ conda install -c conda-forge graphviz
+(digital) $ conda install -c symbiflow netlistsvg
+(digital) $ conda install -c "litex-hub" yosys
+(digital) $ conda install -c "litex-hub" iverilog
+```
+
+> Para comprobar que se han instalado las herramientas requeridas podrá listar y ubicarlas con el comando `$ conda list`
+
+### Descarga e instalación digital y complementos
+
+> Digital requiere la máquina virtual de java, puede comprobar que tenga instalada usando el comando`java --version`.
+> en el caso de no tener instalada la máquina virtual podría revisar el siguiente enlace: [JVM](https://adoptium.net/).
+
+> En el caso de no tener instalado el JDK o alguna librería requerida en Linux podrá realizar la instalación del JDK desde un gestor de paquetes, ejemplo:
+```bash
+$ sudo apt install openjdk-11-jdk # > Si es una distribución basada en debian
+$ pamac install jdk-openjdk # > Si es una distribución basada en arch
+```
+
+Para realizar la instalación de Digital en su sistema podrá seguir estos 3 pasos:
+
+1. Descargar [Digital.zip](https://github.com/hneemann/Digital/releases/latest/download/Digital.zip): este archivo contiene la aplicación y los scripts necesarios.
+2. Ejecutar la aplicación: Se descomprime el archivo .zip y en la carpeta generada basta con lanzar el ejecutable con extensión .exe para Windows o `java -jar Digital.jar` en una terminal para Linux.
+3. Instalar Digital: si desea encontrar Digital en el menú de aplicaciones bastará con ejecutar el comando `./install.sh` en el directorio donde se encuentra Digitak.jar.
+
+
+## Análisis y Resultados
 
 
 
-## 7. Conclusiones
+
+## Discusión
 
 
 
-## 8. Trabajo Futuro
+## Conclusiones
 
 
 
-## 9. Referencias
+## Referencias
 
 
 
