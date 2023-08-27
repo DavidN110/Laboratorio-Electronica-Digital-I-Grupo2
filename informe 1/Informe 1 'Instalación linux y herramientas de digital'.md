@@ -26,7 +26,14 @@ Instalar linux mint y herramientas como minianaconda (Iverilog y Yosys en minico
 
 ## Marco Teórico
 
-....
+# Marco Teórico: Instalación y Configuración de VirtualBox, Linux Mint, Miniconda y Digital Ocean
+
+La virtualización es una tecnología que permite crear **máquinas virtuales** (VM) en un sistema físico, lo que posibilita ejecutar múltiples sistemas operativos en una sola máquina. **VirtualBox**, una plataforma de virtualización, facilita la gestión de VMs emulando sistemas completos. Esto es útil para pruebas, aislamiento y desarrollo.
+Una **imagen ISO** es una copia exacta de un sistema de archivos, utilizada para distribuir software y sistemas operativos. Permite instalar sistemas operativos en máquinas virtuales o físicas. 
+**Linux Mint**, una distribución de Linux basada en Ubuntu, destaca por su entorno de usuario amigable y estable. Ofrece una alternativa atractiva para aquellos que desean explorar el sistema operativo Linux.
+**Miniconda** es una distribución de **Conda**, un sistema de gestión de paquetes de Python. Conda permite administrar entornos aislados de desarrollo, evitando conflictos de dependencias entre proyectos.
+**Digital** es un diseñador de lógica digital y simulador de circuitos fácil de usar diseñado con fines educativos y de experimentación en diseño de circuitos digitales.
+La configuración con estos elementos trae ventajas, como el aislamiento para pruebas, la gestión de entornos Python y la libertad de configurar herramientas digitales como las FPGA a través de plataformas como **Digital**. Esto facilita el desarrollo y la experimentación con lógica digital en un entorno virtual.
 
 ## Procedimiento
 
