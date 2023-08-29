@@ -124,46 +124,8 @@ Para realizar la instalación de Digital en su sistema podrá seguir estos 3 pas
 ## Análisis y Resultados
 
 A continuación se presentan las imágenes relacionadas a la descarga: 
-![imagen](../Informe1/Imagenes/Imagen1.png)
-![imagen](../Informe1/Imagenes/Imagen2.png)
-![imagen](../Informe1/Imagenes/Imagen3.png)
-![imagen](../Informe1/Imagenes/Imagen4.png)
-![imagen](../Informe1/Imagenes/Imagen5.png)
-![imagen](../Informe1/Imagenes/Imagen6.png)
-![imagen](../Informe1/Imagenes/Imagen7.png)
-![imagen](../Informe1/Imagenes/Imagen8.png)
-![imagen](../Informe1/Imagenes/Imagen9.png)
-![imagen](../Informe1/Imagenes/Imagen10.png)
-![imagen](../Informe1/Imagenes/Imagen11.png)
-![imagen](../Informe1/Imagenes/Imagen12.png)
-![imagen](../Informe1/Imagenes/Imagen13.png)
-![imagen](../Informe1/Imagenes/Imagen14.png)
-![imagen](../Informe1/Imagenes/Imagen15.png)
-![imagen](../Informe1/Imagenes/Imagen16.png)
-![imagen](../Informe1/Imagenes/Imagen17.png)
-![imagen](../Informe1/Imagenes/Imagen18.png)
-![imagen](../Informe1/Imagenes/Imagen19.png)
-![imagen](../Informe1/Imagenes/Imagen20.png)
-![imagen](../Informe1/Imagenes/Imagen21.png)
-![imagen](../Informe1/Imagenes/Imagen22.png)
-![imagen](../Informe1/Imagenes/Imagen23.png)
-![imagen](../Informe1/Imagenes/Imagen24.png)
-![imagen](../Informe1/Imagenes/Imagen25.png)
-![imagen](../Informe1/Imagenes/Imagen26.png)
-![imagen](../Informe1/Imagenes/Imagen27.png)
-![imagen](../Informe1/Imagenes/Imagen28.png)
-![imagen](../Informe1/Imagenes/Imagen29.png)
-![imagen](../Informe1/Imagenes/Imagen30.png)
-![imagen](../Informe1/Imagenes/Imagen31.png)
-![imagen](../Informe1/Imagenes/Imagen32.png)
-![imagen](../Informe1/Imagenes/Imagen33.png)
-![imagen](../Informe1/Imagenes/Imagen34.png)
-![imagen](../Informe1/Imagenes/Imagen35.png)
-![imagen](../Informe1/Imagenes/Imagen36.png)
-![imagen](../Informe1/Imagenes/Imagen37.png)
-![imagen](../Informe1/Imagenes/Imagen38.png)
-![imagen](../Informe1/Imagenes/Imagen39.png)
-<img src="../Informe1/Imagenes/Imagen39.png" alt="Texto alternativo" width="20" height="20" align=center>
+<img src="../Informe1/Imagenes/Imagen39.png" alt="Texto alternativo" width="200" height="200" align=center>
+
 
 La instalación de Linux Mint y herramientas mediante una máquina virtual y Miniconda ofrece un enfoque inteligente para la creación de entornos de desarrollo aislados. Esto permite a los estudiantes experimentar con sistemas operativos y herramientas sin comprometer sus sistemas principales. La virtualización proporcionada por VirtualBox garantiza seguridad y facilita la configuración.
 
