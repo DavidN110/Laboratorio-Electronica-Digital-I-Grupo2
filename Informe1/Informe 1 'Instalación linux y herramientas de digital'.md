@@ -129,26 +129,32 @@ Para realizar la instalación de Digital en su sistema podrá seguir estos 3 pas
 
 A continuación se presentan las imágenes relacionadas a los resultados del proceso de descarga: <br>
 
-   Primeramente se verifica que este activada la opción de virtualización en el administrador de tareas.
+   Primeramente se verifica que este activada la opción de virtualización en el administrador de tareas.<br>
+<p align="center">
    <img src="../Informe1/Imagenes/Imagen1.png" alt="Texto alternativo" width="500"><br>
-   
-   Se descarga e instala la aplicación VirtualBox.
+</p>
+   Se descarga e instala la aplicación VirtualBox.<br>
+<p align="center">
    <img src="../Informe1/Imagenes/Imagen2.png" alt="Texto alternativo" width="250"><br>
    <img src="../Informe1/Imagenes/Imagen3.png" alt="Texto alternativo" width="250"><br>
    <img src="../Informe1/Imagenes/Imagen4.png" alt="Texto alternativo" width="250"><br>
    <img src="../Informe1/Imagenes/Imagen5.png" alt="Texto alternativo" width="250"><br>
    <img src="../Informe1/Imagenes/Imagen6.png" alt="Texto alternativo" width="500"><br>
-   
-   A su vez se descarga la imagen ISO de Linux Mate.
+</p>
+   A su vez se descarga la imagen ISO de Linux Mate.<br>
+<p align="center">
    <img src="../Informe1/Imagenes/Imagen7.png" alt="Texto alternativo" width="250"><br>
-
-   Se inicializa la máquina virtual con la ISO de Linux Mate.
+</p>
+   Se inicializa la máquina virtual con la ISO de Linux Mate.<br>
+<p align="center">
    <img src="../Informe1/Imagenes/Imagen8.png" alt="Texto alternativo" width="250"><br>
-
-   Se crea un usuario para la máquina virtual.
+</p>
+   Se crea un usuario para la máquina virtual.<br>
+<p align="center">
    <img src="../Informe1/Imagenes/Imagen9.png" alt="Texto alternativo" width="500"><br>
-   
-   Se asigna 2 núcleos y 3072 MB para la máquina virtual.
+</p> 
+   Se asigna 2 núcleos y 3072 MB para la máquina virtual.<br>
+ <p align="center">  
    <img src="../Informe1/Imagenes/Imagen10.png" alt="Texto alternativo" width="500"><br>
    <img src="../Informe1/Imagenes/Imagen11.png" alt="Texto alternativo" width="250"><br>
    <img src="../Informe1/Imagenes/Imagen12.png" alt="Texto alternativo" width="250"><br>
