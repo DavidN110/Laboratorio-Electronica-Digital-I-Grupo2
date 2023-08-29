@@ -26,7 +26,7 @@ Instalar linux mint y herramientas como miniconda (Iverilog y Yosys) y digital (
 
 ## Marco Teórico
 
-# Marco Teórico: Instalación y Configuración de VirtualBox, Linux Mint, Miniconda y Digital Ocean
+# Marco Teórico:
 
 La virtualización es una tecnología que permite crear **máquinas virtuales** (VM) en un sistema físico, lo que posibilita ejecutar múltiples sistemas operativos en una sola máquina. **VirtualBox**, una plataforma de virtualización, facilita la gestión de VMs emulando sistemas completos. Esto es útil para pruebas, aislamiento y desarrollo.
 Una **imagen ISO** es una copia exacta de un sistema de archivos, utilizada para distribuir software y sistemas operativos. Permite instalar sistemas operativos en máquinas virtuales o físicas. 
