@@ -126,7 +126,7 @@ Para realizar la instalación de Digital en su sistema podrá seguir estos 3 pas
 ## Análisis y Resultados
 
 A continuación se presentan algunas 
-![imagen](informe 1/Imagenes/Imagen1.png)
+![imagen](informe 1/Imagenes/Imagen1.png);
 
 ## Discusión
 
