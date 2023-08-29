@@ -26,8 +26,6 @@ Instalar linux mint y herramientas como miniconda (Iverilog y Yosys) y digital (
 
 ## Marco Teórico
 
-# Marco Teórico:
-
 La virtualización es una tecnología que permite crear **máquinas virtuales** (VM) en un sistema físico, lo que posibilita ejecutar múltiples sistemas operativos en una sola máquina. **VirtualBox**, una plataforma de virtualización, facilita la gestión de VMs emulando sistemas completos. Esto es útil para pruebas, aislamiento y desarrollo.
 Una **imagen ISO** es una copia exacta de un sistema de archivos, utilizada para distribuir software y sistemas operativos. Permite instalar sistemas operativos en máquinas virtuales o físicas. 
 **Linux Mint**, una distribución de Linux basada en Ubuntu, destaca por su entorno de usuario amigable y estable. Ofrece una alternativa atractiva para aquellos que desean explorar el sistema operativo Linux.
