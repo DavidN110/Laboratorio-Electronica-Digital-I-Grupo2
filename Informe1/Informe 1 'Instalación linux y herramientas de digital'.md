@@ -121,11 +121,13 @@ Para realizar la instalación de Digital en su sistema podrá seguir estos 3 pas
 3. Instalar Digital: si desea encontrar Digital en el menú de aplicaciones bastará con ejecutar el comando `./install.sh` en el directorio donde se encuentra Digitak.jar.
 
 
-## Análisis y Resultados
+## Resultados y Análisis
 
-A continuación se presentan las imágenes relacionadas a la descarga: <br>
+A continuación se presentan las imágenes relacionadas a los resultados del proceso de descarga: <br>
 <p align="center">
+   Primeramente se verifica que este activada la opción de virtualización en el administrador de tareas.
    <img src="../Informe1/Imagenes/Imagen1.png" alt="Texto alternativo" width="500"><br>
+   Se descarga e instala la aplicación VirtualBox.
    <img src="../Informe1/Imagenes/Imagen2.png" alt="Texto alternativo" width="250">
    <img src="../Informe1/Imagenes/Imagen3.png" alt="Texto alternativo" width="250"><br>
    <img src="../Informe1/Imagenes/Imagen4.png" alt="Texto alternativo" width="250">
