@@ -127,10 +127,15 @@ A continuación se presentan las imágenes relacionadas a los resultados del pro
 <p align="center">
    Primeramente se verifica que este activada la opción de virtualización en el administrador de tareas.
    <img src="../Informe1/Imagenes/Imagen1.png" alt="Texto alternativo" width="500"><br>
+  
    Se descarga e instala la aplicación VirtualBox.
+   
    <img src="../Informe1/Imagenes/Imagen2.png" alt="Texto alternativo" width="250">
    <img src="../Informe1/Imagenes/Imagen3.png" alt="Texto alternativo" width="250"><br>
    <img src="../Informe1/Imagenes/Imagen4.png" alt="Texto alternativo" width="250">
+   
+   A su vez se descargar la imagen ISO de Linux Mate
+   
    <img src="../Informe1/Imagenes/Imagen5.png" alt="Texto alternativo" width="250"><br>
    <img src="../Informe1/Imagenes/Imagen6.png" alt="Texto alternativo" width="500"><br>
    <img src="../Informe1/Imagenes/Imagen7.png" alt="Texto alternativo" width="250">
