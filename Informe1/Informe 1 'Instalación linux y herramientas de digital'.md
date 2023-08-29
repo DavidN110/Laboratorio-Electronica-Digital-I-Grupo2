@@ -123,8 +123,7 @@ Para realizar la instalación de Digital en su sistema podrá seguir estos 3 pas
 
 ## Análisis y Resultados
 
-A continuación se presentan las imágenes relacionadas a la descarga: 
-/n
+A continuación se presentan las imágenes relacionadas a la descarga: <br>
 <img src="../Informe1/Imagenes/Imagen39.png" alt="Texto alternativo" width="200" height="200" align=center>
 
 
