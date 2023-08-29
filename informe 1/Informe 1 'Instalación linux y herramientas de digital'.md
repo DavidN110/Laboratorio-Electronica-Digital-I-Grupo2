@@ -127,7 +127,7 @@ Para realizar la instalación de Digital en su sistema podrá seguir estos 3 pas
 
 A continuación se presentan algunas 
 
-![Logo de mi proyecto](https://github.com/tu-usuario/tu-repositorio/raw/main/informe-1/Imagenes/Imagen1.png)
+![Logo de mi proyecto](https://github.com/tu-usuario/tu-repositorio/raw/main/informe 1/Imagenes/Imagen1.png)
 
 ## Discusión
 
