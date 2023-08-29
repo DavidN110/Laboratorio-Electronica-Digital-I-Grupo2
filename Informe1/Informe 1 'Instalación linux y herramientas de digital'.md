@@ -125,7 +125,7 @@ Para realizar la instalación de Digital en su sistema podrá seguir estos 3 pas
 
 A continuación se presentan las imágenes relacionadas a la descarga: <br>
 <p align="center">
-   <img src="../Informe1/Imagenes/Imagen1.png" alt="Texto alternativo" width="300" height="300"><br>
+   <img src="../Informe1/Imagenes/Imagen1.png" alt="Texto alternativo" width="500" ><br>
    <img src="../Informe1/Imagenes/Imagen2.png" alt="Texto alternativo" width="300" height="300"><br>
    <img src="../Informe1/Imagenes/Imagen3.png" alt="Texto alternativo" width="300" height="300"><br>
   <img src="../Informe1/Imagenes/Imagen39.png" alt="Texto alternativo"  height="300"><br>
