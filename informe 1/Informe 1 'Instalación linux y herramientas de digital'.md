@@ -18,11 +18,11 @@
 
 ## Introducción
 
-Se desarrollara un paso a paso de como se instaló linux mint mate en una maquina virtual en este caso VirtualBox como alternativa para no instalar nativamente linux mint, y luego se descargaron e instalaron algunas herramientas que se utilizaran a lo largo del curso de electronica digital 1.
+Se desarrollará un paso a paso de cómo se instaló linux mint mate en una maquina virtual en este caso VirtualBox como alternativa para no instalar nativamente linux mint, luego se descargaron e instalaron algunas herramientas que se utilizaran a lo largo del curso de electrónica digital I.
 
 ## Objetivos
 
-Instalar linux mint y herramientas como minianaconda (Iverilog y Yosys en miniconda) y digital(como complementos para digital)
+Instalar linux mint y herramientas como miniconda (Iverilog y Yosys) y digital (Complementos para digital)
 
 ## Marco Teórico
 
@@ -125,8 +125,7 @@ Para realizar la instalación de Digital en su sistema podrá seguir estos 3 pas
 
 ## Análisis y Resultados
 
-
-
+A continuación se presentan algunas 
 
 ## Discusión
 
