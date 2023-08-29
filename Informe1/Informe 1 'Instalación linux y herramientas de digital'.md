@@ -75,6 +75,10 @@ Completar la Instalación y Configuración
 
 ### Descarga e instalación minianaconda y complementos
 
+1.Abre la terminal en tu sistema Linux Mint.
+
+2.Descarga el instalador de Miniconda usando wget (asegúrate de obtener el enlace correcto para tu arquitectura):
+
 ```bash
 $ cd Downloads
 $ wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh
