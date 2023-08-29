@@ -2,7 +2,7 @@
 * [Introducción](#Introducción)
 * [Objetivos](#Objetivos)
 * [Marco teórico](#Marco-Teórico)
-* [Procedimeinto](#Procedimeinto)
+* [Procedimeinto](#Procedimiento)
     * [Descarga e instalación Virtualbox](#Descarga-e-instalación-Virtualbox)
     * [Descarga e instalación linux mint](#Descarga-e-instalación-linux-mint)
     * [Descarga e instalación minianaconda y complementos](#Descarga-e-instalación-minianaconda-y-complementos)
