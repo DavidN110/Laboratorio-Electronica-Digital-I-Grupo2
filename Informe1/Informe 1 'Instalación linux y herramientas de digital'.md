@@ -163,7 +163,7 @@ A continuación se presentan las imágenes relacionadas a la descarga:
 ![imagen](../Informe1/Imagenes/Imagen37.png)
 ![imagen](../Informe1/Imagenes/Imagen38.png)
 ![imagen](../Informe1/Imagenes/Imagen39.png)
-<img src="../Informe1/Imagenes/Imagen39.png" alt="Texto alternativo" width="200" height="200">
+<img src="../Informe1/Imagenes/Imagen39.png" alt="Texto alternativo" width="20" height="20">
 
 La instalación de Linux Mint y herramientas mediante una máquina virtual y Miniconda ofrece un enfoque inteligente para la creación de entornos de desarrollo aislados. Esto permite a los estudiantes experimentar con sistemas operativos y herramientas sin comprometer sus sistemas principales. La virtualización proporcionada por VirtualBox garantiza seguridad y facilita la configuración.
 
