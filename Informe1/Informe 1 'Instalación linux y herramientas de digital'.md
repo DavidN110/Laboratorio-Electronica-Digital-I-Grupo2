@@ -135,19 +135,19 @@ A continuación se presentan las imágenes relacionadas a los resultados del pro
 </p>
    Se descarga e instala la aplicación VirtualBox.<br>
 <p align="center">
-   <img src="../Informe1/Imagenes/Imagen2.png" alt="Texto alternativo" width="250"><br>
+   <img src="../Informe1/Imagenes/Imagen2.png" alt="Texto alternativo" width="250">
    <img src="../Informe1/Imagenes/Imagen3.png" alt="Texto alternativo" width="250"><br>
-   <img src="../Informe1/Imagenes/Imagen4.png" alt="Texto alternativo" width="250"><br>
+   <img src="../Informe1/Imagenes/Imagen4.png" alt="Texto alternativo" width="250">
    <img src="../Informe1/Imagenes/Imagen5.png" alt="Texto alternativo" width="250"><br>
    <img src="../Informe1/Imagenes/Imagen6.png" alt="Texto alternativo" width="500"><br>
 </p>
    A su vez se descarga la imagen ISO de Linux Mate.<br>
 <p align="center">
-   <img src="../Informe1/Imagenes/Imagen7.png" alt="Texto alternativo" width="250"><br>
+   <img src="../Informe1/Imagenes/Imagen7.png" alt="Texto alternativo" width="500"><br>
 </p>
    Se inicializa la máquina virtual con la ISO de Linux Mate.<br>
 <p align="center">
-   <img src="../Informe1/Imagenes/Imagen8.png" alt="Texto alternativo" width="250"><br>
+   <img src="../Informe1/Imagenes/Imagen8.png" alt="Texto alternativo" width="500"><br>
 </p>
    Se crea un usuario para la máquina virtual.<br>
 <p align="center">
@@ -156,13 +156,13 @@ A continuación se presentan las imágenes relacionadas a los resultados del pro
    Se asigna 2 núcleos y 3072 MB para la máquina virtual.<br>
  <p align="center">  
    <img src="../Informe1/Imagenes/Imagen10.png" alt="Texto alternativo" width="500"><br>
-   <img src="../Informe1/Imagenes/Imagen11.png" alt="Texto alternativo" width="250"><br>
+   <img src="../Informe1/Imagenes/Imagen11.png" alt="Texto alternativo" width="250">
    <img src="../Informe1/Imagenes/Imagen12.png" alt="Texto alternativo" width="250"><br>
    <img src="../Informe1/Imagenes/Imagen13.png" alt="Texto alternativo" width="500"><br>
-   <img src="../Informe1/Imagenes/Imagen14.png" alt="Texto alternativo" width="250"><br>
+   <img src="../Informe1/Imagenes/Imagen14.png" alt="Texto alternativo" width="250">
    <img src="../Informe1/Imagenes/Imagen15.png" alt="Texto alternativo" width="250"><br>
    <img src="../Informe1/Imagenes/Imagen16.png" alt="Texto alternativo" width="500"><br>
-   <img src="../Informe1/Imagenes/Imagen17.png" alt="Texto alternativo" width="250"><br>
+   <img src="../Informe1/Imagenes/Imagen17.png" alt="Texto alternativo" width="250">
    <img src="../Informe1/Imagenes/Imagen18.png" alt="Texto alternativo" width="250"><br>
    <img src="../Informe1/Imagenes/Imagen19.png" alt="Texto alternativo" width="500"><br>
    <img src="../Informe1/Imagenes/Imagen20.png" alt="Texto alternativo" width="500"><br>
