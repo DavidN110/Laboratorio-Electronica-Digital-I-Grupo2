@@ -43,8 +43,6 @@ Instalar VirtualBox
 1. Visita el sitio web de VirtualBox: [virtualbox.org](https://www.virtualbox.org/)
 2. Descarga e instala VirtualBox según tu sistema operativo.
    
-![imagen](../Informe1/Imagenes/Imagen1.png)
-
 Crear una Nueva Máquina Virtual en VirtualBox
 
 1. Abre VirtualBox y haz clic en "Nuevo".
@@ -166,14 +164,27 @@ A continuación se presentan las imágenes relacionadas a la descarga:
 ![imagen](../Informe1/Imagenes/Imagen38.png)
 ![imagen](../Informe1/Imagenes/Imagen39.png)
 
+La instalación de Linux Mint y herramientas mediante una máquina virtual y Miniconda ofrece un enfoque inteligente para la creación de entornos de desarrollo aislados. Esto permite a los estudiantes experimentar con sistemas operativos y herramientas sin comprometer sus sistemas principales. La virtualización proporcionada por VirtualBox garantiza seguridad y facilita la configuración.
+
+Sin embargo, esta metodología puede aumentar la complejidad para los principiantes, ya que involucra varios pasos y plataformas como Miniconda, que pueden ser desconocidas para algunos. La instalación de herramientas específicas para electrónica digital, como Iverilog y Yosys, a través de Miniconda, puede ser un proceso detallado y requerir un ajuste por parte de los estudiantes.
+
+La elección de Digital como herramienta de diseño de circuitos digitales plantea una dependencia de Java que podría generar problemas de compatibilidad y requerir soluciones adicionales.
 
 ## Discusión
 
+La instalación de Linux Mint y las herramientas asociadas para el curso de Electrónica Digital I es un proceso esencial para brindar a los estudiantes un entorno de desarrollo y experimentación efectivo. La decisión de utilizar una máquina virtual a través de VirtualBox en lugar de una instalación nativa de Linux Mint presenta ventajas significativas en términos de aislamiento y seguridad. Sin embargo, esta elección también plantea cuestiones relacionadas con el rendimiento y la limitación de recursos.
 
+Una discusión clave gira en torno a la elección de Miniconda como la plataforma de gestión de paquetes para Python y la instalación de herramientas como Iverilog y Yosys. Si bien Miniconda brinda un control preciso sobre las dependencias y la creación de entornos aislados, también puede generar cierta complejidad adicional para los estudiantes que no están familiarizados con esta plataforma. La necesidad de crear un entorno separado (como 'digital') puede resultar confusa para los principiantes y requerir un tiempo adicional para entender su funcionamiento.
+
+La instalación de Digital, un simulador de circuitos digitales, también presenta su propio conjunto de desafíos. La dependencia de Java para ejecutar Digital puede ser problemática, especialmente si los estudiantes no tienen experiencia previa con Java o no tienen la versión adecuada instalada. Aunque se proporciona una solución para instalar Digital en Linux, la variedad de sistemas operativos y configuraciones podría llevar a posibles obstáculos para algunos estudiantes.
+
+Otra consideración es la interoperabilidad de todas estas herramientas en un entorno virtual. Aunque la instalación individual se ha detallado claramente, podría haber interacciones inesperadas o problemas de compatibilidad entre las herramientas, lo que puede ser frustrante y requerir tiempo para resolver.
 
 ## Conclusiones
 
+Este informe ha demostrado el proceso detallado de instalación de Linux Mint, herramientas de Miniconda y Digital para el curso de Electrónica Digital I. La virtualización con VirtualBox permite crear entornos aislados y facilita la instalación de sistemas operativos y herramientas sin afectar el sistema principal. La utilización de Miniconda proporciona un entorno de desarrollo aislado para Python, lo que ayuda a evitar conflictos de dependencias y permite la instalación de Iverilog y Yosys, componentes cruciales para la simulación y síntesis de circuitos digitales. Además, la instalación de Digital brinda una plataforma de diseño y simulación de circuitos digitales accesible y educativa.
 
+Este enfoque de instalación y configuración de herramientas en una máquina virtual resulta beneficioso, ya que proporciona un ambiente controlado y seguro para explorar y experimentar con las tecnologías digitales sin comprometer el sistema principal. La documentación detallada y las referencias proporcionadas son recursos útiles para cualquier estudiante o persona interesada en configurar estas herramientas.
 
 ## Referencias
 
