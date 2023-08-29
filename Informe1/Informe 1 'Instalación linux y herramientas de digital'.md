@@ -128,9 +128,7 @@ Para realizar la instalación de Digital en su sistema podrá seguir estos 3 pas
 <<<<<<< HEAD
 A continuación se presentan las imágenes relacionadas a la descarga: 
 =======
-A continuación se presentan algunas 
-![imagen](informe 1/Imagenes/Imagen1.png);
->>>>>>> bc14fc83cfbbc681a771556f34b8a0803bc98515
+![Logo de mi proyecto](https://github.com/tu-usuario/tu-repositorio/raw/main/Laboratorio-Electronica-Digital-I-Grupo2/Informe1/imagen1.png)
 
 ## Discusión
 
