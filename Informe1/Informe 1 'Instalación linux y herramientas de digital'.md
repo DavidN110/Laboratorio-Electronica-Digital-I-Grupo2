@@ -125,7 +125,9 @@ Para realizar la instalación de Digital en su sistema podrá seguir estos 3 pas
 
 A continuación se presentan las imágenes relacionadas a la descarga: <br>
 <img src="../Informe1/Imagenes/Imagen39.png" alt="Texto alternativo" width="200" height="200" align=center>
-
+<p align="center">
+  <img src="../Informe1/Imagenes/Imagen39.png" alt="Texto alternativo" width="200" height="200">
+</p>
 
 La instalación de Linux Mint y herramientas mediante una máquina virtual y Miniconda ofrece un enfoque inteligente para la creación de entornos de desarrollo aislados. Esto permite a los estudiantes experimentar con sistemas operativos y herramientas sin comprometer sus sistemas principales. La virtualización proporcionada por VirtualBox garantiza seguridad y facilita la configuración.
 
