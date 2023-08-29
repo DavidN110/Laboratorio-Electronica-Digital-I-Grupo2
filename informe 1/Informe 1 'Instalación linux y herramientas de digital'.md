@@ -44,6 +44,7 @@ Instalar VirtualBox
 
 1. Visita el sitio web de VirtualBox: [virtualbox.org](https://www.virtualbox.org/)
 2. Descarga e instala VirtualBox según tu sistema operativo.
+   
 ![imagen](informe 1/Imagen1.png)
 
 Crear una Nueva Máquina Virtual en VirtualBox
