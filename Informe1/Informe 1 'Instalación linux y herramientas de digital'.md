@@ -131,24 +131,23 @@ A continuación se presentan las imágenes relacionadas a la descarga: <br>
    <img src="../Informe1/Imagenes/Imagen4.png" alt="Texto alternativo" width="250">
    <img src="../Informe1/Imagenes/Imagen5.png" alt="Texto alternativo" width="250"><br>
    <img src="../Informe1/Imagenes/Imagen6.png" alt="Texto alternativo" width="500"><br>
-   <img src="../Informe1/Imagenes/Imagen7.png" alt="Texto alternativo" width="500"><br>
-   <img src="../Informe1/Imagenes/Imagen8.png" alt="Texto alternativo" width="500"><br>
+   <img src="../Informe1/Imagenes/Imagen7.png" alt="Texto alternativo" width="250">
+   <img src="../Informe1/Imagenes/Imagen8.png" alt="Texto alternativo" width="250"><br>
    <img src="../Informe1/Imagenes/Imagen9.png" alt="Texto alternativo" width="500"><br>
    <img src="../Informe1/Imagenes/Imagen10.png" alt="Texto alternativo" width="500"><br>
-   <img src="../Informe1/Imagenes/Imagen11.png" alt="Texto alternativo" width="500"><br>
-   <img src="../Informe1/Imagenes/Imagen12.png" alt="Texto alternativo" width="500"><br>
+   <img src="../Informe1/Imagenes/Imagen11.png" alt="Texto alternativo" width="250">
+   <img src="../Informe1/Imagenes/Imagen12.png" alt="Texto alternativo" width="250"><br>
    <img src="../Informe1/Imagenes/Imagen13.png" alt="Texto alternativo" width="500"><br>
-   <img src="../Informe1/Imagenes/Imagen14.png" alt="Texto alternativo" width="500"><br>
-   <img src="../Informe1/Imagenes/Imagen15.png" alt="Texto alternativo" width="500"><br>
+   <img src="../Informe1/Imagenes/Imagen14.png" alt="Texto alternativo" width="250">
+   <img src="../Informe1/Imagenes/Imagen15.png" alt="Texto alternativo" width="250"><br>
    <img src="../Informe1/Imagenes/Imagen16.png" alt="Texto alternativo" width="500"><br>
-   <img src="../Informe1/Imagenes/Imagen17.png" alt="Texto alternativo" width="500"><br>
-   <img src="../Informe1/Imagenes/Imagen18.png" alt="Texto alternativo" width="500"><br>
+   <img src="../Informe1/Imagenes/Imagen17.png" alt="Texto alternativo" width="250">
+   <img src="../Informe1/Imagenes/Imagen18.png" alt="Texto alternativo" width="250"><br>
    <img src="../Informe1/Imagenes/Imagen19.png" alt="Texto alternativo" width="500"><br>
    <img src="../Informe1/Imagenes/Imagen20.png" alt="Texto alternativo" width="500"><br>
    <img src="../Informe1/Imagenes/Imagen21.png" alt="Texto alternativo" width="500"><br>
    <img src="../Informe1/Imagenes/Imagen22.png" alt="Texto alternativo" width="500"><br>
    <img src="../Informe1/Imagenes/Imagen23.png" alt="Texto alternativo" width="500"><br>
-   <img src="../Informe1/Imagenes/Imagen24.png" alt="Texto alternativo" width="500"><br>
    <img src="../Informe1/Imagenes/Imagen25.png" alt="Texto alternativo" width="500"><br>
    <img src="../Informe1/Imagenes/Imagen26.png" alt="Texto alternativo" width="500"><br>
    <img src="../Informe1/Imagenes/Imagen27.png" alt="Texto alternativo" width="500"><br>
@@ -156,8 +155,6 @@ A continuación se presentan las imágenes relacionadas a la descarga: <br>
    <img src="../Informe1/Imagenes/Imagen29.png" alt="Texto alternativo" width="500"><br>
    <img src="../Informe1/Imagenes/Imagen30.png" alt="Texto alternativo" width="500"><br>
    <img src="../Informe1/Imagenes/Imagen31.png" alt="Texto alternativo" width="500"><br>
-   <img src="../Informe1/Imagenes/Imagen32.png" alt="Texto alternativo" width="500"><br>
-   <img src="../Informe1/Imagenes/Imagen33.png" alt="Texto alternativo" width="500"><br>
    <img src="../Informe1/Imagenes/Imagen34.png" alt="Texto alternativo" width="500"><br>
    <img src="../Informe1/Imagenes/Imagen35.png" alt="Texto alternativo" width="500"><br>
    <img src="../Informe1/Imagenes/Imagen36.png" alt="Texto alternativo" width="500"><br>
