@@ -129,7 +129,7 @@ Para realizar la instalación de Digital en su sistema podrá seguir estos 3 pas
 
 A continuación se presentan las imágenes relacionadas a los resultados del proceso de descarga: <br>
 
-   Primeramente se verifica que este activada la opción de virtualización en el administrador de tareas.<br>
+   Primeramente se verifica que esté activada la opción de virtualización en el administrador de tareas.<br>
 <p align="center">
    <img src="../Informe1/Imagenes/Imagen1.png" alt="Texto alternativo" width="500"><br>
 </p>
@@ -149,10 +149,10 @@ A continuación se presentan las imágenes relacionadas a los resultados del pro
 <p align="center">
    <img src="../Informe1/Imagenes/Imagen8.png" alt="Texto alternativo" width="500"><br>
 </p>
-   Se crea un usuario para la máquina virtual.<br>
 <p align="center">
    <img src="../Informe1/Imagenes/Imagen9.png" alt="Texto alternativo" width="500"><br>
 </p> 
+Se crea un usuario para la máquina virtual.<br>
 <p align="center">  
    <img src="../Informe1/Imagenes/Imagen10.png" alt="Texto alternativo" width="500"><br>
 </p> 
@@ -186,15 +186,32 @@ A continuación se presentan las imágenes relacionadas a los resultados del pro
    <img src="../Informe1/Imagenes/Imagen21.png" alt="Texto alternativo" width="500"><br>
    <img src="../Informe1/Imagenes/Imagen22.png" alt="Texto alternativo" width="500"><br>
 </p>
+   Se activa una función para pasar la información del pc anfitrión al invitado.<br>
+<p align="center"> 
    <img src="../Informe1/Imagenes/Imagen23.png" alt="Texto alternativo" width="500"><br>
+</p>
+   Se instala miniconda.<br>
+<p align="center"> 
    <img src="../Informe1/Imagenes/Imagen25.png" alt="Texto alternativo" width="500"><br>
    <img src="../Informe1/Imagenes/Imagen26.png" alt="Texto alternativo" width="500"><br>
    <img src="../Informe1/Imagenes/Imagen27.png" alt="Texto alternativo" width="500"><br>
+</p>
+   Se actualiza miniconda.<br>
+<p align="center"> 
    <img src="../Informe1/Imagenes/Imagen28.png" alt="Texto alternativo" width="500"><br>
+</p>
+   Se comprueba que esté instalado Java y Python.<br>
+<p align="center"> 
    <img src="../Informe1/Imagenes/Imagen29.png" alt="Texto alternativo" width="500"><br>
    <img src="../Informe1/Imagenes/Imagen30.png" alt="Texto alternativo" width="500"><br>
+</p>
+   Se instala iverilog, yosys, gtkwave, graphviz y symbiflow netlistsvg.<br>
+<p align="center"> 
    <img src="../Informe1/Imagenes/Imagen31.png" alt="Texto alternativo" width="500"><br>
    <img src="../Informe1/Imagenes/Imagen34.png" alt="Texto alternativo" width="500"><br>
+</p>
+   Se verifica las instalación de las herramientas.<br>
+<p align="center"> 
    <img src="../Informe1/Imagenes/Imagen35.png" alt="Texto alternativo" width="500"><br>
    <img src="../Informe1/Imagenes/Imagen36.png" alt="Texto alternativo" width="500"><br>
    <img src="../Informe1/Imagenes/Imagen37.png" alt="Texto alternativo" width="500"><br>
