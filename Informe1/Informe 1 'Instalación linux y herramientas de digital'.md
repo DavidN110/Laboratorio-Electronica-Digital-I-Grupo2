@@ -210,11 +210,17 @@ Se crea un usuario para la máquina virtual.<br>
    <img src="../Informe1/Imagenes/Imagen31.png" alt="Texto alternativo" width="500"><br>
    <img src="../Informe1/Imagenes/Imagen34.png" alt="Texto alternativo" width="500"><br>
 </p>
-   Se verifica las instalación de las herramientas.<br>
+   Se verifica la instalación de las herramientas.<br>
 <p align="center"> 
    <img src="../Informe1/Imagenes/Imagen35.png" alt="Texto alternativo" width="500"><br>
    <img src="../Informe1/Imagenes/Imagen36.png" alt="Texto alternativo" width="500"><br>
+</p>
+   Se descarga Digital.<br>
+<p align="center">  
    <img src="../Informe1/Imagenes/Imagen37.png" alt="Texto alternativo" width="500"><br>
+</p>
+   Se inicializa Digital desde la consola.<br>
+<p align="center">
    <img src="../Informe1/Imagenes/Imagen38.png" alt="Texto alternativo" width="500"><br>
    <img src="../Informe1/Imagenes/Imagen39.png" alt="Texto alternativo" width="500"><br>
 </p>
