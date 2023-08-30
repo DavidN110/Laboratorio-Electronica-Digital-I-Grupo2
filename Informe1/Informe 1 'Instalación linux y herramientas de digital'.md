@@ -153,9 +153,10 @@ A continuación se presentan las imágenes relacionadas a los resultados del pro
 <p align="center">
    <img src="../Informe1/Imagenes/Imagen9.png" alt="Texto alternativo" width="500"><br>
 </p> 
-   Se asigna 2 núcleos y 3072 MB para la máquina virtual.<br>
- <p align="center">  
+<p align="center">  
    <img src="../Informe1/Imagenes/Imagen10.png" alt="Texto alternativo" width="500"><br>
+</p> 
+   Se asigna 2 núcleos y 3072 MB para la máquina virtual.<br>
    <img src="../Informe1/Imagenes/Imagen11.png" alt="Texto alternativo" width="250">
    <img src="../Informe1/Imagenes/Imagen12.png" alt="Texto alternativo" width="250"><br>
    <img src="../Informe1/Imagenes/Imagen13.png" alt="Texto alternativo" width="500"><br>
