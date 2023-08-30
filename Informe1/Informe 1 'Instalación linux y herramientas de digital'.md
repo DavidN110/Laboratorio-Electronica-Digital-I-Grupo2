@@ -156,19 +156,36 @@ A continuación se presentan las imágenes relacionadas a los resultados del pro
 <p align="center">  
    <img src="../Informe1/Imagenes/Imagen10.png" alt="Texto alternativo" width="500"><br>
 </p> 
-   Se asigna 2 núcleos y 3072 MB para la máquina virtual.<br>
+   Se asignan 2 núcleos y 3072 MB para la máquina virtual.<br>
+<p align="center"> 
    <img src="../Informe1/Imagenes/Imagen11.png" alt="Texto alternativo" width="250">
+</p>
+   Se termina de inicializar la máquina virtual.<br>
+<p align="center"> 
    <img src="../Informe1/Imagenes/Imagen12.png" alt="Texto alternativo" width="250"><br>
    <img src="../Informe1/Imagenes/Imagen13.png" alt="Texto alternativo" width="500"><br>
+</p>
+   Se ingresa a la máquina virtual con el usuario y contraseña establecidos.<br>
+<p align="center"> 
    <img src="../Informe1/Imagenes/Imagen14.png" alt="Texto alternativo" width="250">
    <img src="../Informe1/Imagenes/Imagen15.png" alt="Texto alternativo" width="250"><br>
+</p>
+   Se configura el entorno para que proyecte en pantalla completa la máquina virtual.<br>
+<p align="center"> 
    <img src="../Informe1/Imagenes/Imagen16.png" alt="Texto alternativo" width="500"><br>
    <img src="../Informe1/Imagenes/Imagen17.png" alt="Texto alternativo" width="250">
    <img src="../Informe1/Imagenes/Imagen18.png" alt="Texto alternativo" width="250"><br>
    <img src="../Informe1/Imagenes/Imagen19.png" alt="Texto alternativo" width="500"><br>
+</p>
+   Se sube la cantidad de memoria de video.<br>
+<p align="center"> 
    <img src="../Informe1/Imagenes/Imagen20.png" alt="Texto alternativo" width="500"><br>
+</p>
+   Se proyecta la máquina virtual en pantalla completa.<br>
+<p align="center"> 
    <img src="../Informe1/Imagenes/Imagen21.png" alt="Texto alternativo" width="500"><br>
    <img src="../Informe1/Imagenes/Imagen22.png" alt="Texto alternativo" width="500"><br>
+</p>
    <img src="../Informe1/Imagenes/Imagen23.png" alt="Texto alternativo" width="500"><br>
    <img src="../Informe1/Imagenes/Imagen25.png" alt="Texto alternativo" width="500"><br>
    <img src="../Informe1/Imagenes/Imagen26.png" alt="Texto alternativo" width="500"><br>
