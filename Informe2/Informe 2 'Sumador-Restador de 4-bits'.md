@@ -16,6 +16,8 @@
 
 ## Procedimiento
 
+## Resultados y Análisis
+
 ## Discusión
 
 ## Conclusiones
