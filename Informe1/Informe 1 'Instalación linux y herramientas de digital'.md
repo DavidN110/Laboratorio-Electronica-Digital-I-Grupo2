@@ -7,7 +7,7 @@
     * [Descarga e instalación linux mint](#Descarga-e-instalación-linux-mint)
     * [Descarga e instalación minianaconda y complementos](#Descarga-e-instalación-minianaconda-y-complementos)
     * [Descarga e instalación digital y complementos](#Descarga-e-instalación-digital-y-complementos)
-* [Análisis y Resultados](#Análisis-y-Resultados)
+* [Resultados y Análisis](#Resultados-y-Análisis)
 * [Discusión](#Discusión)
 * [Conclusiones](#Conclusiones)
 * [Referencias](#Referencias)
