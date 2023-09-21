@@ -5,7 +5,7 @@
 * [Procedimiento](#Procedimiento)
     * [Descarga e instalación Virtualbox](#Descarga-e-instalación-Virtualbox)
     * [Descarga e instalación linux mint](#Descarga-e-instalación-linux-mint)
-    * [Descarga e instalación miniconda y complementos](#Descarga-e-instalación-minianaconda-y-complementos)
+    * [Descarga e instalación miniconda y complementos](#Descarga-e-instalación-miniconda-y-complementos)
     * [Descarga e instalación digital y complementos](#Descarga-e-instalación-digital-y-complementos)
 * [Resultados y Análisis](#Resultados-y-Análisis)
 * [Discusión](#Discusión)
