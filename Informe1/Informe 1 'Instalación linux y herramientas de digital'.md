@@ -14,7 +14,7 @@
 
 ## Resumen
 
-----
+Se presenta una guía con imágenes del proceso para instalar linux mint mate en Windows mediante el uso de la máquina virtual VirtualBox, a su vez se muestra el proceso para instalar algunas herramientas como digital e iverilog en la imagen del linux mate instalado
 
 ## Introducción
 
