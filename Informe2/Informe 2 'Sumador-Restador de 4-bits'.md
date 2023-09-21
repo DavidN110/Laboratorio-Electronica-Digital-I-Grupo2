@@ -8,6 +8,8 @@
 * [Conclusiones](#Conclusiones)
 * [Referencias](#Referencias)
 
+## Resumen
+
 ## Introducción
 
 ## Objetivos
