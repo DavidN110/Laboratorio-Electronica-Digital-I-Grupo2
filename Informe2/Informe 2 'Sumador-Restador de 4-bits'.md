@@ -48,14 +48,23 @@ El acarreo de salida (Cout) es el resultado de (A AND B') OR ((A XOR B') AND Cin
 
 <p align="center">
    <img src="../Informe2/Imagenes/SemiSumador.png" alt="Texto alternativo" width="150"><br>
+<p align="center">
    <img src="../Informe2/Imagenes/Sumador 1 bit.png" alt="Texto alternativo" width="250"><br>
+<p align="center">
    <img src="../Informe2/Imagenes/Sumador 4 bits.png" alt="Texto alternativo" width="250"><br>
+<p align="center">
    <img src="../Informe2/Imagenes/Complemento a 2.png" alt="Texto alternativo" width="250"><br>
+<p align="center">
    <img src="../Informe2/Imagenes/Mini ALU.jpeg" alt="Texto alternativo" width="250"><br>
-
+</p>
+Se presentan las imágenes de las simulaciones hechas en gtkwave para cada uno de los componentes del sumador-restador de  4 bits:<br>
+<p align="center">
    <img src="../Informe2/Imagenes/Sim Suma 1 bit.png" alt="Texto alternativo" width="250"><br>
+<p align="center">
    <img src="../Informe2/Imagenes/Sim Suma 4 bits.png" alt="Texto alternativo" width="250"><br>
+<p align="center">
    <img src="../Informe2/Imagenes/Sim Complemento 2.png" alt="Texto alternativo" width="250"><br>
+<p align="center">
    <img src="../Informe2/Imagenes/Sim Mini ALU.png" alt="Texto alternativo" width="250"><br>
 
 ## Discusión
