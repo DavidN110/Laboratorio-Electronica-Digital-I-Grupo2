@@ -53,6 +53,11 @@ El acarreo de salida (Cout) es el resultado de (A AND B') OR ((A XOR B') AND Cin
    <img src="../Informe2/Imagenes/Complemento a 2.png" alt="Texto alternativo" width="250"><br>
    <img src="../Informe2/Imagenes/Mini ALU.jpeg" alt="Texto alternativo" width="250"><br>
 
+   <img src="../Informe2/Imagenes/Sim Suma 1 bit.png" alt="Texto alternativo" width="250"><br>
+   <img src="../Informe2/Imagenes/Sim Suma 4 bits.png" alt="Texto alternativo" width="250"><br>
+   <img src="../Informe2/Imagenes/Sim Complemento 2.png" alt="Texto alternativo" width="250"><br>
+   <img src="../Informe2/Imagenes/Sim Mini ALU.png" alt="Texto alternativo" width="250"><br>
+
 ## Discusión
 
 ## Conclusiones
