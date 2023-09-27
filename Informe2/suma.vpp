@@ -1,0 +1,93 @@
+#! /usr/bin/env bash
+exec /home/samuelcruz/miniconda3/envs/digital/bin/vvp -f "$0" "$@" <<'# EOF'
+:ivl_version "13.0 (devel)" "(0_8-6859-gf50cc35d2-dirty)";
+:ivl_delay_selection "TYPICAL";
+:vpi_time_precision + 0;
+:vpi_module "/home/samuelcruz/miniconda3/envs/digital/lib/ivl/system.vpi";
+:vpi_module "/home/samuelcruz/miniconda3/envs/digital/lib/ivl/vhdl_sys.vpi";
+:vpi_module "/home/samuelcruz/miniconda3/envs/digital/lib/ivl/vhdl_textio.vpi";
+:vpi_module "/home/samuelcruz/miniconda3/envs/digital/lib/ivl/v2005_math.vpi";
+:vpi_module "/home/samuelcruz/miniconda3/envs/digital/lib/ivl/va_math.vpi";
+S_0x1008ed0 .scope module, "testbech" "testbech" 2 1;
+ .timescale 0 0;
+v0x101f1f0_0 .var/i "i", 31 0;
+v0x101f2d0_0 .var "inputs", 2 0;
+v0x101f3b0_0 .net "outs", 1 0, L_0x101fd30;  1 drivers
+L_0x101f9a0 .part v0x101f2d0_0, 1, 1;
+L_0x101fad0 .part v0x101f2d0_0, 2, 1;
+L_0x101fc00 .part v0x101f2d0_0, 0, 1;
+L_0x101fd30 .concat8 [ 1 1 0 0], L_0x101f6a0, L_0x101f910;
+S_0x1009060 .scope module, "dut" "Sumador" 2 15, 3 1 0, S_0x1008ed0;
+ .timescale 0 0;
+    .port_info 0 /INPUT 1 "A";
+    .port_info 1 /INPUT 1 "B";
+    .port_info 2 /INPUT 1 "CIn";
+    .port_info 3 /OUTPUT 1 "COut";
+    .port_info 4 /OUTPUT 1 "Sum";
+L_0x101f910 .functor OR 1, L_0x101f880, L_0x101f5c0, C4<0>, C4<0>;
+v0x101eb40_0 .net "A", 0 0, L_0x101f9a0;  1 drivers
+v0x101ec00_0 .net "B", 0 0, L_0x101fad0;  1 drivers
+v0x101ecd0_0 .net "CIn", 0 0, L_0x101fc00;  1 drivers
+v0x101edd0_0 .net "COut", 0 0, L_0x101f910;  1 drivers
+v0x101ee70_0 .net "Sum", 0 0, L_0x101f6a0;  1 drivers
+v0x101ef60_0 .net "s0", 0 0, L_0x101f470;  1 drivers
+v0x101f050_0 .net "s1", 0 0, L_0x101f5c0;  1 drivers
+v0x101f0f0_0 .net "s2", 0 0, L_0x101f880;  1 drivers
+S_0x100b120 .scope module, "Semisumador_0" "Semisumador" 3 11, 4 1 0, S_0x1009060;
+ .timescale 0 0;
+    .port_info 0 /INPUT 1 "A";
+    .port_info 1 /INPUT 1 "B";
+    .port_info 2 /OUTPUT 1 "Y";
+    .port_info 3 /OUTPUT 1 "X";
+L_0x101f470 .functor XOR 1, L_0x101fad0, L_0x101f9a0, C4<0>, C4<0>;
+L_0x101f5c0 .functor AND 1, L_0x101f9a0, L_0x101fad0, C4<1>, C4<1>;
+v0xff7fc0_0 .net "A", 0 0, L_0x101f9a0;  alias, 1 drivers
+v0xff82e0_0 .net "B", 0 0, L_0x101fad0;  alias, 1 drivers
+v0x101e3b0_0 .net "X", 0 0, L_0x101f5c0;  alias, 1 drivers
+v0x101e450_0 .net "Y", 0 0, L_0x101f470;  alias, 1 drivers
+S_0x101e590 .scope module, "Semisumador_1" "Semisumador" 3 12, 4 1 0, S_0x1009060;
+ .timescale 0 0;
+    .port_info 0 /INPUT 1 "A";
+    .port_info 1 /INPUT 1 "B";
+    .port_info 2 /OUTPUT 1 "Y";
+    .port_info 3 /OUTPUT 1 "X";
+L_0x101f6a0 .functor XOR 1, L_0x101fc00, L_0x101f470, C4<0>, C4<0>;
+L_0x101f880 .functor AND 1, L_0x101f470, L_0x101fc00, C4<1>, C4<1>;
+v0x101e820_0 .net "A", 0 0, L_0x101f470;  alias, 1 drivers
+v0x101e8c0_0 .net "B", 0 0, L_0x101fc00;  alias, 1 drivers
+v0x101e960_0 .net "X", 0 0, L_0x101f880;  alias, 1 drivers
+v0x101ea00_0 .net "Y", 0 0, L_0x101f6a0;  alias, 1 drivers
+    .scope S_0x1008ed0;
+T_0 ;
+    %pushi/vec4 0, 0, 32;
+    %store/vec4 v0x101f1f0_0, 0, 32;
+T_0.0 ; Top of for-loop 
+    %load/vec4 v0x101f1f0_0;
+    %cmpi/s 8, 0, 32;
+    %jmp/0xz T_0.1, 5;
+    %load/vec4 v0x101f1f0_0;
+    %pad/s 3;
+    %store/vec4 v0x101f2d0_0, 0, 3;
+    %delay 1, 0;
+T_0.2 ; for-loop step statement
+    %load/vec4 v0x101f1f0_0;
+    %addi 1, 0, 32;
+    %store/vec4 v0x101f1f0_0, 0, 32;
+    %jmp T_0.0;
+T_0.1 ; for-loop exit label
+    %end;
+    .thread T_0;
+    .scope S_0x1008ed0;
+T_1 ;
+    %vpi_call 2 28 "$dumpfile", "suma.vcd" {0 0 0};
+    %vpi_call 2 29 "$dumpvars", 32'sb00000000000000000000000000000000, S_0x1008ed0 {0 0 0};
+    %end;
+    .thread T_1;
+# The file index is used to find the file name in the following table.
+:file_names 5;
+    "N/A";
+    "<interactive>";
+    "sumador_tb.v";
+    "Sumador.v";
+    "Semisumador.v";
+# EOF
