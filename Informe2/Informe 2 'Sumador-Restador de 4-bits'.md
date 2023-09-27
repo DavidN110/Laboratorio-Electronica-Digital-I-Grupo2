@@ -18,7 +18,11 @@ Un sumador-restador de 4-bits es un componente esencial en sistemas digitales qu
 
 ## Objetivos
 
-hacer un sumador y restados de 4 bits
+Elaborar un modelo digital de un sumador-restador de 4 bits 
+
+Describir el funcionamiento de un sumador-restador de 4 bits
+
+Simular el procesamiento de distintas ondas de un sumador-restador de 4 bits.
 
 ## Marco Teórico
 
@@ -41,6 +45,14 @@ El acarreo de salida (Cout) es el resultado de (A AND B') OR ((A XOR B') AND Cin
 ## Procedimiento
 
 ## Resultados y Análisis
+
+<p align="center">
+   <img src="../Informe2/Imagenes/SemiSumador.png" alt="Texto alternativo" width="50">
+   <img src="../Informe2/Imagenes/Sumador.png" alt="Texto alternativo" width="250"><br>
+   <img src="../Informe2/Imagenes/Sumador 1 bit.png" alt="Texto alternativo" width="250">
+   <img src="../Informe2/Imagenes/Sumador 4 bits.png" alt="Texto alternativo" width="250"><br>
+   <img src="../Informe2/Imagenes/Complemento a 2.png" alt="Texto alternativo" width="250"><br>
+   <img src="../Informe2/Imagenes/Mini ALU.jpeg" alt="Texto alternativo" width="250"><br>
 
 ## Discusión
 
