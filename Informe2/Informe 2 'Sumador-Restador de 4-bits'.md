@@ -68,6 +68,7 @@ Para las simulaciones, se exportan todos los archivos anteriores a Verilog y se 
 ```bash
 $ iverilog -o MiniALU.vvp MiniALU_tb.v MiniALU.v \4_bit_adder.v Com_to_2.v Sumador.v Semisumador.v
 ```
+Este comando varía según el nombre del archivo .vvp que se haya usado en los testbech y los módulos usados durante su implementación. 
 
 Una vez se tenga el archivo .vpp se ejecta el siguiente comando para generar el archivo .vcd:
 
