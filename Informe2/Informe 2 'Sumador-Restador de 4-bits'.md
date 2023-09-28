@@ -65,7 +65,15 @@ Finalmente, para terminar de construir el sumador-restador de 4 bits, se incorpo
 </p>
 Para las simulaciones, se exportan todos los archivos anteriores a Verilog y se realizan módulos de prueba (testbech) para cada componente, en los cuales se asignarán casos de prueba para cada una de los entradas que la compongan. Una vez se tengan hechos se ejecuta el siguiente comando para generar el archivo .vpp:
 
+```bash
+$ iverilog -o MiniALU.vvp MiniALU_tb.v MiniALU.v \4_bit_adder.v Com_to_2.v Sumador.v Semisumador.v
+```
+
 Una vez se tenga el archivo .vpp se ejecta el siguiente comando para generar el archivo .vcd:
+
+```bash
+$ vvp MiniALU.vvp
+```
 
 Finalmente se abre el programa  gtkwave y se cargan todos los archivos .vcd para visualizar las ondas de salida de cada componente.
 ## Resultados y Análisis
