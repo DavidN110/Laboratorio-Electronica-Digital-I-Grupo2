@@ -37,10 +37,7 @@ El acarreo de salida (Cout) es el resultado de (A AND B) OR ((A XOR B) AND Cin).
 
 2. Etapas de Resta:
 
-Cada etapa de resta también toma dos bits de entrada, A y B, y el acarreo de la etapa anterior (Cin).
-Utiliza compuertas XOR para calcular la diferencia (D) y compuertas AND para calcular el acarreo de salida (Cout).
-La diferencia (D) es el resultado de A XOR B XOR Cin.
-El acarreo de salida (Cout) es el resultado de (A AND B') OR ((A XOR B') AND Cin), donde B' es la negación de B.
+Para realizar la resta de dos números, se requiere transformar el número negativo para operarlo como si fuera una suma, para ello se emplea una técnica denominada complemento a 2 en el sistema binario, en la cual los bits del número negativo a operar se niegan, mediante el uso de compuertas XOR que se activan con un bit de signo, y se le suma uno a todo el resultado con compuertas XOR y compuertas AND  que emiten el acarreo de salida.
 
 ## Procedimiento
 En primer lugar se construye el semisumador el cual utiliza una compuerta XOR para emitir la suma binaria y una compuerta AND para emitir el acarreo de salida (Carry Out).<br>
