@@ -120,16 +120,86 @@ Luego de ingresar los números en el formato mencionado, se procede a realizar l
 Este caso de uso aborda cuatro casos esenciales:
 
 1. **Suma de Dos Números (A + B):**
-
    
+```bash
++9 + 4 = 13
 
-3. **Resta de Dos Números (A - B) cuando A > B:** 
+01001 + 00100 = 01101
 
-4. **Resta de Dos Números (-A + B) cuando A < B:** 
+input(01001,00100)
+outpu(001101)
+```
+2. **Resta de Dos Números (A - B):**
 
-5. **Resta de Dos Números (-A - B):** 
+```bash
+9 - 4 = 5
 
+complemento a2 de 4 es 11100 == -4 
 
+01001 + 11100 = 100101
+
+como el reultado tiene que ser positivo se descarta el ultimo bit
+
+01001 + 11100 = 00101
+
+input(01001,10100)
+output(000101)
+```
+
+3. **Resta de Dos Números (-A + B):**
+
+```bash
+-9 + 4 = -5
+
+complemento a2 de 9 es 10111 ==-9
+
+10111 + 00100 = 11011
+
+se descarta el count quedando 1011
+complementoa2 pues hay overflow 1011 es 0101 y como es negativo 10101
+
+10111 + 00100 = 10101
+
+input(11001,0100)
+output(100101)
+```
+
+4. **Resta de Dos Números (-A - B):**
+
+```bash
+-9 - 4 = -13
+
+utilizamos el complemento a2 de 9 y 4 vistos anteriormente
+
+10111 + 11100 = 110011
+
+se descarta los ultimos dos bits mas significativos
+
+y se hace complemento a2 0011 pue hay overflow quedando 1101
+
+10111 + 11100 = 11101
+
+input(11001,10100)
+output(11101)
+```
+
+5. **Resta de Dos Números (-A - A):**
+
+```bash
+-4 + 4 = 0
+
+complemento a2 de 4
+
+00100+ 11100 = 100000
+
+se descarta los dos ultimos bits mas significativos quedando 0000
+
+00100+ 11100 = 00000
+
+input(00100,10100)
+output(000000)
+```
+   
 
 ## Discusión
 El sumador-restador fue implementado de manera que la resta pueda ser aplicada de la primera entrada a la segunda y en el sentido inverso, permitiendo más aplicabilidad de como se procesan los numeros de 4-bits. Uno de los problemas mas grandes fue reconocer cuando habia overflow....
