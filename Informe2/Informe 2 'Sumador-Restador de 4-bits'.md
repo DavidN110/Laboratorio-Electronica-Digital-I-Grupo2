@@ -111,4 +111,4 @@ El sumador-restador de 4-bits es una unidad fundamental en la aritmética binari
 
 ## Referencias
 [1] FUNDAMENTOS DE SISTEMAS DIGITALES, Thomas L. Floyd, PEARSON EDUCACIÓN S.A., Madrid, 2006.
-[2] https://github.com/johnnycubides/digital-electronic-1-101/tree/main/simulations/digital
+[2] [Repositorio de FullAdder digital en github](https://github.com/johnnycubides/digital-electronic-1-101/tree/main/simulations/digital)
