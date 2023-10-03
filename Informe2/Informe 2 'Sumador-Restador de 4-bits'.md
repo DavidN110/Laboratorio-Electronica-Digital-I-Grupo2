@@ -109,3 +109,6 @@ El sumador-restador fue implementado de manera que la resta pueda ser aplicada d
 
 El sumador-restador de 4-bits es una unidad fundamental en la aritmética binaria utilizada en la mayoría de los sistemas digitales. Su diseño se basa en principios de lógica digital y utiliza compuertas XOR, AND y OR para realizar operaciones aritméticas de suma y resta. Es esencial comprender su funcionamiento para diseñar y trabajar con sistemas digitales que requieran operaciones binarias de 4 bits.
 
+## Referencias
+[1] FUNDAMENTOS DE SISTEMAS DIGITALES, Thomas L. Floyd, PEARSON EDUCACIÓN S.A., Madrid, 2006.
+[2] https://github.com/johnnycubides/digital-electronic-1-101/tree/main/simulations/digital
