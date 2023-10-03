@@ -85,6 +85,23 @@ Estos fueron los resultados de las simulaciones hechas en gtkwave para cada uno 
 <p align="center">
    <img src="../Informe2/Imagenes/Sim Mini ALU.png" alt="Texto alternativo" width="250"><br>
 
+## Caso de uso
+
+El formato en que se ingresa el número es: sb_ X3_ X2_ X_1 X_0
+Donde sb es el bit de signo llamado sb o Sa donde 1 es un número negativo y 0 es un número positivo
+X_3 X_2 X_2 X_1 es el número de cuatro bits en binario.
+Por ejemplo 10011 es el número -3 y 00011 es el numero 3.
+Luego se suman los números dando el formato en el que se presenta la salida: SC_Co_S3_S2_S1_S0
+Donde SC es el bit de sign sindo 1 un numero negativo y 0 un numero positivo
+Co_S3_S2_S1_S0 es el número donde puede ser de 5 Bits si la suma de dos numeros de 4 bits se desborda y genera el carry de salida que es Co
+
+Se tomo en consideración 4 casos escenciales:
+A+B
+A-B cuando A>B y A<B
+-A+B cuando A>B y A<B
+-A-B
+
+
 ## Discusión
 El sumador-restador fue implementado de manera que la resta pueda ser aplicada de la primera entrada a la segunda y en el sentido inverso, permitiendo más aplicabilidad de como se procesan los numeros de 4-bits.
 
