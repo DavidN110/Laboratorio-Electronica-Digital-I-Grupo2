@@ -39,6 +39,10 @@ El acarreo de salida (Cout) es el resultado de (A AND B) OR ((A XOR B) AND Cin).
 
 Para realizar la resta de dos números, se requiere transformar el número negativo para operarlo como si fuera una suma, para ello se emplea una técnica denominada complemento a 2 en el sistema binario, en la cual los bits del número negativo a operar se niegan, mediante el uso de compuertas XOR que se activan con un bit de signo, y se le suma uno a todo el resultado con compuertas XOR y compuertas AND que emiten acarreos de salida que se suman a los bits consecutivamente más significativos, luego de ello se suma el número complementado al número positivo de forma tradicional como en la etapa de suma.
 
+3. Etapa de overflow y carry out:
+
+Cuando ya se tiene la suma de los dos numeros y hay desbordamiendo o overflow se necestian volver a hacer complementoa2 para esto se necesita reconocer el desbordamiento y para esto se implemento un tipo multiplexor en donde se utilizan compuertas and, or y xor y un sumador y a su vez reconocer el carry de salida utlizando dicha ruta para reconocer el desvordamiento.
+
 ## Procedimiento
 En primer lugar se construye el semisumador el cual utiliza una compuerta XOR para emitir la suma binaria y una compuerta AND para emitir el acarreo de salida (Carry Out).<br>
 <p align="center">
