@@ -119,18 +119,20 @@ Luego de ingresar los números en el formato mencionado, se procede a realizar l
 
 Este caso de uso aborda cuatro casos esenciales:
 
-1. **Suma de Dos Números (A + B):** 
+1. **Suma de Dos Números (A + B):**
 
-2. **Resta de Dos Números (A - B) cuando A > B:** 
+   
 
-3. **Resta de Dos Números (-A + B) cuando A < B:** 
+3. **Resta de Dos Números (A - B) cuando A > B:** 
 
-4. **Resta de Dos Números (-A - B):** 
+4. **Resta de Dos Números (-A + B) cuando A < B:** 
+
+5. **Resta de Dos Números (-A - B):** 
 
 
 
 ## Discusión
-El sumador-restador fue implementado de manera que la resta pueda ser aplicada de la primera entrada a la segunda y en el sentido inverso, permitiendo más aplicabilidad de como se procesan los numeros de 4-bits.
+El sumador-restador fue implementado de manera que la resta pueda ser aplicada de la primera entrada a la segunda y en el sentido inverso, permitiendo más aplicabilidad de como se procesan los numeros de 4-bits. Uno de los problemas mas grandes fue reconocer cuando habia overflow....
 
 ## Conclusiones
 
