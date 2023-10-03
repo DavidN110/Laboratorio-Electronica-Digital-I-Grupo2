@@ -86,6 +86,7 @@ Estos fueron los resultados de las simulaciones hechas en gtkwave para cada uno 
    <img src="../Informe2/Imagenes/Sim Mini ALU.png" alt="Texto alternativo" width="250"><br>
 
 ## Discusión
+El sumador-restador fue implementado de manera que la resta pueda ser aplicada de la primera entrada a la segunda y en el sentido inverso, permitiendo más aplicabilidad de como se procesan los numeros de 4-bits.
 
 ## Conclusiones
 
