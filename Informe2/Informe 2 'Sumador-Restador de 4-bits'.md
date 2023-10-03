@@ -85,21 +85,44 @@ Estos fueron los resultados de las simulaciones hechas en gtkwave para cada uno 
 <p align="center">
    <img src="../Informe2/Imagenes/Sim Mini ALU.png" alt="Texto alternativo" width="250"><br>
 
-## Caso de uso
+## Caso de Uso: Suma de Números en Formato Binario
 
-El formato en que se ingresa el número es: sb_ X3_ X2_ X_1 X_0
-Donde sb es el bit de signo llamado sb o Sa donde 1 es un número negativo y 0 es un número positivo
-X_3 X_2 X_2 X_1 es el número de cuatro bits en binario.
-Por ejemplo 10011 es el número -3 y 00011 es el numero 3.
-Luego se suman los números dando el formato en el que se presenta la salida: SC_Co_S3_S2_S1_S0
-Donde SC es el bit de sign sindo 1 un numero negativo y 0 un numero positivo
-Co_S3_S2_S1_S0 es el número donde puede ser de 5 Bits si la suma de dos numeros de 4 bits se desborda y genera el carry de salida que es Co
+### Descripción
 
-Se tomo en consideración 4 casos escenciales:
-A+B
-A-B cuando A>B y A<B
--A+B cuando A>B y A<B
--A-B
+Este caso de uso se centra en la conversión y suma de números expresados en un Formato signo-magnitud. Los números ingresados siguen un patrón específico, y la suma resultante se presenta en un Formato signo-magnitud. A continuación, se describen los detalles de este proceso.
+
+### Formato de Entrada
+
+El formato en el que se ingresa el número:
+
+1. **Bit de Signo (sb o Sa):** Se utiliza para representar el signo del número. Un valor de 1 indica un número negativo, mientras que un valor de 0 indica un número positivo.
+
+2. **Cuatro Bits en Binario (A_3, A_2, A_1, A_0):** Estos cuatro bits representan el valor numérico en formato binario del número en cuestión.
+
+   Ejemplo:
+   - `10011` representa el número -3.
+   - `00011` representa el número 3.
+
+### Proceso de Suma
+
+Luego de ingresar los números en el formato mencionado, se procede a realizar la suma. La salida se presenta en el siguiente formato:
+
+- **Bit de Signo de la Suma (SC):** Indica el signo de la suma. Un valor de 1 denota un número negativo, mientras que un valor de 0 indica un número positivo.
+
+- **Suma de Cinco Bits (Co_C3_C2_C1_C0):** Representa el valor resultante de la suma. Puede constar de cinco bits si la suma de los dos números de cuatro bits genera un carry de salida, denominado "Co."
+
+### Casos Esenciales Considerados
+
+Este caso de uso aborda cuatro casos esenciales:
+
+1. **Suma de Dos Números (A + B):** 
+
+2. **Resta de Dos Números (A - B) cuando A > B:** 
+
+3. **Resta de Dos Números (-A + B) cuando A < B:** 
+
+4. **Resta de Dos Números (-A - B):** 
+
 
 
 ## Discusión
