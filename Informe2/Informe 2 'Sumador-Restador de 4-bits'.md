@@ -26,22 +26,22 @@ Simular el comportamiento de un sumador-restador de 4 bits y sus componentes.
 
 ## Marco Teórico
 
-El sumador-restador de 4-bits consta de cuatro etapas, una para cada bit de entrada, y una etapa adicional para manejar el acarreo de entrada (carry-in) en el caso de una operación de resta. Cada etapa opera de la siguiente manera:
+El sumador-restador de 4-bits consta de tres etapas, una para cada bit de entrada, y una etapa adicional para manejar el acarreo de entrada (carry-in) en el caso de una operación de resta. Cada etapa opera de la siguiente manera:
 
-1. Etapas de Suma:
+1. Etapa de Suma:
 
 Cada etapa de suma toma dos bits de entrada, A y B, y el acarreo de la etapa anterior (Cin).
 Utiliza compuertas XOR para calcular la suma (S) y compuertas AND para calcular el acarreo de salida (Cout).
 La suma (S) es el resultado de A XOR B XOR Cin.
 El acarreo de salida (Cout) es el resultado de (A AND B) OR ((A XOR B) AND Cin).
 
-2. Etapas de Resta:
+2. Etapa de Resta:
 
 Para realizar la resta de dos números, se requiere transformar el número negativo para operarlo como si fuera una suma, para ello se emplea una técnica denominada complemento a 2 en el sistema binario, en la cual los bits del número negativo a operar se niegan, mediante el uso de compuertas XOR que se activan con un bit de signo, y se le suma uno a todo el resultado con compuertas XOR y compuertas AND que emiten acarreos de salida que se suman a los bits consecutivamente más significativos, luego de ello se suma el número complementado al número positivo de forma tradicional como en la etapa de suma.
 
 3. Etapa de overflow y carry out:
 
-Cuando ya se tiene la suma de los dos numeros y hay desbordamiendo o overflow se necestian volver a hacer complementoa2 para esto se necesita reconocer el desbordamiento y para esto se implemento un tipo multiplexor en donde se utilizan compuertas and, or y xor y un sumador y a su vez reconocer el carry de salida utlizando dicha ruta para reconocer el desvordamiento.
+Cuando ya se tiene la suma de los dos numeros y hay desbordamiento u overflow se necesitan volver a hacer complemento a 2, para esto se necesita reconocer el desbordamiento, por ello se implementa un tipo de multiplexor en donde se utilizan compuertas and, or y xor y un semisumador que habilitan o deshabilitan el carry de salida cuando identifican el desbordamiento.
 
 ## Procedimiento
 En primer lugar se construye el semisumador el cual utiliza una compuerta XOR para emitir la suma binaria y una compuerta AND para emitir el acarreo de salida (Carry Out).<br>
@@ -93,13 +93,13 @@ Estos fueron los resultados de las simulaciones hechas en gtkwave para cada uno 
 
 ### Descripción
 
-Este caso de uso se centra en la conversión y suma de números expresados en un Formato signo-magnitud. Los números ingresados siguen un patrón específico, y la suma resultante se presenta en un Formato signo-magnitud. A continuación, se describen los detalles de este proceso.
+Este caso de uso se centra en la conversión y suma de números expresados en un formato signo-magnitud. Los números ingresados siguen un patrón específico, y la suma resultante se presenta en un formato signo-magnitud. A continuación, se describen los detalles de este proceso.
 
 ### Formato de Entrada
 
 El formato en el que se ingresa el número:
 
-1. **Bit de Signo (sb o Sa):** Se utiliza para representar el signo del número. Un valor de 1 indica un número negativo, mientras que un valor de 0 indica un número positivo.
+1. **Bit de Signo (Sb o Sa):** Se utiliza para representar el signo del número. Un valor de 1 indica un número negativo, mientras que un valor de 0 indica un número positivo.
 
 2. **Cuatro Bits en Binario (A_3, A_2, A_1, A_0):** Estos cuatro bits representan el valor numérico en formato binario del número en cuestión.
 
@@ -127,18 +127,18 @@ Este caso de uso aborda cuatro casos esenciales:
 01001 + 00100 = 01101
 
 input(01001,00100)
-outpu(001101)
+output(001101)
 ```
 2. **Resta de Dos Números (A - B):**
 
 ```bash
 9 - 4 = 5
 
-complemento a2 de 4 es 11100 == -4 
+El complemento a 2 de 4 es 11100 == -4 
 
 01001 + 11100 = 100101
 
-como el reultado tiene que ser positivo se descarta el ultimo bit
+Como el resultado tiene que ser positivo se descarta el ultimo bit
 
 01001 + 11100 = 00101
 
@@ -151,12 +151,12 @@ output(000101)
 ```bash
 -9 + 4 = -5
 
-complemento a2 de 9 es 10111 ==-9
+El complemento a 2 de 9 es 10111 ==-9
 
 10111 + 00100 = 11011
 
-se descarta el count quedando 1011
-complementoa2 pues hay overflow 1011 es 0101 y como es negativo 10101
+Se descarta el Cout quedando 1011
+complemento a 2 pues hay overflow 1011 es 0101 y como es negativo 10101
 
 10111 + 00100 = 10101
 
@@ -169,13 +169,13 @@ output(100101)
 ```bash
 -9 - 4 = -13
 
-utilizamos el complemento a2 de 9 y 4 vistos anteriormente
+utilizamos el complemento a 2 de 9 y 4 vistos anteriormente
 
 10111 + 11100 = 110011
 
-se descarta los ultimos dos bits mas significativos
+se descartan los últimos dos bits más significativos
 
-y se hace complemento a2 0011 pue hay overflow quedando 1101
+y se hace complemento a 2 0011 pues hay overflow quedando 1101
 
 10111 + 11100 = 11101
 
@@ -188,11 +188,11 @@ output(11101)
 ```bash
 -4 + 4 = 0
 
-complemento a2 de 4
+Complemento a 2 de 4
 
 00100+ 11100 = 100000
 
-se descarta los dos ultimos bits mas significativos quedando 0000
+Se descartan los dos últimos bits más significativos quedando 0000
 
 00100+ 11100 = 00000
 
@@ -202,7 +202,7 @@ output(000000)
    
 
 ## Discusión
-El sumador-restador fue implementado de manera que la resta pueda ser aplicada de la primera entrada a la segunda y en el sentido inverso, permitiendo más aplicabilidad de como se procesan los numeros de 4-bits. Uno de los problemas mas grandes fue reconocer cuando habia overflow....
+El sumador-restador fue implementado de manera que la resta pueda ser aplicada de la primera entrada a la segunda y en el sentido inverso, permitiendo más aplicabilidad de como se procesan los numeros de 4-bits. Uno de los problemas mas grandes fue reconocer cuando había overflow....
 
 ## Conclusiones
 
