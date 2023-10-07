@@ -43,6 +43,12 @@ Para realizar la resta de dos números, se requiere transformar el número negat
 
 Cuando ya se tiene la suma de los dos numeros y hay desbordamiento u overflow se necesitan volver a hacer complemento a 2, para esto se necesita reconocer el desbordamiento, por ello se implementa un tipo de multiplexor en donde se utilizan compuertas and, or y xor y un semisumador que habilitan o deshabilitan el carry de salida cuando identifican el desbordamiento.
 
+## Diagrama de flujo
+
+<p align="center">
+   <img src="../Informe2/Imagenes/Diagrama en blanco.png" alt="Texto alternativo" width="850"><br>
+</p>
+
 ## Procedimiento
 En primer lugar se construye el semisumador el cual utiliza una compuerta XOR para emitir la suma binaria y una compuerta AND para emitir el acarreo de salida (Carry Out).<br>
 <p align="center">
@@ -81,13 +87,13 @@ Finalmente se abre el programa  gtkwave y se cargan todos los archivos .vcd para
 ## Resultados y Análisis
 Estos fueron los resultados de las simulaciones hechas en gtkwave para cada uno de los componentes del sumador-restador de  4 bits:<br>
 <p align="center">
-   <img src="../Informe2/Imagenes/Sim Suma 1 bit.png" alt="Texto alternativo" width="250"><br>
+   <img src="../Informe2/Imagenes/Sim Suma 1 bit.png" alt="Texto alternativo" width="450"><br>
 <p align="center">
-   <img src="../Informe2/Imagenes/Sim Suma 4 bits.png" alt="Texto alternativo" width="250"><br>
+   <img src="../Informe2/Imagenes/Sim Suma 4 bits.png" alt="Texto alternativo" width="450"><br>
 <p align="center">
-   <img src="../Informe2/Imagenes/Sim Complemento 2.png" alt="Texto alternativo" width="250"><br>
+   <img src="../Informe2/Imagenes/Sim Complemento 2.png" alt="Texto alternativo" width="450"><br>
 <p align="center">
-   <img src="../Informe2/Imagenes/Sim Mini ALU.png" alt="Texto alternativo" width="250"><br>
+   <img src="../Informe2/Imagenes/Sim Mini ALU.png" alt="Texto alternativo" width="450"><br>
 
 ## Caso de Uso: Suma de Números en Formato Binario
 
@@ -209,5 +215,7 @@ El sumador-restador fue implementado de manera que la resta pueda ser aplicada d
 El sumador-restador de 4-bits es una unidad fundamental en la aritmética binaria utilizada en la mayoría de los sistemas digitales. Su diseño se basa en principios de lógica digital y utiliza compuertas XOR, AND y OR para realizar operaciones aritméticas de suma y resta. Es esencial comprender su funcionamiento para diseñar y trabajar con sistemas digitales que requieran operaciones binarias de 4 bits.
 
 ## Referencias
+
 [1] FUNDAMENTOS DE SISTEMAS DIGITALES, Thomas L. Floyd, PEARSON EDUCACIÓN S.A., Madrid, 2006.
+
 [2] [Repositorio de FullAdder digital en github](https://github.com/johnnycubides/digital-electronic-1-101/tree/main/simulations/digital)
