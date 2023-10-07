@@ -183,7 +183,7 @@ input(11001,10100)
 output(11101)
 ```
 
-5. **Resta de Dos Números (-A - A):**
+5. **Suma de Dos Números (-A + A):**
 
 ```bash
 -4 + 4 = 0
@@ -202,7 +202,7 @@ output(000000)
    
 
 ## Discusión
-El sumador-restador fue implementado de manera que la resta pueda ser aplicada de la primera entrada a la segunda y en el sentido inverso, permitiendo más aplicabilidad de como se procesan los numeros de 4-bits. Uno de los problemas mas grandes fue reconocer cuando había overflow....
+El sumador-restador fue implementado de manera que la resta pueda ser aplicada de la primera entrada a la segunda y en el sentido inverso, permitiendo más aplicabilidad de como se procesan los numeros de 4-bits. Uno de los problemas mas grandes fue reconocer cuando había overflow pues esto se debe puramente a entender el funcionamiento algebraico de como funciona el complemento a2 y de el desbordamiento de operar dos numeros. Se pueden encontrar mejores soluciones un poco mas optimizadas a futuro para el sumador-restador.
 
 ## Conclusiones
 
