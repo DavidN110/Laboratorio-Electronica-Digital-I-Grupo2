@@ -55,13 +55,17 @@ En primer lugar se construye el semisumador el cual utiliza una compuerta XOR pa
    <img src="../Informe2/Imagenes/SemiSumador.png" alt="Texto alternativo" width="150"><br>
 </p>
 <p align="center">
-   <img src="../Informe2/Imagenes/SemiSumador.svg" alt="Texto alternativo" width="450"><br>
+   <img src="../Informe2/Imagenes/Semisumador.svg" alt="Texto alternativo" width="450"><br>
 </p>
 
 Con dos módulos semisumadores se construye un sumador de un bit, el cual difiere del semisumador por la incorporación de un acarreo de entrada (Carry In) el cual abarca todas las entradas posibles y permite la implementación del módulo en sumas más grandes.<br>
 <p align="center">
    <img src="../Informe2/Imagenes/Sumador 1 bit.png" alt="Texto alternativo" width="250"><br>
 </p>
+<p align="center">
+   <img src="../Informe2/Imagenes/Sumadorbit.svg" alt="Texto alternativo" width="250"><br>
+</p>
+
 Con cuatro módulos sumadores se construye un sumador de 4 bits, teniendo en cuenta que la suma se realiza bit a bit y que el acarreo de salida del bit menos significativo será el acarreo de entrada del siguiente bit, lo cual se repite sucesivamente hasta llegar al bit más significativo.<br>
 <p align="center">
    <img src="../Informe2/Imagenes/Sumador 4 bits.png" alt="Texto alternativo" width="250"><br>
@@ -81,7 +85,7 @@ Finalmente, para terminar de construir el sumador-restador de 4 bits, se incorpo
    <img src="../Informe2/Imagenes/Mini ALU.jpeg" alt="Texto alternativo" width="250"><br>
 </p>
 <p align="center">
-   <img src="../Informe2/Imagenes/Sim MiniALU.svg" alt="Texto alternativo" width="450"><br>
+   <img src="../Informe2/Imagenes/MiniALU.svg" alt="Texto alternativo" width="450"><br>
 </p>
 
 Para las simulaciones, se exportan todos los archivos anteriores a Verilog y se realizan módulos de prueba (testbech) para cada componente, en los cuales se asignarán casos de prueba para cada una de los entradas que la compongan. Una vez se tengan hechos se ejecuta el siguiente comando para generar el archivo .vpp:
