@@ -55,7 +55,7 @@ En primer lugar se construye el semisumador el cual utiliza una compuerta XOR pa
    <img src="../Informe2/Imagenes/SemiSumador.png" alt="Texto alternativo" width="150"><br>
 </p>
 <p align="center">
-   <img src="../Informe2/Imagenes/Semisumador.svg" alt="Texto alternativo" width="450"><br>
+   <img src="../Informe2/Imagenes/Semisumador.png" alt="Texto alternativo" width="450"><br>
 </p>
 
 Con dos módulos semisumadores se construye un sumador de un bit, el cual difiere del semisumador por la incorporación de un acarreo de entrada (Carry In) el cual abarca todas las entradas posibles y permite la implementación del módulo en sumas más grandes.<br>
@@ -63,7 +63,7 @@ Con dos módulos semisumadores se construye un sumador de un bit, el cual difier
    <img src="../Informe2/Imagenes/Sumador 1 bit.png" alt="Texto alternativo" width="250"><br>
 </p>
 <p align="center">
-   <img src="../Informe2/Imagenes/Sumador.svg" alt="Texto alternativo" width="250"><br>
+   <img src="../Informe2/Imagenes/Sumador.png" alt="Texto alternativo" width="250"><br>
 </p>
 
 Con cuatro módulos sumadores se construye un sumador de 4 bits, teniendo en cuenta que la suma se realiza bit a bit y que el acarreo de salida del bit menos significativo será el acarreo de entrada del siguiente bit, lo cual se repite sucesivamente hasta llegar al bit más significativo.<br>
@@ -71,21 +71,21 @@ Con cuatro módulos sumadores se construye un sumador de 4 bits, teniendo en cue
    <img src="../Informe2/Imagenes/Sumador 4 bits.png" alt="Texto alternativo" width="250"><br>
 </p>
 <p align="center">
-   <img src="../Informe2/Imagenes/4_bit_adder.svg" alt="Texto alternativo" width="450"><br>
+   <img src="../Informe2/Imagenes/4_bit_adder.png" alt="Texto alternativo" width="450"><br>
 </p>
 Para la resta se realiza un módulo que transforme el número de 4 bits a complemento a dos, cuando el bit de signo así lo indique, para ello se usan compuertas XOR que niegan los bits cuando el bit de signo es uno, pero los dejan iguales cuando es cero, una vez se hayan negado, se procede a efectuar la suma de 1 con el mismo bit de signo.<br>
 <p align="center">
    <img src="../Informe2/Imagenes/Complemento a 2.png" alt="Texto alternativo" width="250"><br>
 </p>
 <p align="center">
-   <img src="../Informe2/Imagenes/Com_to_2.svg" alt="Texto alternativo" width="450"><br>
+   <img src="../Informe2/Imagenes/Com_to_2.png" alt="Texto alternativo" width="450"><br>
 </p>   
 Finalmente, para terminar de construir el sumador-restador de 4 bits, se incorporan los módulos de complemento a 2 para cada entrada antes de pasarlas por el sumador de 4 bits, a su vez, a la salida del sumador se coloca otro módulo de complemento para facilitar la lectura del resultado final. En cuanto al acarreo del resultado, se ubicaron una serie de multiplexores con compuertas AND y OR que habilitan o deshabilitan el acarreo de salida del sumador de 4 bits dependiendo si los signos de los entradas son iguales o son diferentes, además para el signo del resultado se suman los bits de signo y estos determinan el signo resultante salvo para el caso de cuando ambos números son negativos, para ello se emplea una compuerta AND y un multiplexor que deja pasar o no las señales del semisumador de signo o de la compuerta AND de signo.<br>
 <p align="center">
    <img src="../Informe2/Imagenes/Mini ALU.jpeg" alt="Texto alternativo" width="250"><br>
 </p>
 <p align="center">
-   <img src="../Informe2/Imagenes/MiniALU.svg" alt="Texto alternativo" width="450"><br>
+   <img src="../Informe2/Imagenes/MiniALU.png" alt="Texto alternativo" width="450"><br>
 </p>
 
 Para las simulaciones, se exportan todos los archivos anteriores a Verilog y se realizan módulos de prueba (testbech) para cada componente, en los cuales se asignarán casos de prueba para cada una de los entradas que la compongan. Una vez se tengan hechos se ejecuta el siguiente comando para generar el archivo .vpp:
