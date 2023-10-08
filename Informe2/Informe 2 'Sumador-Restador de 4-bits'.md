@@ -63,7 +63,7 @@ Con dos módulos semisumadores se construye un sumador de un bit, el cual difier
    <img src="../Informe2/Imagenes/Sumador 1 bit.png" alt="Texto alternativo" width="250"><br>
 </p>
 <p align="center">
-   <img src="../Informe2/Imagenes/Sumadorbit.svg" alt="Texto alternativo" width="250"><br>
+   <img src="../Informe2/Imagenes/Sumador.svg" alt="Texto alternativo" width="250"><br>
 </p>
 
 Con cuatro módulos sumadores se construye un sumador de 4 bits, teniendo en cuenta que la suma se realiza bit a bit y que el acarreo de salida del bit menos significativo será el acarreo de entrada del siguiente bit, lo cual se repite sucesivamente hasta llegar al bit más significativo.<br>
