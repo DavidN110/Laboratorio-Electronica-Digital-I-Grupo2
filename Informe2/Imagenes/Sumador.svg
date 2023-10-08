@@ -1,0 +1,108 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:s="https://github.com/nturley/netlistsvg" width="424" height="151.5">
+  <style>svg {
+    stroke:#000;
+    fill:none;
+  }
+  text {
+    fill:#000;
+    stroke:none;
+    font-size:10px;
+    font-weight: bold;
+    font-family: "Courier New", monospace;
+  }
+  .nodelabel {
+    text-anchor: middle;
+  }
+  .inputPortLabel {
+    text-anchor: end;
+  }
+  .splitjoinBody {
+    fill:#000;
+  }</style>
+  <g s:type="or" transform="translate(317,19.5)" s:width="30" s:height="25" id="cell_$or$./Sumador.v:13$8">
+    <s:alias val="$or"/>
+    <s:alias val="$logic_or"/>
+    <s:alias val="$_OR_"/>
+    <path d="M0,25 L0,25 L15,25 A15 12.5 0 0 0 15,0 L0,0" class="cell_$or$./Sumador.v:13$8"/>
+    <path d="M0,0 A30 25 0 0 1 0,25" class="cell_$or$./Sumador.v:13$8"/>
+    <g s:x="3" s:y="5" s:pid="A"/>
+    <g s:x="3" s:y="20" s:pid="B"/>
+    <g s:x="30" s:y="12.5" s:pid="Y"/>
+  </g>
+  <g s:type="generic" transform="translate(84,29)" s:width="30" s:height="40" id="cell_Semisumador_0">
+    <text x="15" y="-4" class="nodelabel cell_Semisumador_0" s:attribute="ref">Semisumador</text>
+    <rect width="30" height="40" s:generic="body" class="cell_Semisumador_0"/>
+    <g transform="translate(0,10)" s:x="0" s:y="10" s:pid="in0" id="port_Semisumador_0~A">
+      <text x="-3" y="-4" class="inputPortLabel cell_Semisumador_0">A</text>
+    </g>
+    <g transform="translate(0,30)" s:x="0" s:y="10" s:pid="in0" id="port_Semisumador_0~B">
+      <text x="-3" y="-4" class="inputPortLabel cell_Semisumador_0">B</text>
+    </g>
+    <g transform="translate(30,10)" s:x="30" s:y="10" s:pid="out0" id="port_Semisumador_0~X">
+      <text x="5" y="-4" style="fill:#000; stroke:none" class="cell_Semisumador_0">X</text>
+    </g>
+    <g transform="translate(30,30)" s:x="30" s:y="10" s:pid="out0" id="port_Semisumador_0~Y">
+      <text x="5" y="-4" style="fill:#000; stroke:none" class="cell_Semisumador_0">Y</text>
+    </g>
+  </g>
+  <g s:type="generic" transform="translate(204,96.5)" s:width="30" s:height="40" id="cell_Semisumador_1">
+    <text x="15" y="-4" class="nodelabel cell_Semisumador_1" s:attribute="ref">Semisumador</text>
+    <rect width="30" height="40" s:generic="body" class="cell_Semisumador_1"/>
+    <g transform="translate(0,10)" s:x="0" s:y="10" s:pid="in0" id="port_Semisumador_1~A">
+      <text x="-3" y="-4" class="inputPortLabel cell_Semisumador_1">A</text>
+    </g>
+    <g transform="translate(0,30)" s:x="0" s:y="10" s:pid="in0" id="port_Semisumador_1~B">
+      <text x="-3" y="-4" class="inputPortLabel cell_Semisumador_1">B</text>
+    </g>
+    <g transform="translate(30,10)" s:x="30" s:y="10" s:pid="out0" id="port_Semisumador_1~X">
+      <text x="5" y="-4" style="fill:#000; stroke:none" class="cell_Semisumador_1">X</text>
+    </g>
+    <g transform="translate(30,30)" s:x="30" s:y="10" s:pid="out0" id="port_Semisumador_1~Y">
+      <text x="5" y="-4" style="fill:#000; stroke:none" class="cell_Semisumador_1">Y</text>
+    </g>
+  </g>
+  <g s:type="inputExt" transform="translate(12,29.5)" s:width="30" s:height="20" id="cell_A">
+    <text x="15" y="-4" class="nodelabel cell_A" s:attribute="ref">A</text>
+    <s:alias val="$_inputExt_"/>
+    <path d="M0,0 L0,20 L15,20 L30,10 L15,0 Z" class="cell_A"/>
+    <g s:x="28" s:y="10" s:pid="Y"/>
+  </g>
+  <g s:type="inputExt" transform="translate(12,94.5)" s:width="30" s:height="20" id="cell_B">
+    <text x="15" y="-4" class="nodelabel cell_B" s:attribute="ref">B</text>
+    <s:alias val="$_inputExt_"/>
+    <path d="M0,0 L0,20 L15,20 L30,10 L15,0 Z" class="cell_B"/>
+    <g s:x="28" s:y="10" s:pid="Y"/>
+  </g>
+  <g s:type="inputExt" transform="translate(84,117)" s:width="30" s:height="20" id="cell_CIn">
+    <text x="15" y="-4" class="nodelabel cell_CIn" s:attribute="ref">CIn</text>
+    <s:alias val="$_inputExt_"/>
+    <path d="M0,0 L0,20 L15,20 L30,10 L15,0 Z" class="cell_CIn"/>
+    <g s:x="28" s:y="10" s:pid="Y"/>
+  </g>
+  <g s:type="outputExt" transform="translate(382,22)" s:width="30" s:height="20" id="cell_COut">
+    <text x="15" y="-4" class="nodelabel cell_COut" s:attribute="ref">COut</text>
+    <s:alias val="$_outputExt_"/>
+    <path d="M30,0 L30,20 L15,20 L0,10 L15,0 Z" class="cell_COut"/>
+    <g s:x="0" s:y="10" s:pid="A"/>
+  </g>
+  <g s:type="outputExt" transform="translate(382,117)" s:width="30" s:height="20" id="cell_Sum">
+    <text x="15" y="-4" class="nodelabel cell_Sum" s:attribute="ref">Sum</text>
+    <s:alias val="$_outputExt_"/>
+    <path d="M30,0 L30,20 L15,20 L0,10 L15,0 Z" class="cell_Sum"/>
+    <g s:x="0" s:y="10" s:pid="A"/>
+  </g>
+  <line x1="235" x2="292" y1="107" y2="107" class="net_7"/>
+  <line x1="292" x2="292" y1="107" y2="24.5" class="net_7"/>
+  <line x1="292" x2="320" y1="24.5" y2="24.5" class="net_7"/>
+  <line x1="115" x2="320" y1="39.5" y2="39.5" class="net_8"/>
+  <line x1="40" x2="84" y1="39.5" y2="39.5" class="net_2"/>
+  <line x1="40" x2="52" y1="104.5" y2="104.5" class="net_3"/>
+  <line x1="52" x2="52" y1="104.5" y2="59.5" class="net_3"/>
+  <line x1="52" x2="84" y1="59.5" y2="59.5" class="net_3"/>
+  <line x1="115" x2="172" y1="59.5" y2="59.5" class="net_9"/>
+  <line x1="172" x2="172" y1="59.5" y2="107" class="net_9"/>
+  <line x1="172" x2="204" y1="107" y2="107" class="net_9"/>
+  <line x1="112" x2="204" y1="127" y2="127" class="net_4"/>
+  <line x1="347" x2="382" y1="32" y2="32" class="net_5"/>
+  <line x1="235" x2="382" y1="127" y2="127" class="net_6"/>
+</svg>
