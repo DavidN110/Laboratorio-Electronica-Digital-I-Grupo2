@@ -1,4 +1,4 @@
-# Creación y ejecución de comandos en Quartus para FPGA Blink y Sumador BCD
+# Creación y ejecución de comandos en Quartus para FPGA Servomotor
 * [Introducción](#Introducción)
 * [Objetivos](#Objetivos)
 * [Marco teórico](#Marco-Teórico)
