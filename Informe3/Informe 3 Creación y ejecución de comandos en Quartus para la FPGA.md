@@ -21,7 +21,7 @@ Los objetivos de este proyecto son los siguientes:
 El servomotor SG90 es un dispositivo que permite el control preciso de ángulos en aplicaciones como robótica y automatización. En el contexto de una FPGA, se pueden utilizar señales PWM (Pulse Width Modulation) para controlar la posición angular del servomotor SG90. La programación de Quartus permite generar las señales PWM necesarias para mover el servomotor a ángulos específicos.
 
 ## Procedimiento
-En este proyecto, se utilizarán las capacidades de Quartus para generar señales PWM que controlen el servomotor SG90. Se programarán los comandos necesarios para mover el servomotor a ángulos específicos y se realizarán pruebas para validar su funcionamiento.
+En este proyecto, se utilizarán las capacidades de Quartus para generar señales PWM que controlen el servomotor SG90. Se programarán los comandos necesarios para mover el servomotor a ángulos específicos y se realizarán pruebas para validar su funcionamiento. Se crearon diferentes etapas para el control del servo, un comparador, un duty y un contador, se analizo los pines de salida de las señales de la FPGA. 
 
 ## Resultados y Análisis
 Los resultados de las pruebas muestran un control exitoso del servomotor SG90 a ángulos específicos mediante Quartus y la FPGA. Se logra una precisión en el posicionamiento angular, lo que demuestra la viabilidad de esta solución en aplicaciones de control.
