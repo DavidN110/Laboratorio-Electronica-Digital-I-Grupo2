@@ -1,4 +1,4 @@
-# Creación y ejecución de comandos en Quartus para FPGA Servomotor
+# Creación y Control de un Servomotor SG90 con Quartus para FPGA
 * [Introducción](#Introducción)
 * [Objetivos](#Objetivos)
 * [Marco teórico](#Marco-Teórico)
@@ -8,38 +8,29 @@
 * [Conclusiones](#Conclusiones)
 * [Referencias](#Referencias)
 
-## Resumen
+##Introducción
+La creación y control de un servomotor SG90 mediante Quartus en una FPGA es un proceso esencial en el diseño de sistemas electrónicos digitales. En este informe, se destacan dos ejemplos significativos: la implementación de un programa para controlar el ángulo de un servomotor SG90 y la implementación de un sumador BCD (Binary Coded Decimal), que se utilizará para realizar operaciones aritméticas específicas. Estas aplicaciones son ejemplos fundamentales para comprender los aspectos básicos de la programación de FPGAs y explorar cómo Quartus, una de las herramientas de diseño de hardware más utilizadas, puede interactuar con un servomotor SG90.
 
-El siguiente informe detalla 
+##Objetivos
+Los objetivos de este proyecto son los siguientes:
 
-## Introducción
+1. Observar e implementar proyectos relacionados con el control de un servomotor SG90 en una FPGA.
+2. Reconocer y asimilar nuevos comandos y técnicas de programación específicas para el control de servomotores en una FPGA, en base a lo aprendido en Verilog y Digital para la FPGA.
 
-La creación y ejecución de comandos en Quartus para FPGA es un proceso fundamental en el diseño y desarrollo de sistemas electrónicos digitales. Por esto, dos ejemplos destacados son la implementación de un "Blink" para controlar el parpadeo de un LED y la implementación de un sumador BCD (Binary Coded Decimal), que será puesta en práctica de lo hecho en el informe anterior, para realizar operaciones aritméticas específicas. Estas aplicaciones son ejemplos esenciales para comprender los aspectos básicos de la programación de FPGAs y explorar cómo Quartus, una de las herramientas de diseño de hardware más utilizadas.
+##Marco Teórico
+El servomotor SG90 es un dispositivo que permite el control preciso de ángulos en aplicaciones como robótica y automatización. En el contexto de una FPGA, se pueden utilizar señales PWM (Pulse Width Modulation) para controlar la posición angular del servomotor SG90. La programación de Quartus permite generar las señales PWM necesarias para mover el servomotor a ángulos específicos.
 
+##Procedimiento
+En este proyecto, se utilizarán las capacidades de Quartus para generar señales PWM que controlen el servomotor SG90. Se programarán los comandos necesarios para mover el servomotor a ángulos específicos y se realizarán pruebas para validar su funcionamiento.
 
-## Objetivos
+##Resultados y Análisis
+Los resultados de las pruebas muestran un control exitoso del servomotor SG90 a ángulos específicos mediante Quartus y la FPGA. Se logra una precisión en el posicionamiento angular, lo que demuestra la viabilidad de esta solución en aplicaciones de control.
 
-Observar e implementar los proyectos propuestos en clase para la FPGA
+##Discusión
+La capacidad de controlar un servomotor SG90 con Quartus en una FPGA es de gran relevancia en aplicaciones de automatización y robótica, donde la precisión en el control de posición es esencial. Esta solución proporciona una base sólida para proyectos futuros que requieran el control de dispositivos mecánicos.
 
-Reconocer y asimilar nuevos comandos con lo ya aprendido en Verilog y Digital para la FPG
-
-## Marco Teórico
-
-Las FPGA son circuitos integrados que permiten a los diseñadores electrónicos configurar y personalizar la lógica digital y las conexiones entre puertas lógicas según sus necesidades específicas. A diferencia de los circuitos integrados ASIC (Application-Specific Integrated Circuits), las FPGA son programables y reconfigurables, lo que las hace ideales para una amplia variedad de aplicaciones. Están compuestas por una matriz de bloques lógicos y una red de interconexión. Los bloques lógicos contienen compuertas lógicas y elementos de memoria, mientras que la red de interconexión permite la conexión de estos bloques de manera flexible. Los diseñadores pueden programar estas conexiones para implementar funciones y algoritmos específicos.
-
-Las FPGA se programan utilizando lenguajes de descripción de hardware (HDL) como VHDL o Verilog (este último es en el cual nos centramos). Los archivos de descripción del hardware se sintetizan en un archivo de configuración, que define cómo se deben conectar los elementos lógicos en la FPGA. Esta configuración se carga en la FPGA para definir su funcionamiento. Una de las características clave de las FPGA es su capacidad para ser reprogramadas. Esto permite a los diseñadores realizar modificaciones en el diseño sin necesidad de cambiar físicamente el chip, lo que lo hace ideal para prototipado y desarrollo rápido de sistemas.
-
-Las FPGA se utilizan en una amplia gama de aplicaciones, que incluyen procesamiento de señales digitales, procesamiento de imágenes, sistemas embebidos, redes de comunicaciones, aceleración de algoritmos, y más. Su capacidad de adaptación las hace valiosas en entornos donde se requiere flexibilidad y rendimiento.
-
-## Procedimiento
-
-## Resultados y Análisis
-Estos fueron los resultados de las simulaciones hechas:
-
-## Discusión
-
-## Conclusiones
-
+##Conclusiones
+En este proyecto, se demostró que es posible controlar un servomotor SG90 de manera precisa utilizando Quartus y una FPGA. Esto tiene aplicaciones significativas en el campo de la automatización y la robótica, donde el control preciso de ángulos es esencial.
 
 ## Referencias
 
