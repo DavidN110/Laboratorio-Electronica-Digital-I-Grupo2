@@ -46,7 +46,6 @@
 | LCD i2c                    | \$19.00     |
 | Servo           | \$45.225    |
 | x2 Sensor HC-SR04            | \$14.000    |
-
 | **Total**                            | **\$** |
 
 ## Esquemas
