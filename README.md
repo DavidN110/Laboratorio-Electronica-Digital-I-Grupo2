@@ -1,7 +1,8 @@
-# Laboratorio-Electronica-Digital-I-Grupo2
-Repositorio del Grupo 2 del Laboratorio de Electrónica Digital I para la recopilación de informes y documentación del Proyecto final de la materia.<br>
+# Laboratorio de Electrónica Digital I - Grupo 2
 
-Integrantes:<br>
--Samuel Alejandro Cruz Saavedra<br>
--Santiago Alejandro Ochoa Quesada<br>
--David Santiago Nagles Barajas<br>
+Repositorio del Grupo 2 del Laboratorio de Electrónica Digital I de la Universidad Nacional de Colombia para la recopilación de informes y documentación del Proyecto final de la materia.
+
+## Integrantes
+- Samuel Alejandro Cruz Saavedra
+- Santiago Alejandro Ochoa Quesada
+- David Santiago Nagles Barajas
