@@ -29,7 +29,7 @@
 1. [Planteamiento del problema](#Planteamiento-del-problema)
 2. [Presupuesto](#Presupuesto)
 3. [Esquemas](#Esquemas)
-
+4. [Marco teórico](#Marco-teórico).
 
 ## Planteamiento-del-problema
 
@@ -50,7 +50,14 @@
 
 ## Esquemas
 
+## Marco-Teórico
+
+a. Sensor ultrasónico HC-SR04 (SEN-15569)
+
+Este es el sensor de alcance ultrasónico HC-SR04. Este económico sensor proporciona una funcionalidad de medición sin contacto de 2 cm a 400 cm con una precisión de alcance que puede alcanzar hasta 3 mm. Solo hay cuatro pines de los que debe preocuparse en el HC-SR04: VCC (alimentación), Trig (disparador), Echo (recepción) y GND (tierra). [2]
+
 ## Simulaciones
 
 ##Referencias 
-https://www.sparkfun.com/datasheets/Sensors/MQ-3.pdf
+[1] https://www.sparkfun.com/datasheets/Sensors/MQ-3.pdf
+[2] “Ultrasonic Ranging Module HC - SR04”. sparkfun.com/. Accedido el 13 de noviembre de 2023. [En línea]. Disponible: https://cdn.sparkfun.com/datasheets/Sensors/Proximity/HCSR04.pdf
