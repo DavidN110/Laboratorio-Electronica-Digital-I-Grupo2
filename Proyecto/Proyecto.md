@@ -52,9 +52,9 @@
 
 ## Marco-Teórico
 
-a. Sensor ultrasónico HC-SR04 (SEN-15569)
+a. **Sensor ultrasónico HC-SR04 (SEN-15569)**
 
-Este es el sensor de alcance ultrasónico HC-SR04. Este económico sensor proporciona una funcionalidad de medición sin contacto de 2 cm a 400 cm con una precisión de alcance que puede alcanzar hasta 3 mm. Solo hay cuatro pines de los que debe preocuparse en el HC-SR04: VCC (alimentación), Trig (disparador), Echo (recepción) y GND (tierra). [2]
+Este es el sensor de alcance ultrasónico HC-SR04. Es un sensor que proporciona una funcionalidad de medición sin contacto de 2 cm a 400 cm con una precisión de alcance que puede alcanzar hasta 3 mm. Solo hay cuatro pines en el HC-SR04: VCC (alimentación), Trig (disparador), Echo (recepción) y GND (tierra). Trabaja alrededor de los 40 kHz y tiene un buen rango de observación hasta los 30°.[2]
 
 ## Simulaciones
 
