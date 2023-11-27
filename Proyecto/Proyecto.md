@@ -104,7 +104,7 @@ Esto se logro en la FPGA gracias a una maquina de estados y una serie de modulos
 Tiene una frecuencia de 50Mhz y es un dispositivo lógico programable desarrollado por Altera (ahora parte de Intel) que pertenece a la serie Cyclone IV de FPGAs. Se tiene que instalar una version de Quartus para programarla https://github.com/johnnycubides/digital-electronic-1-101/blob/main/installTools/quartus.md
 
 <p align="center">
-   <img src="../Proyecto/imagenes/A-C4E6-SCH.pdf" alt="Texto alternativo" width="450"><br>
+   <img src="../Proyecto/imagenes/fpga.jpg" alt="Texto alternativo" width="450"><br>
 
 
 ## Simulaciones
