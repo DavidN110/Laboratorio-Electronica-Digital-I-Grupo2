@@ -1,7 +1,7 @@
 <p align="center">
 <strong> Laboratorio Electrónica Digital I<strong><br>
 <p align="center">  
-<strong> Proyecto Final: sistema de alcohimetro<strong><br><br>
+<strong> Proyecto Final: Sistema de Alcoholimetro <strong><br><br>
 <p align="center">  
 <strong> Samuel Alejandro Cruz Saavedra<strong><br>
 <p align="center">  
@@ -32,8 +32,6 @@
 4. [Marco teórico](#Marco-teórico).
 
 ## Planteamiento-del-problema
-
-## Presupuesto
 
 ## Presupuesto
 
