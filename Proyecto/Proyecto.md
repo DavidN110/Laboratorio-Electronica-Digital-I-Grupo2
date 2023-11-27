@@ -59,20 +59,20 @@ Este es el sensor de alcance ultrasónico HC-SR04. Es un sensor que proporciona 
 En el proyecto se impremento de forma que detectara un rango de distancia para poder verificar que si es la persona que esta conduciendo la que hace la prueba de alcohol, para utilizar este sensor se creo 1 pulso de 10us por medio de un contador que es salida del Trig, luego el sensor manda 8 pulsos de 40khz y el tiempo en que vuelven dichos pulsos por el Echo este se activa logrando asi poder lograr contar la duracion en que el Echo estuvo en 1 se obtiene la distancia utilizando la fisica dado que v=d/t y conociendo la frecuencia de funciona miento de la FPGA para cada ciclo de reloj que en nuestro caso fue de 50Mhz.
 
 <p align="center">
-   <img src="../Proyecto/imagenes/" alt="Texto alternativo" width="450"><br>
+   <img src="../Proyecto/imagenes/hc.jpeg" alt="Texto alternativo" width="450"><br>
 
 **Sensor MQ3**
 
 El sensor MQ-3 es un sensor de gas semiconductor que se utiliza comúnmente para detectar concentraciones de gas en el aire. Este sensor es particularmente conocido por su capacidad para detectar gases inflamables y vapores de alcohol con buena sensibilidad que para nuestro caso es el alcoholímetro. El sensor MQ-3 utiliza un elemento de detección semiconductor que cambia su resistencia eléctrica en respuesta a la presencia de determinados gases. Este cambio en la resistencia se debe a la adsorción de gas en la superficie del material semiconductor. Antes de su uso, el sensor requiere un período de calentamiento para alcanzar una temperatura operativa estable. Este calentamiento es esencial para que el sensor funcione de manera efectiva. Cuenta con 4 pines  VCC (alimentación), A0(salida analogica), D0 (salida digital logica negativa) y GND (tierra), Es importante recalibrar el sensor MQ-3 en intervalos regulares, ya que la sensibilidad puede cambiar con el tiempo. La calibración implica exponer el sensor a una concentración conocida de gas de referencia y ajustar el circuito para que refleje con precisión esa concentración en este caso tuvimos que hacerlo de manera experimental ya que es muy complicado tener una medicion especifica conocida y el datasheet las especifiones ambientales son dificiles de controlar para algo demasiado preciso.
 
 <p align="center">
-   <img src="../Proyecto/imagenes/mq3.webp" alt="Texto alternativo" width="450"><br>
+   <img src="../Proyecto/imagenes/Mq3.webp" alt="Texto alternativo" width="450"><br>
 
 **Sensor de audio**
 tiene un Voltaje de operacion de 3,3/ 5 Vcc con una respuesta en frecuencia: 50 – 20,000 Hz y una sensibilidad: 48-66 dB su Impedancia es 2,200 Ohms  consiste en el funcionamiento de un detector de ondas sonoras, dichas ondas son recibidas en forma de energía y son enviadas mediante señal eléctrica hacia un aparato receptor/codificador. La salida del módulo es dual, en donde por un lado se tiene una señal analógica corresponde a una señal de tensión que va desde los 0 a 5 volts, y por otro lado una salida digital de 2 estados (0 o 1 lógico) según un umbral establecido mediante potenciometro
 
 <p align="center">
-   <img src="../Proyecto/imagenes/sonido.jpeg" alt="Texto alternativo" width="450"><br>
+   <img src="../Proyecto/imagenes/sonido.jpg" alt="Texto alternativo" width="450"><br>
 
 **Rele**
 
