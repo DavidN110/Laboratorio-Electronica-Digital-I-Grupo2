@@ -1,7 +1,7 @@
 <p align="center">
 <strong> Laboratorio Electrónica Digital I<strong><br>
 <p align="center">  
-<strong> Proyecto Final: Sistema de Alcoholimetro <strong><br><br>
+<strong> Proyecto Final: Sistema de Alcoholímetro <strong><br><br>
 <p align="center">  
 <strong> Samuel Alejandro Cruz Saavedra<strong><br>
 <p align="center">  
@@ -98,7 +98,7 @@ Esto se logro en la FPGA gracias a una maquina de estados y una serie de modulos
 <p align="center">
    <img src="../Proyecto/imagenes/lcd.webp" alt="Texto alternativo" width="450"><br>
 
-**FPGA altera cyclone iv**
+**FPGA Altera Cyclone IV**
 Tiene una frecuencia de 50Mhz y es un dispositivo lógico programable desarrollado por Altera (ahora parte de Intel) que pertenece a la serie Cyclone IV de FPGAs. Se tiene que instalar una version de Quartus para programarla https://github.com/johnnycubides/digital-electronic-1-101/blob/main/installTools/quartus.md
 
 <p align="center">
