@@ -204,7 +204,7 @@ Sonido
 top
 <p align="center">
    <img src="../Proyecto/imagenes/top.png" alt="Texto alternativo" width="450"><br>
-<p align="left"><br>
+<p align="left"><br>  
 ## Simulaciones
 
 ## Referencias
