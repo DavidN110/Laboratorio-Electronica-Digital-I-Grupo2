@@ -217,6 +217,12 @@ top
 <p align="center">
    <img src="../Proyecto/imagenes/foto5.jpg" alt="Texto alternativo" width="450"><br>  
 
+## Conclusiones
+
+El proyecto realizado permite constatar y cumplir los objetivos tratados con fé de que esta propuesta cumpla la función de ser una opción que apoye la disminución de los sinestros viales, mediante la implementación de tegnología y sensores que prueben la sobriedad del piloto. Se proporciona un presupuesto detallado con los elementos necesarios para la implementación del proyecto que incluye componentes como FPGA, sensores, LCD, relé, entre otros. Los esquemas y las imágenes contribuyen a la comprensión visual de la solución propuesta. 
+
+Para mejorar el prototipo a versiones posteriores, se plantea introducir sistemas más precisos de detección de alcohol y sensor de proximidad, se podría compaginar aun más la idea para que este dispositivo se incluya dentro de los sistemas del carro como activa acción en busca de la reducción de los siniestros viales.
+
 ## Referencias
 
 [1] [Datasheet del Sensor MQ-3](https://www.sparkfun.com/datasheets/Sensors/MQ-3.pdf)
