@@ -105,7 +105,7 @@ Ofrecer una herramienta para tratar de reducir la cantidad de siniestros viales 
 
 
 ## Presupuesto
-
+<p align="center">
 | Elemento                             | Precio      |
 | ------------------------------------ | ----------- |
 | FPGA                                 | \$679.058   |
