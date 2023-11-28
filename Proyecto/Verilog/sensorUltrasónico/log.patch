@@ -1,0 +1,139 @@
+264,298d263
+< module clock_divider 
+< #(parameter INIT=0)
+< (
+<   input clk_in,
+<   output reg clk_out = 0
+< );
+< 
+< /* count = (clk_in / clk_out) */
+< /* Ejemplo 1 */
+< /* count = 25E6 = 25000000 = (25E6 Mhz)/(1 Hz) */
+< /* SIZE = 2^25 = 33.5E6 lo contiene */
+< /* Ejemplo 2 */
+< /* count = (50E6 Mhz)/(1 Hz) = 50E6 = 50000000 */
+< /* SIZE = 2^26 = 67.5E6 lo contiene */
+< 
+< parameter SIZE = 26; 
+< parameter LIMIT = 26'd50000000;
+< 
+< reg [SIZE-1:0] count = INIT;
+< 
+< always@(posedge clk_in)
+< begin
+<   if(count == LIMIT)
+<   begin
+<     count <= 0;
+<     clk_out <= ~clk_out;
+<   end
+<   else
+<   begin
+<     count <= count + 1;
+<   end
+< end
+< 
+< endmodule
+< 
+309a275
+>   input enc,
+321d286
+<   wire enc;
+347c312
+<   wire [3:0] s25;
+---
+>   wire s25;
+349a315
+>   wire [3:0] s28;
+368c334
+<     .ne( ~ ne )
+---
+>     .ne( s8 )
+389,393c355,359
+<     .s1( s8 ),
+<     .s0( s9 ),
+<     .s3( s10 ),
+<     .s2( s11 ),
+<     .s4( s12 )
+---
+>     .s1( s9 ),
+>     .s0( s10 ),
+>     .s3( s11 ),
+>     .s2( s12 ),
+>     .s4( s13 )
+394a361
+>   assign ne = ~ s8;
+396,408c363,375
+<     .e4( s12 ),
+<     .e3( s10 ),
+<     .e2( s11 ),
+<     .e1( s8 ),
+<     .e0( s9 ),
+<     .d3( s13 ),
+<     .d2( s14 ),
+<     .d1( s15 ),
+<     .d0( s16 ),
+<     .u3( s17 ),
+<     .u2( s18 ),
+<     .u1( s19 ),
+<     .u0( s20 )
+---
+>     .e4( s13 ),
+>     .e3( s11 ),
+>     .e2( s12 ),
+>     .e1( s9 ),
+>     .e0( s10 ),
+>     .d3( s14 ),
+>     .d2( s15 ),
+>     .d1( s16 ),
+>     .d0( s17 ),
+>     .u3( s18 ),
+>     .u2( s19 ),
+>     .u1( s20 ),
+>     .u0( s21 )
+410,418c377,384
+<   assign enc = 1'b0;
+<   assign s25[0] = s16;
+<   assign s25[1] = s15;
+<   assign s25[2] = s14;
+<   assign s25[3] = s13;
+<   assign s27[0] = s20;
+<   assign s27[1] = s19;
+<   assign s27[2] = s18;
+<   assign s27[3] = s17;
+---
+>   assign s26[0] = s17;
+>   assign s26[1] = s16;
+>   assign s26[2] = s15;
+>   assign s26[3] = s14;
+>   assign s28[0] = s21;
+>   assign s28[1] = s20;
+>   assign s28[2] = s19;
+>   assign s28[3] = s18;
+424,426c390,392
+<     .in_0( s25 ),
+<     .in_1( s27 ),
+<     .out( s26 )
+---
+>     .in_0( s26 ),
+>     .in_1( s28 ),
+>     .out( s27 )
+428,431c394,397
+<   assign s24 = s26[0];
+<   assign s23 = s26[1];
+<   assign s22 = s26[2];
+<   assign s21 = s26[3];
+---
+>   assign s25 = s27[0];
+>   assign s24 = s27[1];
+>   assign s23 = s27[2];
+>   assign s22 = s27[3];
+433,436c399,402
+<     .f3( s21 ),
+<     .f2( s22 ),
+<     .f1( s23 ),
+<     .f0( s24 ),
+---
+>     .f3( s22 ),
+>     .f2( s23 ),
+>     .f1( s24 ),
+>     .f0( s25 ),

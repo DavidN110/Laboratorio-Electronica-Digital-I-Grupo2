@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<circuit>
+  <version>2</version>
+  <attributes/>
+  <visualElements>
+    <visualElement>
+      <elementName>Mul</elementName>
+      <elementAttributes>
+        <entry>
+          <string>Bits</string>
+          <int>20</int>
+        </entry>
+      </elementAttributes>
+      <pos x="600" y="300"/>
+    </visualElement>
+    <visualElement>
+      <elementName>Splitter</elementName>
+      <elementAttributes>
+        <entry>
+          <string>mirror</string>
+          <boolean>true</boolean>
+        </entry>
+        <entry>
+          <string>Input Splitting</string>
+          <string>40</string>
+        </entry>
+        <entry>
+          <string>Output Splitting</string>
+          <string>1*40</string>
+        </entry>
+      </elementAttributes>
+      <pos x="740" y="320"/>
+    </visualElement>
+    <visualElement>
+      <elementName>Splitter</elementName>
+      <elementAttributes>
+        <entry>
+          <string>mirror</string>
+          <boolean>true</boolean>
+        </entry>
+        <entry>
+          <string>Input Splitting</string>
+          <string>1*9</string>
+        </entry>
+        <entry>
+          <string>Output Splitting</string>
+          <string>9</string>
+        </entry>
+      </elementAttributes>
+      <pos x="820" y="-80"/>
+    </visualElement>
+    <visualElement>
+      <elementName>Out</elementName>
+      <elementAttributes>
+        <entry>
+          <string>Label</string>
+          <string>may</string>
+        </entry>
+        <entry>
+          <string>intFormat</string>
+          <intFormat>dec</intFormat>
+        </entry>
+      </elementAttributes>
+      <pos x="1100" y="-80"/>
+    </visualElement>
+    <visualElement>
+      <elementName>In</elementName>
+      <elementAttributes>
+        <entry>
+          <string>Label</string>
+          <string>cn</string>
+        </entry>
+        <entry>
+          <string>Bits</string>
+          <int>20</int>
+        </entry>
+      </elementAttributes>
+      <pos x="520" y="340"/>
+    </visualElement>
+    <visualElement>
+      <elementName>Const</elementName>
+      <elementAttributes>
+        <entry>
+          <string>Value</string>
+          <long>359</long>
+        </entry>
+        <entry>
+          <string>Bits</string>
+          <int>20</int>
+        </entry>
+        <entry>
+          <string>intFormat</string>
+          <intFormat>bin</intFormat>
+        </entry>
+      </elementAttributes>
+      <pos x="520" y="300"/>
+    </visualElement>
+  </visualElements>
+  <wires>
+    <wire>
+      <p1 x="660" y="320"/>
+      <p2 x="740" y="320"/>
+    </wire>
+    <wire>
+      <p1 x="760" y="-100"/>
+      <p2 x="820" y="-100"/>
+    </wire>
+    <wire>
+      <p1 x="760" y="-180"/>
+      <p2 x="820" y="-180"/>
+    </wire>
+    <wire>
+      <p1 x="520" y="340"/>
+      <p2 x="600" y="340"/>
+    </wire>
+    <wire>
+      <p1 x="760" y="-200"/>
+      <p2 x="820" y="-200"/>
+    </wire>
+    <wire>
+      <p1 x="760" y="-120"/>
+      <p2 x="820" y="-120"/>
+    </wire>
+    <wire>
+      <p1 x="760" y="-140"/>
+      <p2 x="820" y="-140"/>
+    </wire>
+    <wire>
+      <p1 x="760" y="-220"/>
+      <p2 x="820" y="-220"/>
+    </wire>
+    <wire>
+      <p1 x="520" y="300"/>
+      <p2 x="600" y="300"/>
+    </wire>
+    <wire>
+      <p1 x="760" y="-80"/>
+      <p2 x="820" y="-80"/>
+    </wire>
+    <wire>
+      <p1 x="840" y="-80"/>
+      <p2 x="1100" y="-80"/>
+    </wire>
+    <wire>
+      <p1 x="760" y="-240"/>
+      <p2 x="820" y="-240"/>
+    </wire>
+    <wire>
+      <p1 x="760" y="-160"/>
+      <p2 x="820" y="-160"/>
+    </wire>
+  </wires>
+  <measurementOrdering/>
+</circuit>

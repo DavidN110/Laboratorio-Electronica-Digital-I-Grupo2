@@ -1,0 +1,81 @@
+# -------------------------------------------------------------------------- #
+#
+# Copyright (C) 2023  Intel Corporation. All rights reserved.
+# Your use of Intel Corporation's design tools, logic functions 
+# and other software and tools, and any partner logic 
+# functions, and any output files from any of the foregoing 
+# (including device programming or simulation files), and any 
+# associated documentation or information are expressly subject 
+# to the terms and conditions of the Intel Program License 
+# Subscription Agreement, the Intel Quartus Prime License Agreement,
+# the Intel FPGA IP License Agreement, or other applicable license
+# agreement, including, without limitation, that your use is for
+# the sole purpose of programming logic devices manufactured by
+# Intel and sold by Intel or its authorized distributors.  Please
+# refer to the applicable agreement for further details, at
+# https://fpgasoftware.intel.com/eula.
+#
+# -------------------------------------------------------------------------- #
+#
+# Quartus Prime
+# Version 22.1std.1 Build 917 02/14/2023 SC Lite Edition
+# Date created = 15:09:37  September 07, 2023
+#
+# -------------------------------------------------------------------------- #
+#
+# Notes:
+#
+# 1) The default values for assignments are stored in the file:
+#		top_assignment_defaults.qdf
+#    If this file doesn't exist, see file:
+#		assignment_defaults.qdf
+#
+# 2) Intel recommends that you do not modify this file. This
+#    file is updated automatically by the Quartus Prime software
+#    and any changes you make may be lost or overwritten.
+#
+# -------------------------------------------------------------------------- #
+
+
+set_global_assignment -name FAMILY "Cyclone IV E"
+set_global_assignment -name DEVICE EP4CE10E22C8
+set_global_assignment -name TOP_LEVEL_ENTITY top
+set_global_assignment -name PROJECT_OUTPUT_DIRECTORY build
+set_global_assignment -name ORIGINAL_QUARTUS_VERSION 22.make.1
+set_global_assignment -name PROJECT_CREATION_TIME_DATE "15:09:37  SEPTEMBER 07, 2023"
+set_global_assignment -name LAST_QUARTUS_VERSION "22.1std.2 Lite Edition"
+
+
+
+set_location_assignment PIN_127 -to A
+set_location_assignment PIN_126 -to B
+set_location_assignment PIN_125 -to C
+set_location_assignment PIN_124 -to D
+set_location_assignment PIN_121 -to E
+set_location_assignment PIN_120 -to F
+set_location_assignment PIN_119 -to G
+set_location_assignment PIN_115 -to H
+
+set_location_assignment PIN_128 -to L_1
+set_location_assignment PIN_129 -to L_2
+set_location_assignment PIN_132 -to L_3
+set_location_assignment PIN_133 -to L_4
+
+set_location_assignment PIN_135 -to L_5
+set_location_assignment PIN_136 -to L_6
+set_location_assignment PIN_137 -to L_7
+set_location_assignment PIN_138 -to L_8
+
+
+set_location_assignment PIN_23 -to cl
+set_location_assignment PIN_141 -to bell
+
+
+
+set_location_assignment PIN_30 -to VCC
+set_location_assignment PIN_32 -to \Tri
+set_location_assignment PIN_34 -to ec
+set_location_assignment PIN_39 -to GND
+
+set_location_assignment PIN_74 -to lec
+

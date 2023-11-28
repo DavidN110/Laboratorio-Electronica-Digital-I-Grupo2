@@ -1,0 +1,4 @@
+v1
+DSP_BALANCING_IMPLEMENTATION,DSP_BLOCKS,distancia:distancia_i5|DIG_Mul_unsigned:DIG_Mul_unsigned_i0|lpm_mult:Mult0|mult_dft:auto_generated|mac_out2,
+DSP_BALANCING_IMPLEMENTATION,DSP_BLOCKS,distancia:distancia_i5|DIG_Mul_unsigned:DIG_Mul_unsigned_i0|lpm_mult:Mult0|mult_dft:auto_generated|mac_out4,
+PORT_SWAPPING,PORT_SWAP_TYPE_DSPMULT,distancia:distancia_i5|DIG_Mul_unsigned:DIG_Mul_unsigned_i0|lpm_mult:Mult0|mult_dft:auto_generated|mac_mult1,
