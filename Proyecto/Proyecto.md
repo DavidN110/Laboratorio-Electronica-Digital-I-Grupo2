@@ -179,11 +179,17 @@ Tiene una frecuencia de 50Mhz y es un dispositivo lógico programable desarrolla
 
 ## Simulaciones
 
-##Referencias 
-[1] https://www.sparkfun.com/datasheets/Sensors/MQ-3.pdf
-[2] “Ultrasonic Ranging Module HC - SR04”. sparkfun.com/. Accedido el 13 de noviembre de 2023. [En línea]. Disponible: https://cdn.sparkfun.com/datasheets/Sensors/Proximity/HCSR04.pdf
-[3] https://www.sparkfun.com/datasheets/Sensors/MQ-3.pdf
-[4] https://pdf1.alldatasheet.com/datasheet-pdf/view/1138845/ETC2/KY-038.html
-[5] https://components101.com/switches/5v-single-channel-relay-module-pinout-features-applications-working-datasheet
-[6] https://circuitdigest.com/article/16x2-lcd-display-module-pinout-datasheet
-[7]
+## Referencias
+
+[1] [Datasheet del Sensor MQ-3](https://www.sparkfun.com/datasheets/Sensors/MQ-3.pdf)
+
+[2] "Ultrasonic Ranging Module HC - SR04". sparkfun.com/. Accedido el 13 de noviembre de 2023. [En línea]. Disponible: [Datasheet del Módulo de Rango Ultrasonido HC-SR04](https://cdn.sparkfun.com/datasheets/Sensors/Proximity/HCSR04.pdf)
+
+[3] [Datasheet del Sensor MQ-3](https://www.sparkfun.com/datasheets/Sensors/MQ-3.pdf)
+
+[4] [Datasheet del Módulo KY-038](https://pdf1.alldatasheet.com/datasheet-pdf/view/1138845/ETC2/KY-038.html)
+
+[5] [Datasheet del Módulo de Relé de Canal Único de 5V](https://components101.com/switches/5v-single-channel-relay-module-pinout-features-applications-working-datasheet)
+
+[6] [Datasheet del Módulo de Display LCD 16x2](https://circuitdigest.com/article/16x2-lcd-display-module-pinout-datasheet)
+
