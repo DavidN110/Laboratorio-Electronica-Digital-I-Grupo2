@@ -1,0 +1,109 @@
+{
+	"partitions" : [
+		{
+			"name" : "Top",
+			"pins" : [
+				{
+					"name" : "Tri",
+					"strict" : false
+				},
+				{
+					"name" : "L_4",
+					"strict" : false
+				},
+				{
+					"name" : "L_3",
+					"strict" : false
+				},
+				{
+					"name" : "L_2",
+					"strict" : false
+				},
+				{
+					"name" : "L_1",
+					"strict" : false
+				},
+				{
+					"name" : "A",
+					"strict" : false
+				},
+				{
+					"name" : "B",
+					"strict" : false
+				},
+				{
+					"name" : "C",
+					"strict" : false
+				},
+				{
+					"name" : "D",
+					"strict" : false
+				},
+				{
+					"name" : "E",
+					"strict" : false
+				},
+				{
+					"name" : "F",
+					"strict" : false
+				},
+				{
+					"name" : "G",
+					"strict" : false
+				},
+				{
+					"name" : "H",
+					"strict" : false
+				},
+				{
+					"name" : "d[0]",
+					"strict" : false
+				},
+				{
+					"name" : "d[1]",
+					"strict" : false
+				},
+				{
+					"name" : "d[2]",
+					"strict" : false
+				},
+				{
+					"name" : "d[3]",
+					"strict" : false
+				},
+				{
+					"name" : "d[4]",
+					"strict" : false
+				},
+				{
+					"name" : "d[5]",
+					"strict" : false
+				},
+				{
+					"name" : "d[6]",
+					"strict" : false
+				},
+				{
+					"name" : "d[7]",
+					"strict" : false
+				},
+				{
+					"name" : "d[8]",
+					"strict" : false
+				},
+				{
+					"name" : "lec",
+					"strict" : false
+				},
+				{
+					"name" : "ec",
+					"strict" : false
+				},
+				{
+					"name" : "cl",
+					"strict" : false
+				}
+			]
+		}
+	]
+}
