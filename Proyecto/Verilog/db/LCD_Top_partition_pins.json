@@ -1,0 +1,89 @@
+{
+	"partitions" : [
+		{
+			"name" : "Top",
+			"pins" : [
+				{
+					"name" : "LCD_EN",
+					"strict" : false
+				},
+				{
+					"name" : "LCD_RS",
+					"strict" : false
+				},
+				{
+					"name" : "trigger",
+					"strict" : false
+				},
+				{
+					"name" : "led1",
+					"strict" : false
+				},
+				{
+					"name" : "led2",
+					"strict" : false
+				},
+				{
+					"name" : "led3",
+					"strict" : false
+				},
+				{
+					"name" : "led4",
+					"strict" : false
+				},
+				{
+					"name" : "rele",
+					"strict" : false
+				},
+				{
+					"name" : "LCD_DATA[0]",
+					"strict" : false
+				},
+				{
+					"name" : "LCD_DATA[1]",
+					"strict" : false
+				},
+				{
+					"name" : "LCD_DATA[2]",
+					"strict" : false
+				},
+				{
+					"name" : "LCD_DATA[3]",
+					"strict" : false
+				},
+				{
+					"name" : "LCD_DATA[4]",
+					"strict" : false
+				},
+				{
+					"name" : "LCD_DATA[5]",
+					"strict" : false
+				},
+				{
+					"name" : "LCD_DATA[6]",
+					"strict" : false
+				},
+				{
+					"name" : "LCD_DATA[7]",
+					"strict" : false
+				},
+				{
+					"name" : "CLOCK_50",
+					"strict" : false
+				},
+				{
+					"name" : "senal_sonido",
+					"strict" : false
+				},
+				{
+					"name" : "senal_alcohol",
+					"strict" : false
+				},
+				{
+					"name" : "echo",
+					"strict" : false
+				}
+			]
+		}
+	]
+}
