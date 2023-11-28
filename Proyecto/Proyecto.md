@@ -33,6 +33,77 @@
 
 ## Planteamiento-del-problema
 
+Siniestros viales a causa de conductores en estado de embriaguez
+
+De acuerdo con cifras de la Secretaría de Seguridad, entre el 1 de enero de 2022 y el 18 de
+diciembre de 2022, en Bogotá se registraron 551 muertes en accidentes de tránsito causados por
+conductores en estado de embriaguez (Infobae, 2022).
+Según la Agencia Nacional de Seguridad Vial de Colombia (ANSV), en el año 2022, el 29% de los
+accidentes de tránsito con víctimas fatales fueron ocasionados por conductores en estado de
+embriaguez. Durante el mismo año, la ANSV documentó un total de 7,901 accidentes de tránsito
+causados por conductores en estado de embriaguez, en los cuales perdieron la vida 2,889 personas y
+otras 10,802 resultaron heridas. Además, se estima que el costo económico de los accidentes de
+tránsito causados por conductores ebrios en Colombia asciende a 1.5 billones de pesos al año.
+Los efectos del alcohol en el organismo de un conductor son devastadores, ya que reducen su
+capacidad de atención, concentración, coordinación y toma de decisiones. Además, el alcohol
+aumenta significativamente el tiempo de reacción del conductor y afecta su visión, lo que dificulta
+la visión nocturna y periférica. Estos factores hacen que conducir bajo los efectos del alcohol sea
+extremadamente peligroso y ponga en riesgo la vida de quienes comparten las vías. Es crucial
+concientizar a la sociedad sobre los peligros de la conducción bajo los efectos del alcohol y
+promover la responsabilidad al volante.
+
+## Político:
+- **Políticas públicas:** Existen políticas públicas en la mayoría de los países para prevenir y sancionar los siniestros viales a causa de conductores en estado de embriaguez. Sin embargo, estas políticas pueden ser insuficientes o no aplicarse de manera efectiva.
+- **Clima político:** El clima político puede influir en la voluntad de los gobiernos para tomar medidas para prevenir los siniestros viales a causa de conductores en estado de embriaguez.
+
+## Económico:
+- Los siniestros viales a causa de conductores en estado de embriaguez tienen un alto costo económico, tanto para los individuos como para la sociedad, puesto que suelen ocasionar graves daños a la infraestructura vial y a los vehículos de los involucrados. En Colombia, el costo estimado por dichos siniestros viales es de 1.5 billones de pesos al año.
+
+## Social:
+- **Concientización:** La concientización pública sobre los riesgos de conducir en estado de embriaguez es importante para prevenir los siniestros viales.
+- **Presión social:** La presión social puede disuadir a las personas de conducir en estado de embriaguez.
+
+## Tecnológico:
+- El desarrollo tecnológico puede ayudar a prevenir los siniestros viales a causa de conductores en estado de embriaguez, por ejemplo, a través de sistemas de detección de conductores ebrios o sistemas de conducción autónoma.
+
+## Ambiental:
+- Los siniestros viales a causa de conductores en estado de embriaguez pueden tener un impacto negativo en el medio ambiente, al generar accidentes incendiarios, destrucción de espacios verdes, y a mayor escala, explosiones de camiones de combustible, derrames de productos tóxicos, etc.
+
+## Legal:
+
+**ARTÍCULO 1o.** El artículo 152 de la Ley 769 quedará así:
+
+**Artículo 152. Grado de Alcoholemia.** Si hecha la prueba de alcoholemia se establece:
+
+- Entre 20 y 39 mg de etanol/100 ml de sangre total, además de las sanciones previstas en la presente ley, se decretará la suspensión de la licencia de conducción entre seis (6) y doce (12) meses.
+
+- Primer grado de embriaguez entre 40 y 99 mg de etanol/100 ml de sangre total, adicionalmente a la sanción multa, se decretará la suspensión de la Licencia de Conducción entre uno (1) y tres (3) años.
+
+- Segundo grado de embriaguez entre 100 y 149 mg de etanol/100 ml de sangre total, adicionalmente a la sanción multa, se decretará la suspensión de la Licencia de Conducción entre tres (3) y cinco (5) años, y la obligación de realizar curso de sensibilización, conocimientos y consecuencias de la alcoholemia y drogadicción en centros de rehabilitación debidamente autorizados, por un mínimo de cuarenta (40) horas.
+
+- Tercer grado de embriaguez, desde 150 mg de etanol/100 ml de sangre total en adelante, adicionalmente a la sanción de multa, se decretará la suspensión entre cinco (5) y diez (10) años de la Licencia de Conducción, y la obligación de realizar curso de sensibilización, conocimientos y consecuencias de la alcoholemia y drogadicción en centros de rehabilitación debidamente autorizados, por un mínimo de ochenta (80) horas.
+
+## Antecedentes:
+
+Los productos electrónicos están cambiando rápidamente en el campo de la automoción, especialmente en el ámbito de la seguridad vehicular. Se han vuelto imprescindibles sistemas de seguridad para vehículos, que incluyen mejoras en cinturones de seguridad, sistemas de frenos antibloqueo (ABS, EBD, HBB), sistema de retención auxiliar (SRS, AIRBAG), sistema de dirección asistencia electrónica (EPS, MDPS), suspensión inteligente y otras aplicaciones, como el alcoholímetro conectado al sistema de bloqueo de encendido del vehículo, diseñado para evitar que personas ebrias operen vehículos.
+
+Las empresas de automóviles realizan grandes inversiones cada año para mejorar los sistemas de seguridad de los vehículos, asegurándose de que, año tras año, estos se vuelvan más seguros. Sin embargo, es común que las personas compren vehículos sin comprender completamente cómo funcionan estos sistemas, y por lo tanto, rara vez los utilizan como criterio de compra (El airbag, s. f.).
+
+
+## solucion a implementar:
+
+Implementación de tecnologías que impidan la posibilidad de que una persona en estado de embriaguez conduzca o que alerte de este estado para recordar la importancia de la situación, reiteración de políticas públicas que fomenten una cultura de responsabilidad en la movilidad, en el diálogo con otros actores viales.
+
+
+## Objetivo Principal
+Ofrecer una herramienta para tratar de reducir la cantidad de siniestros viales a causa de conductores en estado de embriaguez, por medio de la detección de conductores en dicho estado y posterior bloqueo del encendido del vehículo.
+
+## Objetivos Secundarios
+- Incrementar la concientización pública sobre los riesgos de conducir en estado de embriaguez.
+- Desarrollar tecnologías de detección de conductores ebrios.
+- Implementar dispositivos que impidan el encendido del vehículo cuando se está ebrio.
+
+
 ## Presupuesto
 
 | Elemento                             | Precio      |
@@ -48,10 +119,11 @@
 
 ## Esquemas
 
+
+
 ## Marco-Teórico
 
-
-a. **Sensor ultrasónico HC-SR04 (SEN-15569)**
+**Sensor ultrasónico HC-SR04 (SEN-15569)**
 
 Este es el sensor de alcance ultrasónico HC-SR04. Es un sensor que proporciona una funcionalidad de medición sin contacto de 2 cm a 400 cm con una precisión de alcance que puede alcanzar hasta 3 mm. Solo hay cuatro pines en el HC-SR04: VCC (alimentación), Trig (disparador), Echo (recepción) y GND (tierra). Trabaja alrededor de los 40 kHz y tiene un ángulo eficaz de observación <15°.[2]
 En el proyecto se impremento de forma que detectara un rango de distancia para poder verificar que si es la persona que esta conduciendo la que hace la prueba de alcohol, para utilizar este sensor se creo 1 pulso de 10us por medio de un contador que es salida del Trig, luego el sensor manda 8 pulsos de 40khz y el tiempo en que vuelven dichos pulsos por el Echo este se activa logrando asi poder lograr contar la duracion en que el Echo estuvo en 1 se obtiene la distancia utilizando la fisica dado que v=d/t y conociendo la frecuencia de funciona miento de la FPGA para cada ciclo de reloj que en nuestro caso fue de 50Mhz.
