@@ -123,6 +123,14 @@ Ofrecer una herramienta para tratar de reducir la cantidad de siniestros viales 
 
 ## Marco-Teórico
 
+**Sensor MQ3**
+
+El sensor MQ-3 es un sensor de gas semiconductor que se utiliza comúnmente para detectar concentraciones de gas en el aire. Este sensor es particularmente conocido por su capacidad para detectar gases inflamables y vapores de alcohol con buena sensibilidad que para nuestro caso es el alcoholímetro. El sensor MQ-3 utiliza un elemento de detección semiconductor que cambia su resistencia eléctrica en respuesta a la presencia de determinados gases. Este cambio en la resistencia se debe a la adsorción de gas en la superficie del material semiconductor. Antes de su uso, el sensor requiere un período de calentamiento para alcanzar una temperatura operativa estable. Este calentamiento es esencial para que el sensor funcione de manera efectiva. Cuenta con 4 pines  VCC (alimentación), A0(salida analogica), D0 (salida digital logica negativa) y GND (tierra), Es importante recalibrar el sensor MQ-3 en intervalos regulares, ya que la sensibilidad puede cambiar con el tiempo. La calibración implica exponer el sensor a una concentración conocida de gas de referencia y ajustar el circuito para que refleje con precisión esa concentración en este caso tuvimos que hacerlo de manera experimental ya que es muy complicado tener una medicion especifica conocida y el datasheet las especifiones ambientales son dificiles de controlar para algo demasiado preciso. [1]
+
+<p align="center">
+   <img src="../Proyecto/imagenes/Mq3.webp" alt="Texto alternativo" width="450"><br>
+
+
 **Sensor ultrasónico HC-SR04 (SEN-15569)**
 
 Este es el sensor de alcance ultrasónico HC-SR04. Es un sensor que proporciona una funcionalidad de medición sin contacto de 2 cm a 400 cm con una precisión de alcance que puede alcanzar hasta 3 mm. Solo hay cuatro pines en el HC-SR04: VCC (alimentación), Trig (disparador), Echo (recepción) y GND (tierra). Trabaja alrededor de los 40 kHz y tiene un ángulo eficaz de observación <15°.[2]
@@ -131,12 +139,6 @@ En el proyecto se impremento de forma que detectara un rango de distancia para p
 <p align="center">
    <img src="../Proyecto/imagenes/hc.jpeg" alt="Texto alternativo" width="450"><br>
 
-**Sensor MQ3**
-
-El sensor MQ-3 es un sensor de gas semiconductor que se utiliza comúnmente para detectar concentraciones de gas en el aire. Este sensor es particularmente conocido por su capacidad para detectar gases inflamables y vapores de alcohol con buena sensibilidad que para nuestro caso es el alcoholímetro. El sensor MQ-3 utiliza un elemento de detección semiconductor que cambia su resistencia eléctrica en respuesta a la presencia de determinados gases. Este cambio en la resistencia se debe a la adsorción de gas en la superficie del material semiconductor. Antes de su uso, el sensor requiere un período de calentamiento para alcanzar una temperatura operativa estable. Este calentamiento es esencial para que el sensor funcione de manera efectiva. Cuenta con 4 pines  VCC (alimentación), A0(salida analogica), D0 (salida digital logica negativa) y GND (tierra), Es importante recalibrar el sensor MQ-3 en intervalos regulares, ya que la sensibilidad puede cambiar con el tiempo. La calibración implica exponer el sensor a una concentración conocida de gas de referencia y ajustar el circuito para que refleje con precisión esa concentración en este caso tuvimos que hacerlo de manera experimental ya que es muy complicado tener una medicion especifica conocida y el datasheet las especifiones ambientales son dificiles de controlar para algo demasiado preciso.
-
-<p align="center">
-   <img src="../Proyecto/imagenes/Mq3.webp" alt="Texto alternativo" width="450"><br>
 
 **Sensor de audio**
 tiene un Voltaje de operacion de 3,3/ 5 Vcc con una respuesta en frecuencia: 50 – 20,000 Hz y una sensibilidad: 48-66 dB su Impedancia es 2,200 Ohms  consiste en el funcionamiento de un detector de ondas sonoras, dichas ondas son recibidas en forma de energía y son enviadas mediante señal eléctrica hacia un aparato receptor/codificador. La salida del módulo es dual, en donde por un lado se tiene una señal analógica corresponde a una señal de tensión que va desde los 0 a 5 volts, y por otro lado una salida digital de 2 estados (0 o 1 lógico) según un umbral establecido mediante potenciometro
@@ -183,13 +185,11 @@ Tiene una frecuencia de 50Mhz y es un dispositivo lógico programable desarrolla
 
 [1] [Datasheet del Sensor MQ-3](https://www.sparkfun.com/datasheets/Sensors/MQ-3.pdf)
 
-[2] "Ultrasonic Ranging Module HC - SR04". sparkfun.com/. Accedido el 13 de noviembre de 2023. [En línea]. Disponible: [Datasheet del Módulo de Rango Ultrasonido HC-SR04](https://cdn.sparkfun.com/datasheets/Sensors/Proximity/HCSR04.pdf)
+[2] [Datasheet del Módulo de Rango Ultrasonido HC-SR04](https://cdn.sparkfun.com/datasheets/Sensors/Proximity/HCSR04.pdf)
 
-[3] [Datasheet del Sensor MQ-3](https://www.sparkfun.com/datasheets/Sensors/MQ-3.pdf)
+[3] [Datasheet del Módulo KY-038](https://pdf1.alldatasheet.com/datasheet-pdf/view/1138845/ETC2/KY-038.html)
 
-[4] [Datasheet del Módulo KY-038](https://pdf1.alldatasheet.com/datasheet-pdf/view/1138845/ETC2/KY-038.html)
+[4] [Datasheet del Módulo de Relé de Canal Único de 5V](https://components101.com/switches/5v-single-channel-relay-module-pinout-features-applications-working-datasheet)
 
-[5] [Datasheet del Módulo de Relé de Canal Único de 5V](https://components101.com/switches/5v-single-channel-relay-module-pinout-features-applications-working-datasheet)
-
-[6] [Datasheet del Módulo de Display LCD 16x2](https://circuitdigest.com/article/16x2-lcd-display-module-pinout-datasheet)
+[5] [Datasheet del Módulo de Display LCD 16x2](https://circuitdigest.com/article/16x2-lcd-display-module-pinout-datasheet)
 
