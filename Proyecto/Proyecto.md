@@ -203,8 +203,8 @@ Sonido
    <img src="../Proyecto/imagenes/Sonido.png" alt="Texto alternativo" width="450"><br>
 top
 <p align="center">
-   <img src="../Proyecto/imagenes/top.png" alt="Texto alternativo" width="450"><br>
-<p align="left"><br>  
+   <img src="../Proyecto/imagenes/top.png" alt="Texto alternativo" width="450"><br>  
+
 ## Simulaciones
 
 ## Referencias
