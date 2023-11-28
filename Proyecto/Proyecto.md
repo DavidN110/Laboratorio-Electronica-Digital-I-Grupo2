@@ -177,8 +177,32 @@ Tiene una frecuencia de 50Mhz y es un dispositivo lógico programable desarrolla
 
 <p align="center">
    <img src="../Proyecto/imagenes/fpga.jpg" alt="Texto alternativo" width="450"><br>
-
-
+  
+## RTL's
+ContadorConEcho
+<p align="center">
+   <img src="../Proyecto/imagenes/ContadorConEcho.svg" alt="Texto alternativo" width="450"><br>
+ContadorConTrigger
+<p align="center">
+   <img src="../Proyecto/imagenes/ContadorConTrigger.svg" alt="Texto alternativo" width="450"><br>
+ControlLed
+<p align="center">
+   <img src="../Proyecto/imagenes/ControlLed.svg" alt="Texto alternativo" width="450"><br>
+LCD_Controller
+<p align="center">
+   <img src="../Proyecto/imagenes/LCD_Controller.svg" alt="Texto alternativo" width="450"><br>
+LED´s
+<p align="center">
+   <img src="../Proyecto/imagenes/LEDs.svg" alt="Texto alternativo" width="450"><br>
+Reset_Delay
+<p align="center">
+   <img src="../Proyecto/imagenes/Reset_Delay.svg" alt="Texto alternativo" width="450"><br>
+Sonido
+<p align="center">
+   <img src="../Proyecto/imagenes/Sonido.svg" alt="Texto alternativo" width="450"><br>
+top
+<p align="center">
+   <img src="../Proyecto/imagenes/top.svg" alt="Texto alternativo" width="450"><br>
 ## Simulaciones
 
 ## Referencias
