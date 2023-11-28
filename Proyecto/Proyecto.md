@@ -41,10 +41,10 @@
 | Sensor MQ3| \$13.000 |
 | Breadboard                      | \$58.806 |
 | Breadboard jumper wires           | \$23.043  |
-| LCD i2c                    | \$19.00     |
-| Servo           | \$45.225    |
-| x2 Sensor HC-SR04            | \$14.000    |
-| **Total**                            | **\$ ** |
+| LCD i2c                    | \$19.000     |
+| Relex          | \$45.225    |
+| Sensor HC-SR04            | \$14.000    |
+| **Total**                            | **\$ 852.132** |
 
 ## Esquemas
 
