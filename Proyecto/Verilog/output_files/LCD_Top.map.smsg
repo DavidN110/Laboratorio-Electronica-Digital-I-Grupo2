@@ -1,0 +1,1 @@
+Warning (10268): Verilog HDL information at sensor.v(13): always construct contains both blocking and non-blocking assignments File: /home/samuelcruz/Proyectos Digital/Proyecto Final/LCD/sensor.v Line: 13

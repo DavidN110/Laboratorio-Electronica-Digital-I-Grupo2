@@ -1,0 +1,771 @@
+Analysis & Synthesis report for LCD_Top
+Tue Nov 28 01:37:38 2023
+Quartus Prime Version 22.1std.1 Build 917 02/14/2023 SC Lite Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Analysis & Synthesis Summary
+  3. Analysis & Synthesis Settings
+  4. Parallel Compilation
+  5. Analysis & Synthesis Source Files Read
+  6. Analysis & Synthesis Resource Usage Summary
+  7. Analysis & Synthesis Resource Utilization by Entity
+  8. State Machine - |LCD_Top|LCD_TEST:u5|mLCD_ST
+  9. State Machine - |LCD_Top|LCD_TEST:u5|LCD_Controller:u0|ST
+ 10. User-Specified and Inferred Latches
+ 11. Registers Removed During Synthesis
+ 12. General Register Statistics
+ 13. Multiplexer Restructuring Statistics (Restructuring Performed)
+ 14. Parameter Settings for User Entity Instance: sensor:Distancia|ContadorConTrigger:ContadorConTrigger_i0
+ 15. Parameter Settings for User Entity Instance: sensor:Distancia|ControlLed:ControlLed_i2
+ 16. Parameter Settings for User Entity Instance: LCD_TEST:u5
+ 17. Parameter Settings for User Entity Instance: LCD_TEST:u5|LCD_Controller:u0
+ 18. Port Connectivity Checks: "LCD_TEST:u5"
+ 19. Post-Synthesis Netlist Statistics for Top Partition
+ 20. Elapsed Time Per Partition
+ 21. Analysis & Synthesis Messages
+ 22. Analysis & Synthesis Suppressed Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 2023  Intel Corporation. All rights reserved.
+Your use of Intel Corporation's design tools, logic functions 
+and other software and tools, and any partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Intel Program License 
+Subscription Agreement, the Intel Quartus Prime License Agreement,
+the Intel FPGA IP License Agreement, or other applicable license
+agreement, including, without limitation, that your use is for
+the sole purpose of programming logic devices manufactured by
+Intel and sold by Intel or its authorized distributors.  Please
+refer to the applicable agreement for further details, at
+https://fpgasoftware.intel.com/eula.
+
+
+
++-------------------------------------------------------------------------------------+
+; Analysis & Synthesis Summary                                                        ;
++------------------------------------+------------------------------------------------+
+; Analysis & Synthesis Status        ; Successful - Tue Nov 28 01:37:38 2023          ;
+; Quartus Prime Version              ; 22.1std.1 Build 917 02/14/2023 SC Lite Edition ;
+; Revision Name                      ; LCD_Top                                        ;
+; Top-level Entity Name              ; LCD_Top                                        ;
+; Family                             ; Cyclone IV E                                   ;
+; Total logic elements               ; 431                                            ;
+;     Total combinational functions  ; 430                                            ;
+;     Dedicated logic registers      ; 116                                            ;
+; Total registers                    ; 116                                            ;
+; Total pins                         ; 21                                             ;
+; Total virtual pins                 ; 0                                              ;
+; Total memory bits                  ; 0                                              ;
+; Embedded Multiplier 9-bit elements ; 0                                              ;
+; Total PLLs                         ; 0                                              ;
++------------------------------------+------------------------------------------------+
+
+
++------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Settings                                                                              ;
++------------------------------------------------------------------+--------------------+--------------------+
+; Option                                                           ; Setting            ; Default Value      ;
++------------------------------------------------------------------+--------------------+--------------------+
+; Device                                                           ; EP4CE10E22C8       ;                    ;
+; Top-level entity name                                            ; LCD_Top            ; LCD_Top            ;
+; Family name                                                      ; Cyclone IV E       ; Cyclone V          ;
+; Use smart compilation                                            ; Off                ; Off                ;
+; Enable parallel Assembler and Timing Analyzer during compilation ; On                 ; On                 ;
+; Enable compact report table                                      ; Off                ; Off                ;
+; Restructure Multiplexers                                         ; Auto               ; Auto               ;
+; Create Debugging Nodes for IP Cores                              ; Off                ; Off                ;
+; Preserve fewer node names                                        ; On                 ; On                 ;
+; Intel FPGA IP Evaluation Mode                                    ; Enable             ; Enable             ;
+; Verilog Version                                                  ; Verilog_2001       ; Verilog_2001       ;
+; VHDL Version                                                     ; VHDL_1993          ; VHDL_1993          ;
+; State Machine Processing                                         ; Auto               ; Auto               ;
+; Safe State Machine                                               ; Off                ; Off                ;
+; Extract Verilog State Machines                                   ; On                 ; On                 ;
+; Extract VHDL State Machines                                      ; On                 ; On                 ;
+; Ignore Verilog initial constructs                                ; Off                ; Off                ;
+; Iteration limit for constant Verilog loops                       ; 5000               ; 5000               ;
+; Iteration limit for non-constant Verilog loops                   ; 250                ; 250                ;
+; Add Pass-Through Logic to Inferred RAMs                          ; On                 ; On                 ;
+; Infer RAMs from Raw Logic                                        ; On                 ; On                 ;
+; Parallel Synthesis                                               ; On                 ; On                 ;
+; DSP Block Balancing                                              ; Auto               ; Auto               ;
+; NOT Gate Push-Back                                               ; On                 ; On                 ;
+; Power-Up Don't Care                                              ; On                 ; On                 ;
+; Remove Redundant Logic Cells                                     ; Off                ; Off                ;
+; Remove Duplicate Registers                                       ; On                 ; On                 ;
+; Ignore CARRY Buffers                                             ; Off                ; Off                ;
+; Ignore CASCADE Buffers                                           ; Off                ; Off                ;
+; Ignore GLOBAL Buffers                                            ; Off                ; Off                ;
+; Ignore ROW GLOBAL Buffers                                        ; Off                ; Off                ;
+; Ignore LCELL Buffers                                             ; Off                ; Off                ;
+; Ignore SOFT Buffers                                              ; On                 ; On                 ;
+; Limit AHDL Integers to 32 Bits                                   ; Off                ; Off                ;
+; Optimization Technique                                           ; Balanced           ; Balanced           ;
+; Carry Chain Length                                               ; 70                 ; 70                 ;
+; Auto Carry Chains                                                ; On                 ; On                 ;
+; Auto Open-Drain Pins                                             ; On                 ; On                 ;
+; Perform WYSIWYG Primitive Resynthesis                            ; Off                ; Off                ;
+; Auto ROM Replacement                                             ; On                 ; On                 ;
+; Auto RAM Replacement                                             ; On                 ; On                 ;
+; Auto DSP Block Replacement                                       ; On                 ; On                 ;
+; Auto Shift Register Replacement                                  ; Auto               ; Auto               ;
+; Allow Shift Register Merging across Hierarchies                  ; Auto               ; Auto               ;
+; Auto Clock Enable Replacement                                    ; On                 ; On                 ;
+; Strict RAM Replacement                                           ; Off                ; Off                ;
+; Allow Synchronous Control Signals                                ; On                 ; On                 ;
+; Force Use of Synchronous Clear Signals                           ; Off                ; Off                ;
+; Auto RAM Block Balancing                                         ; On                 ; On                 ;
+; Auto RAM to Logic Cell Conversion                                ; Off                ; Off                ;
+; Auto Resource Sharing                                            ; Off                ; Off                ;
+; Allow Any RAM Size For Recognition                               ; Off                ; Off                ;
+; Allow Any ROM Size For Recognition                               ; Off                ; Off                ;
+; Allow Any Shift Register Size For Recognition                    ; Off                ; Off                ;
+; Use LogicLock Constraints during Resource Balancing              ; On                 ; On                 ;
+; Ignore translate_off and synthesis_off directives                ; Off                ; Off                ;
+; Timing-Driven Synthesis                                          ; On                 ; On                 ;
+; Report Parameter Settings                                        ; On                 ; On                 ;
+; Report Source Assignments                                        ; On                 ; On                 ;
+; Report Connectivity Checks                                       ; On                 ; On                 ;
+; Ignore Maximum Fan-Out Assignments                               ; Off                ; Off                ;
+; Synchronization Register Chain Length                            ; 2                  ; 2                  ;
+; Power Optimization During Synthesis                              ; Normal compilation ; Normal compilation ;
+; HDL message level                                                ; Level2             ; Level2             ;
+; Suppress Register Optimization Related Messages                  ; Off                ; Off                ;
+; Number of Removed Registers Reported in Synthesis Report         ; 5000               ; 5000               ;
+; Number of Swept Nodes Reported in Synthesis Report               ; 5000               ; 5000               ;
+; Number of Inverted Registers Reported in Synthesis Report        ; 100                ; 100                ;
+; Clock MUX Protection                                             ; On                 ; On                 ;
+; Auto Gated Clock Conversion                                      ; Off                ; Off                ;
+; Block Design Naming                                              ; Auto               ; Auto               ;
+; SDC constraint protection                                        ; Off                ; Off                ;
+; Synthesis Effort                                                 ; Auto               ; Auto               ;
+; Shift Register Replacement - Allow Asynchronous Clear Signal     ; On                 ; On                 ;
+; Pre-Mapping Resynthesis Optimization                             ; Off                ; Off                ;
+; Analysis & Synthesis Message Level                               ; Medium             ; Medium             ;
+; Disable Register Merging Across Hierarchies                      ; Auto               ; Auto               ;
+; Resource Aware Inference For Block RAM                           ; On                 ; On                 ;
++------------------------------------------------------------------+--------------------+--------------------+
+
+
++------------------------------------------+
+; Parallel Compilation                     ;
++----------------------------+-------------+
+; Processors                 ; Number      ;
++----------------------------+-------------+
+; Number detected on machine ; 2           ;
+; Maximum allowed            ; 2           ;
+;                            ;             ;
+; Average used               ; 1.00        ;
+; Maximum used               ; 2           ;
+;                            ;             ;
+; Usage by Processor         ; % Time Used ;
+;     Processor 1            ; 100.0%      ;
+;     Processor 2            ;   0.0%      ;
++----------------------------+-------------+
+
+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                               ;
++----------------------------------+-----------------+------------------------------+------------------------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type                    ; File Name with Absolute Path                                           ; Library ;
++----------------------------------+-----------------+------------------------------+------------------------------------------------------------------------+---------+
+; LCD_Top.v                        ; yes             ; Auto-Found Verilog HDL File  ; /home/samuelcruz/Proyectos Digital/Proyecto Final/LCD/LCD_Top.v        ;         ;
+; Reset_Delay.v                    ; yes             ; Auto-Found Verilog HDL File  ; /home/samuelcruz/Proyectos Digital/Proyecto Final/LCD/Reset_Delay.v    ;         ;
+; LEDs.v                           ; yes             ; Auto-Found Verilog HDL File  ; /home/samuelcruz/Proyectos Digital/Proyecto Final/LCD/LEDs.v           ;         ;
+; sensor.v                         ; yes             ; Auto-Found Verilog HDL File  ; /home/samuelcruz/Proyectos Digital/Proyecto Final/LCD/sensor.v         ;         ;
+; LCD_TEST.v                       ; yes             ; Auto-Found Verilog HDL File  ; /home/samuelcruz/Proyectos Digital/Proyecto Final/LCD/LCD_TEST.v       ;         ;
+; LCD_Controller.v                 ; yes             ; Auto-Found Verilog HDL File  ; /home/samuelcruz/Proyectos Digital/Proyecto Final/LCD/LCD_Controller.v ;         ;
++----------------------------------+-----------------+------------------------------+------------------------------------------------------------------------+---------+
+
+
++--------------------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary                  ;
++---------------------------------------------+----------------+
+; Resource                                    ; Usage          ;
++---------------------------------------------+----------------+
+; Estimated Total logic elements              ; 431            ;
+;                                             ;                ;
+; Total combinational functions               ; 430            ;
+; Logic element usage by number of LUT inputs ;                ;
+;     -- 4 input functions                    ; 198            ;
+;     -- 3 input functions                    ; 85             ;
+;     -- <=2 input functions                  ; 147            ;
+;                                             ;                ;
+; Logic elements by mode                      ;                ;
+;     -- normal mode                          ; 320            ;
+;     -- arithmetic mode                      ; 110            ;
+;                                             ;                ;
+; Total registers                             ; 116            ;
+;     -- Dedicated logic registers            ; 116            ;
+;     -- I/O registers                        ; 0              ;
+;                                             ;                ;
+; I/O pins                                    ; 21             ;
+;                                             ;                ;
+; Embedded Multiplier 9-bit elements          ; 0              ;
+;                                             ;                ;
+; Maximum fan-out node                        ; CLOCK_50~input ;
+; Maximum fan-out                             ; 116            ;
+; Total fan-out                               ; 1779           ;
+; Average fan-out                             ; 2.98           ;
++---------------------------------------------+----------------+
+
+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                                                                  ;
++--------------------------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+--------------------------------------------------------------------+--------------------+--------------+
+; Compilation Hierarchy Node                       ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                                                ; Entity Name        ; Library Name ;
++--------------------------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+--------------------------------------------------------------------+--------------------+--------------+
+; |LCD_Top                                         ; 430 (119)           ; 116 (0)                   ; 0           ; 0            ; 0       ; 0         ; 21   ; 0            ; |LCD_Top                                                           ; LCD_Top            ; work         ;
+;    |LCD_TEST:u5|                                 ; 201 (180)           ; 51 (38)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |LCD_Top|LCD_TEST:u5                                               ; LCD_TEST           ; work         ;
+;       |LCD_Controller:u0|                        ; 21 (21)             ; 13 (13)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |LCD_Top|LCD_TEST:u5|LCD_Controller:u0                             ; LCD_Controller     ; work         ;
+;    |LEDs:Integrado|                              ; 3 (3)               ; 3 (3)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |LCD_Top|LEDs:Integrado                                            ; LEDs               ; work         ;
+;    |Reset_Delay:r0|                              ; 27 (27)             ; 21 (21)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |LCD_Top|Reset_Delay:r0                                            ; Reset_Delay        ; work         ;
+;    |sensor:Distancia|                            ; 80 (0)              ; 41 (0)                    ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |LCD_Top|sensor:Distancia                                          ; sensor             ; work         ;
+;       |ContadorConEcho:ContadorConEcho_i1|       ; 20 (20)             ; 20 (20)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |LCD_Top|sensor:Distancia|ContadorConEcho:ContadorConEcho_i1       ; ContadorConEcho    ; work         ;
+;       |ContadorConTrigger:ContadorConTrigger_i0| ; 25 (25)             ; 21 (21)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |LCD_Top|sensor:Distancia|ContadorConTrigger:ContadorConTrigger_i0 ; ContadorConTrigger ; work         ;
+;       |ControlLed:ControlLed_i2|                 ; 35 (35)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |LCD_Top|sensor:Distancia|ControlLed:ControlLed_i2                 ; ControlLed         ; work         ;
++--------------------------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+--------------------------------------------------------------------+--------------------+--------------+
+Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
+
+
+Encoding Type:  One-Hot
++------------------------------------------------------------------------------------+
+; State Machine - |LCD_Top|LCD_TEST:u5|mLCD_ST                                       ;
++----------------+----------------+----------------+----------------+----------------+
+; Name           ; mLCD_ST.000011 ; mLCD_ST.000010 ; mLCD_ST.000001 ; mLCD_ST.000000 ;
++----------------+----------------+----------------+----------------+----------------+
+; mLCD_ST.000000 ; 0              ; 0              ; 0              ; 0              ;
+; mLCD_ST.000001 ; 0              ; 0              ; 1              ; 1              ;
+; mLCD_ST.000010 ; 0              ; 1              ; 0              ; 1              ;
+; mLCD_ST.000011 ; 1              ; 0              ; 0              ; 1              ;
++----------------+----------------+----------------+----------------+----------------+
+
+
+Encoding Type:  One-Hot
++-----------------------------------------------------------+
+; State Machine - |LCD_Top|LCD_TEST:u5|LCD_Controller:u0|ST ;
++-------+-------+-------+-------+---------------------------+
+; Name  ; ST.11 ; ST.10 ; ST.01 ; ST.00                     ;
++-------+-------+-------+-------+---------------------------+
+; ST.00 ; 0     ; 0     ; 0     ; 0                         ;
+; ST.01 ; 0     ; 0     ; 1     ; 1                         ;
+; ST.10 ; 0     ; 1     ; 0     ; 1                         ;
+; ST.11 ; 1     ; 0     ; 0     ; 1                         ;
++-------+-------+-------+-------+---------------------------+
+
+
++----------------------------------------------------------------------------------------------------+
+; User-Specified and Inferred Latches                                                                ;
++-----------------------------------------------------+---------------------+------------------------+
+; Latch Name                                          ; Latch Enable Signal ; Free of Timing Hazards ;
++-----------------------------------------------------+---------------------+------------------------+
+; sensor:Distancia|ControlLed:ControlLed_i2|led2      ; GND                 ; yes                    ;
+; sensor:Distancia|ControlLed:ControlLed_i2|led3      ; GND                 ; yes                    ;
+; sensor:Distancia|ControlLed:ControlLed_i2|led1      ; GND                 ; yes                    ;
+; Mostrar_10[6]                                       ; Equal0              ; yes                    ;
+; Mostrar_16[1]                                       ; Equal0              ; yes                    ;
+; Mostrar_12[4]                                       ; Equal0              ; yes                    ;
+; Mostrar_13[4]                                       ; GND                 ; yes                    ;
+; tiempo_espera[29]                                   ; tiempo_espera[29]   ; yes                    ;
+; tiempo_espera[28]                                   ; tiempo_espera[29]   ; yes                    ;
+; tiempo_espera[27]                                   ; tiempo_espera[29]   ; yes                    ;
+; tiempo_espera[26]                                   ; tiempo_espera[29]   ; yes                    ;
+; tiempo_espera[25]                                   ; tiempo_espera[29]   ; yes                    ;
+; tiempo_espera[24]                                   ; tiempo_espera[29]   ; yes                    ;
+; tiempo_espera[23]                                   ; tiempo_espera[29]   ; yes                    ;
+; tiempo_espera[22]                                   ; tiempo_espera[29]   ; yes                    ;
+; tiempo_espera[21]                                   ; tiempo_espera[29]   ; yes                    ;
+; tiempo_espera[20]                                   ; tiempo_espera[29]   ; yes                    ;
+; tiempo_espera[19]                                   ; tiempo_espera[29]   ; yes                    ;
+; tiempo_espera[18]                                   ; tiempo_espera[29]   ; yes                    ;
+; tiempo_espera[17]                                   ; tiempo_espera[29]   ; yes                    ;
+; tiempo_espera[16]                                   ; tiempo_espera[29]   ; yes                    ;
+; tiempo_espera[15]                                   ; tiempo_espera[29]   ; yes                    ;
+; tiempo_espera[14]                                   ; tiempo_espera[29]   ; yes                    ;
+; tiempo_espera[13]                                   ; tiempo_espera[29]   ; yes                    ;
+; tiempo_espera[12]                                   ; tiempo_espera[29]   ; yes                    ;
+; tiempo_espera[11]                                   ; tiempo_espera[29]   ; yes                    ;
+; tiempo_espera[10]                                   ; tiempo_espera[29]   ; yes                    ;
+; tiempo_espera[9]                                    ; tiempo_espera[29]   ; yes                    ;
+; tiempo_espera[8]                                    ; tiempo_espera[29]   ; yes                    ;
+; tiempo_espera[7]                                    ; tiempo_espera[29]   ; yes                    ;
+; tiempo_espera[6]                                    ; tiempo_espera[29]   ; yes                    ;
+; tiempo_espera[5]                                    ; tiempo_espera[29]   ; yes                    ;
+; tiempo_espera[4]                                    ; tiempo_espera[29]   ; yes                    ;
+; tiempo_espera[3]                                    ; tiempo_espera[29]   ; yes                    ;
+; tiempo_espera[2]                                    ; tiempo_espera[29]   ; yes                    ;
+; tiempo_espera[1]                                    ; tiempo_espera[29]   ; yes                    ;
+; tiempo_espera[0]                                    ; tiempo_espera[29]   ; yes                    ;
+; Number of user-specified and inferred latches = 37  ;                     ;                        ;
++-----------------------------------------------------+---------------------+------------------------+
+Note: All latches listed above may not be present at the end of synthesis due to various synthesis optimizations.
+
+
++------------------------------------------------------------+
+; Registers Removed During Synthesis                         ;
++---------------------------------------+--------------------+
+; Register name                         ; Reason for Removal ;
++---------------------------------------+--------------------+
+; LCD_TEST:u5|mLCD_ST~8                 ; Lost fanout        ;
+; LCD_TEST:u5|mLCD_ST~9                 ; Lost fanout        ;
+; LCD_TEST:u5|mLCD_ST~10                ; Lost fanout        ;
+; LCD_TEST:u5|mLCD_ST~11                ; Lost fanout        ;
+; LCD_TEST:u5|mLCD_ST~12                ; Lost fanout        ;
+; LCD_TEST:u5|mLCD_ST~13                ; Lost fanout        ;
+; LCD_TEST:u5|LCD_Controller:u0|ST~8    ; Lost fanout        ;
+; LCD_TEST:u5|LCD_Controller:u0|ST~9    ; Lost fanout        ;
+; Total Number of Removed Registers = 8 ;                    ;
++---------------------------------------+--------------------+
+
+
++------------------------------------------------------+
+; General Register Statistics                          ;
++----------------------------------------------+-------+
+; Statistic                                    ; Value ;
++----------------------------------------------+-------+
+; Total registers                              ; 116   ;
+; Number of registers using Synchronous Clear  ; 58    ;
+; Number of registers using Synchronous Load   ; 1     ;
+; Number of registers using Asynchronous Clear ; 51    ;
+; Number of registers using Asynchronous Load  ; 0     ;
+; Number of registers using Clock Enable       ; 61    ;
+; Number of registers using Preset             ; 0     ;
++----------------------------------------------+-------+
+
+
++------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                                             ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------------------------+
+; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                   ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------------------------+
+; 3:1                ; 2 bits    ; 4 LEs         ; 2 LEs                ; 2 LEs                  ; Yes        ; |LCD_Top|LCD_TEST:u5|LCD_Controller:u0|oDone ;
+; 6:1                ; 2 bits    ; 8 LEs         ; 6 LEs                ; 2 LEs                  ; No         ; |LCD_Top|LCD_TEST:u5|Selector2               ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------------------------+
+
+
++--------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: sensor:Distancia|ContadorConTrigger:ContadorConTrigger_i0 ;
++----------------+----------------------+----------------------------------------------------------------+
+; Parameter Name ; Value                ; Type                                                           ;
++----------------+----------------------+----------------------------------------------------------------+
+; limite         ; 01111010000100100000 ; Unsigned Binary                                                ;
++----------------+----------------------+----------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: sensor:Distancia|ControlLed:ControlLed_i2 ;
++----------------+----------------------+------------------------------------------------+
+; Parameter Name ; Value                ; Type                                           ;
++----------------+----------------------+------------------------------------------------+
+; L1             ; 00010101111110010000 ; Unsigned Binary                                ;
+; L1m            ; 00001110101001100000 ; Unsigned Binary                                ;
+; L2             ; 00001000100010111000 ; Unsigned Binary                                ;
+; L2m            ; 00000100111000100000 ; Unsigned Binary                                ;
+; L3             ; 00000100111000100000 ; Unsigned Binary                                ;
+; L3m            ; 00000000101110111000 ; Unsigned Binary                                ;
++----------------+----------------------+------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------+
+; Parameter Settings for User Entity Instance: LCD_TEST:u5 ;
++----------------+-------+---------------------------------+
+; Parameter Name ; Value ; Type                            ;
++----------------+-------+---------------------------------+
+; LCD_INTIAL     ; 0     ; Signed Integer                  ;
+; LCD_LINE1      ; 5     ; Signed Integer                  ;
+; LCD_CH_LINE    ; 21    ; Signed Integer                  ;
+; LCD_LINE2      ; 22    ; Signed Integer                  ;
+; LUT_SIZE       ; 67    ; Signed Integer                  ;
++----------------+-------+---------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: LCD_TEST:u5|LCD_Controller:u0 ;
++----------------+-------+---------------------------------------------------+
+; Parameter Name ; Value ; Type                                              ;
++----------------+-------+---------------------------------------------------+
+; CLK_Divide     ; 16    ; Signed Integer                                    ;
++----------------+-------+---------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------+
+; Port Connectivity Checks: "LCD_TEST:u5"             ;
++-------------------+-------+----------+--------------+
+; Port              ; Type  ; Severity ; Details      ;
++-------------------+-------+----------+--------------+
+; Mostrar_10[4..1]  ; Input ; Info     ; Stuck at GND ;
+; Mostrar_10[8]     ; Input ; Info     ; Stuck at VCC ;
+; Mostrar_10[7]     ; Input ; Info     ; Stuck at GND ;
+; Mostrar_11[1..0]  ; Input ; Info     ; Stuck at GND ;
+; Mostrar_11[8]     ; Input ; Info     ; Stuck at VCC ;
+; Mostrar_11[7]     ; Input ; Info     ; Stuck at GND ;
+; Mostrar_11[4]     ; Input ; Info     ; Stuck at GND ;
+; Mostrar_12[3..2]  ; Input ; Info     ; Stuck at GND ;
+; Mostrar_12[8]     ; Input ; Info     ; Stuck at VCC ;
+; Mostrar_12[7]     ; Input ; Info     ; Stuck at GND ;
+; Mostrar_13[8]     ; Input ; Info     ; Stuck at VCC ;
+; Mostrar_13[7]     ; Input ; Info     ; Stuck at GND ;
+; Mostrar_13[6]     ; Input ; Info     ; Stuck at VCC ;
+; Mostrar_13[5]     ; Input ; Info     ; Stuck at GND ;
+; Mostrar_14[5..4]  ; Input ; Info     ; Stuck at GND ;
+; Mostrar_14[8]     ; Input ; Info     ; Stuck at VCC ;
+; Mostrar_14[7]     ; Input ; Info     ; Stuck at GND ;
+; Mostrar_14[6]     ; Input ; Info     ; Stuck at VCC ;
+; Mostrar_14[3]     ; Input ; Info     ; Stuck at VCC ;
+; Mostrar_15[8]     ; Input ; Info     ; Stuck at VCC ;
+; Mostrar_15[7]     ; Input ; Info     ; Stuck at GND ;
+; Mostrar_16[8]     ; Input ; Info     ; Stuck at VCC ;
+; Mostrar_16[7]     ; Input ; Info     ; Stuck at GND ;
+; Mostrar_16[4]     ; Input ; Info     ; Stuck at GND ;
+; Mostrar_17[8]     ; Input ; Info     ; Stuck at VCC ;
+; Mostrar_17[7]     ; Input ; Info     ; Stuck at GND ;
+; Mostrar_17[0]     ; Input ; Info     ; Stuck at GND ;
+; Mostrar_18[8]     ; Input ; Info     ; Stuck at VCC ;
+; Mostrar_18[7]     ; Input ; Info     ; Stuck at GND ;
+; Mostrar_18[6]     ; Input ; Info     ; Stuck at VCC ;
+; Mostrar_18[5]     ; Input ; Info     ; Stuck at GND ;
+; Mostrar_18[3]     ; Input ; Info     ; Stuck at GND ;
+; Mostrar_19[8]     ; Input ; Info     ; Stuck at VCC ;
+; Mostrar_19[7]     ; Input ; Info     ; Stuck at GND ;
+; Mostrar_19[6]     ; Input ; Info     ; Stuck at VCC ;
+; Mostrar_19[5]     ; Input ; Info     ; Stuck at GND ;
+; Mostrar_19[1]     ; Input ; Info     ; Stuck at VCC ;
+; Mostrar_110[5..4] ; Input ; Info     ; Stuck at GND ;
+; Mostrar_110[8]    ; Input ; Info     ; Stuck at VCC ;
+; Mostrar_110[7]    ; Input ; Info     ; Stuck at GND ;
+; Mostrar_110[6]    ; Input ; Info     ; Stuck at VCC ;
+; Mostrar_111[8]    ; Input ; Info     ; Stuck at VCC ;
+; Mostrar_111[7]    ; Input ; Info     ; Stuck at GND ;
+; Mostrar_111[6]    ; Input ; Info     ; Stuck at VCC ;
+; Mostrar_111[5]    ; Input ; Info     ; Stuck at GND ;
+; Mostrar_112[8]    ; Input ; Info     ; Stuck at VCC ;
+; Mostrar_112[7]    ; Input ; Info     ; Stuck at GND ;
+; Mostrar_112[4]    ; Input ; Info     ; Stuck at GND ;
+; Mostrar_113[8]    ; Input ; Info     ; Stuck at VCC ;
+; Mostrar_113[7]    ; Input ; Info     ; Stuck at GND ;
+; Mostrar_113[4]    ; Input ; Info     ; Stuck at GND ;
+; Mostrar_113[0]    ; Input ; Info     ; Stuck at GND ;
+; Mostrar_114[1..0] ; Input ; Info     ; Stuck at GND ;
+; Mostrar_114[8]    ; Input ; Info     ; Stuck at VCC ;
+; Mostrar_114[7]    ; Input ; Info     ; Stuck at GND ;
+; Mostrar_114[3]    ; Input ; Info     ; Stuck at GND ;
+; Mostrar_115[4..3] ; Input ; Info     ; Stuck at GND ;
+; Mostrar_115[8]    ; Input ; Info     ; Stuck at VCC ;
+; Mostrar_115[7]    ; Input ; Info     ; Stuck at GND ;
+; Mostrar_115[1]    ; Input ; Info     ; Stuck at GND ;
+; Mostrar_20[3..2]  ; Input ; Info     ; Stuck at GND ;
+; Mostrar_20[8]     ; Input ; Info     ; Stuck at VCC ;
+; Mostrar_20[7]     ; Input ; Info     ; Stuck at GND ;
+; Mostrar_21[5..4]  ; Input ; Info     ; Stuck at GND ;
+; Mostrar_21[8]     ; Input ; Info     ; Stuck at VCC ;
+; Mostrar_21[7]     ; Input ; Info     ; Stuck at GND ;
+; Mostrar_21[6]     ; Input ; Info     ; Stuck at VCC ;
+; Mostrar_21[0]     ; Input ; Info     ; Stuck at VCC ;
+; Mostrar_22[8]     ; Input ; Info     ; Stuck at VCC ;
+; Mostrar_22[7]     ; Input ; Info     ; Stuck at GND ;
+; Mostrar_22[6]     ; Input ; Info     ; Stuck at VCC ;
+; Mostrar_22[5]     ; Input ; Info     ; Stuck at GND ;
+; Mostrar_23[5..4]  ; Input ; Info     ; Stuck at GND ;
+; Mostrar_23[8]     ; Input ; Info     ; Stuck at VCC ;
+; Mostrar_23[7]     ; Input ; Info     ; Stuck at GND ;
+; Mostrar_23[6]     ; Input ; Info     ; Stuck at VCC ;
+; Mostrar_24[8]     ; Input ; Info     ; Stuck at VCC ;
+; Mostrar_24[7]     ; Input ; Info     ; Stuck at GND ;
+; Mostrar_24[6]     ; Input ; Info     ; Stuck at VCC ;
+; Mostrar_24[5]     ; Input ; Info     ; Stuck at GND ;
+; Mostrar_24[0]     ; Input ; Info     ; Stuck at VCC ;
+; Mostrar_25[8]     ; Input ; Info     ; Stuck at VCC ;
+; Mostrar_25[7]     ; Input ; Info     ; Stuck at GND ;
+; Mostrar_26[8]     ; Input ; Info     ; Stuck at VCC ;
+; Mostrar_26[7]     ; Input ; Info     ; Stuck at GND ;
+; Mostrar_27[8]     ; Input ; Info     ; Stuck at VCC ;
+; Mostrar_27[7]     ; Input ; Info     ; Stuck at GND ;
+; Mostrar_28[8]     ; Input ; Info     ; Stuck at VCC ;
+; Mostrar_28[7]     ; Input ; Info     ; Stuck at GND ;
+; Mostrar_28[6]     ; Input ; Info     ; Stuck at VCC ;
+; Mostrar_28[5]     ; Input ; Info     ; Stuck at GND ;
+; Mostrar_29[8]     ; Input ; Info     ; Stuck at VCC ;
+; Mostrar_29[7]     ; Input ; Info     ; Stuck at GND ;
+; Mostrar_29[4]     ; Input ; Info     ; Stuck at GND ;
+; Mostrar_210[5..4] ; Input ; Info     ; Stuck at GND ;
+; Mostrar_210[8]    ; Input ; Info     ; Stuck at VCC ;
+; Mostrar_210[7]    ; Input ; Info     ; Stuck at GND ;
+; Mostrar_210[6]    ; Input ; Info     ; Stuck at VCC ;
+; Mostrar_211[5..3] ; Input ; Info     ; Stuck at GND ;
+; Mostrar_211[8]    ; Input ; Info     ; Stuck at VCC ;
+; Mostrar_211[7]    ; Input ; Info     ; Stuck at GND ;
+; Mostrar_211[6]    ; Input ; Info     ; Stuck at VCC ;
+; Mostrar_211[1]    ; Input ; Info     ; Stuck at GND ;
+; Mostrar_211[0]    ; Input ; Info     ; Stuck at VCC ;
+; Mostrar_212[8]    ; Input ; Info     ; Stuck at VCC ;
+; Mostrar_212[7]    ; Input ; Info     ; Stuck at GND ;
+; Mostrar_212[6]    ; Input ; Info     ; Stuck at VCC ;
+; Mostrar_212[5]    ; Input ; Info     ; Stuck at GND ;
+; Mostrar_213[5..4] ; Input ; Info     ; Stuck at GND ;
+; Mostrar_213[8]    ; Input ; Info     ; Stuck at VCC ;
+; Mostrar_213[7]    ; Input ; Info     ; Stuck at GND ;
+; Mostrar_213[6]    ; Input ; Info     ; Stuck at VCC ;
+; Mostrar_213[0]    ; Input ; Info     ; Stuck at VCC ;
+; Mostrar_214[8]    ; Input ; Info     ; Stuck at VCC ;
+; Mostrar_214[7]    ; Input ; Info     ; Stuck at GND ;
+; Mostrar_214[6]    ; Input ; Info     ; Stuck at VCC ;
+; Mostrar_214[5]    ; Input ; Info     ; Stuck at GND ;
+; Mostrar_214[3]    ; Input ; Info     ; Stuck at GND ;
+; Mostrar_214[0]    ; Input ; Info     ; Stuck at GND ;
+; Mostrar_215[8]    ; Input ; Info     ; Stuck at VCC ;
+; Mostrar_215[7]    ; Input ; Info     ; Stuck at GND ;
+; Mostrar_215[4]    ; Input ; Info     ; Stuck at GND ;
++-------------------+-------+----------+--------------+
+
+
++-----------------------------------------------------+
+; Post-Synthesis Netlist Statistics for Top Partition ;
++-----------------------+-----------------------------+
+; Type                  ; Count                       ;
++-----------------------+-----------------------------+
+; boundary_port         ; 21                          ;
+; cycloneiii_ff         ; 116                         ;
+;     CLR               ; 9                           ;
+;     ENA               ; 19                          ;
+;     ENA CLR           ; 24                          ;
+;     ENA CLR SCLR      ; 18                          ;
+;     SCLR              ; 40                          ;
+;     SLD               ; 1                           ;
+;     plain             ; 5                           ;
+; cycloneiii_io_obuf    ; 8                           ;
+; cycloneiii_lcell_comb ; 431                         ;
+;     arith             ; 110                         ;
+;         2 data inputs ; 108                         ;
+;         3 data inputs ; 2                           ;
+;     normal            ; 321                         ;
+;         0 data inputs ; 1                           ;
+;         1 data inputs ; 10                          ;
+;         2 data inputs ; 29                          ;
+;         3 data inputs ; 83                          ;
+;         4 data inputs ; 198                         ;
+;                       ;                             ;
+; Max LUT depth         ; 8.00                        ;
+; Average LUT depth     ; 3.97                        ;
++-----------------------+-----------------------------+
+
+
++-------------------------------+
+; Elapsed Time Per Partition    ;
++----------------+--------------+
+; Partition Name ; Elapsed Time ;
++----------------+--------------+
+; Top            ; 00:00:01     ;
++----------------+--------------+
+
+
++-------------------------------+
+; Analysis & Synthesis Messages ;
++-------------------------------+
+Info: *******************************************************************
+Info: Running Quartus Prime Analysis & Synthesis
+    Info: Version 22.1std.1 Build 917 02/14/2023 SC Lite Edition
+    Info: Processing started: Tue Nov 28 01:37:28 2023
+Info: Command: quartus_map --read_settings_files=on --write_settings_files=off LCD_Top -c LCD_Top
+Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
+Info (20030): Parallel compilation is enabled and will use 2 of the 2 processors detected
+Warning (12125): Using design file LCD_Top.v, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
+    Info (12023): Found entity 1: LCD_Top File: /home/samuelcruz/Proyectos Digital/Proyecto Final/LCD/LCD_Top.v Line: 2
+Info (12127): Elaborating entity "LCD_Top" for the top level hierarchy
+Warning (10235): Verilog HDL Always Construct warning at LCD_Top.v(79): variable "senal_distancia" is read inside the Always Construct but isn't in the Always Construct's Event Control File: /home/samuelcruz/Proyectos Digital/Proyecto Final/LCD/LCD_Top.v Line: 79
+Warning (10235): Verilog HDL Always Construct warning at LCD_Top.v(81): variable "tiempo_espera" is read inside the Always Construct but isn't in the Always Construct's Event Control File: /home/samuelcruz/Proyectos Digital/Proyecto Final/LCD/LCD_Top.v Line: 81
+Warning (10235): Verilog HDL Always Construct warning at LCD_Top.v(84): variable "senal_sonido" is read inside the Always Construct but isn't in the Always Construct's Event Control File: /home/samuelcruz/Proyectos Digital/Proyecto Final/LCD/LCD_Top.v Line: 84
+Warning (10235): Verilog HDL Always Construct warning at LCD_Top.v(86): variable "tiempo_espera" is read inside the Always Construct but isn't in the Always Construct's Event Control File: /home/samuelcruz/Proyectos Digital/Proyecto Final/LCD/LCD_Top.v Line: 86
+Warning (10230): Verilog HDL assignment warning at LCD_Top.v(86): truncated value with size 32 to match size of target (30) File: /home/samuelcruz/Proyectos Digital/Proyecto Final/LCD/LCD_Top.v Line: 86
+Warning (10235): Verilog HDL Always Construct warning at LCD_Top.v(87): variable "senal_alcohol" is read inside the Always Construct but isn't in the Always Construct's Event Control File: /home/samuelcruz/Proyectos Digital/Proyecto Final/LCD/LCD_Top.v Line: 87
+Warning (10235): Verilog HDL Always Construct warning at LCD_Top.v(99): variable "tiempo_espera" is read inside the Always Construct but isn't in the Always Construct's Event Control File: /home/samuelcruz/Proyectos Digital/Proyecto Final/LCD/LCD_Top.v Line: 99
+Warning (10235): Verilog HDL Always Construct warning at LCD_Top.v(101): variable "tiempo_espera" is read inside the Always Construct but isn't in the Always Construct's Event Control File: /home/samuelcruz/Proyectos Digital/Proyecto Final/LCD/LCD_Top.v Line: 101
+Warning (10230): Verilog HDL assignment warning at LCD_Top.v(101): truncated value with size 32 to match size of target (30) File: /home/samuelcruz/Proyectos Digital/Proyecto Final/LCD/LCD_Top.v Line: 101
+Warning (10235): Verilog HDL Always Construct warning at LCD_Top.v(115): variable "mensaje" is read inside the Always Construct but isn't in the Always Construct's Event Control File: /home/samuelcruz/Proyectos Digital/Proyecto Final/LCD/LCD_Top.v Line: 115
+Warning (10240): Verilog HDL Always Construct warning at LCD_Top.v(78): inferring latch(es) for variable "mensaje", which holds its previous value in one or more paths through the always construct File: /home/samuelcruz/Proyectos Digital/Proyecto Final/LCD/LCD_Top.v Line: 78
+Warning (10240): Verilog HDL Always Construct warning at LCD_Top.v(78): inferring latch(es) for variable "tiempo_espera", which holds its previous value in one or more paths through the always construct File: /home/samuelcruz/Proyectos Digital/Proyecto Final/LCD/LCD_Top.v Line: 78
+Info (10041): Inferred latch for "tiempo_espera[0]" at LCD_Top.v(78) File: /home/samuelcruz/Proyectos Digital/Proyecto Final/LCD/LCD_Top.v Line: 78
+Info (10041): Inferred latch for "tiempo_espera[1]" at LCD_Top.v(78) File: /home/samuelcruz/Proyectos Digital/Proyecto Final/LCD/LCD_Top.v Line: 78
+Info (10041): Inferred latch for "tiempo_espera[2]" at LCD_Top.v(78) File: /home/samuelcruz/Proyectos Digital/Proyecto Final/LCD/LCD_Top.v Line: 78
+Info (10041): Inferred latch for "tiempo_espera[3]" at LCD_Top.v(78) File: /home/samuelcruz/Proyectos Digital/Proyecto Final/LCD/LCD_Top.v Line: 78
+Info (10041): Inferred latch for "tiempo_espera[4]" at LCD_Top.v(78) File: /home/samuelcruz/Proyectos Digital/Proyecto Final/LCD/LCD_Top.v Line: 78
+Info (10041): Inferred latch for "tiempo_espera[5]" at LCD_Top.v(78) File: /home/samuelcruz/Proyectos Digital/Proyecto Final/LCD/LCD_Top.v Line: 78
+Info (10041): Inferred latch for "tiempo_espera[6]" at LCD_Top.v(78) File: /home/samuelcruz/Proyectos Digital/Proyecto Final/LCD/LCD_Top.v Line: 78
+Info (10041): Inferred latch for "tiempo_espera[7]" at LCD_Top.v(78) File: /home/samuelcruz/Proyectos Digital/Proyecto Final/LCD/LCD_Top.v Line: 78
+Info (10041): Inferred latch for "tiempo_espera[8]" at LCD_Top.v(78) File: /home/samuelcruz/Proyectos Digital/Proyecto Final/LCD/LCD_Top.v Line: 78
+Info (10041): Inferred latch for "tiempo_espera[9]" at LCD_Top.v(78) File: /home/samuelcruz/Proyectos Digital/Proyecto Final/LCD/LCD_Top.v Line: 78
+Info (10041): Inferred latch for "tiempo_espera[10]" at LCD_Top.v(78) File: /home/samuelcruz/Proyectos Digital/Proyecto Final/LCD/LCD_Top.v Line: 78
+Info (10041): Inferred latch for "tiempo_espera[11]" at LCD_Top.v(78) File: /home/samuelcruz/Proyectos Digital/Proyecto Final/LCD/LCD_Top.v Line: 78
+Info (10041): Inferred latch for "tiempo_espera[12]" at LCD_Top.v(78) File: /home/samuelcruz/Proyectos Digital/Proyecto Final/LCD/LCD_Top.v Line: 78
+Info (10041): Inferred latch for "tiempo_espera[13]" at LCD_Top.v(78) File: /home/samuelcruz/Proyectos Digital/Proyecto Final/LCD/LCD_Top.v Line: 78
+Info (10041): Inferred latch for "tiempo_espera[14]" at LCD_Top.v(78) File: /home/samuelcruz/Proyectos Digital/Proyecto Final/LCD/LCD_Top.v Line: 78
+Info (10041): Inferred latch for "tiempo_espera[15]" at LCD_Top.v(78) File: /home/samuelcruz/Proyectos Digital/Proyecto Final/LCD/LCD_Top.v Line: 78
+Info (10041): Inferred latch for "tiempo_espera[16]" at LCD_Top.v(78) File: /home/samuelcruz/Proyectos Digital/Proyecto Final/LCD/LCD_Top.v Line: 78
+Info (10041): Inferred latch for "tiempo_espera[17]" at LCD_Top.v(78) File: /home/samuelcruz/Proyectos Digital/Proyecto Final/LCD/LCD_Top.v Line: 78
+Info (10041): Inferred latch for "tiempo_espera[18]" at LCD_Top.v(78) File: /home/samuelcruz/Proyectos Digital/Proyecto Final/LCD/LCD_Top.v Line: 78
+Info (10041): Inferred latch for "tiempo_espera[19]" at LCD_Top.v(78) File: /home/samuelcruz/Proyectos Digital/Proyecto Final/LCD/LCD_Top.v Line: 78
+Info (10041): Inferred latch for "tiempo_espera[20]" at LCD_Top.v(78) File: /home/samuelcruz/Proyectos Digital/Proyecto Final/LCD/LCD_Top.v Line: 78
+Info (10041): Inferred latch for "tiempo_espera[21]" at LCD_Top.v(78) File: /home/samuelcruz/Proyectos Digital/Proyecto Final/LCD/LCD_Top.v Line: 78
+Info (10041): Inferred latch for "tiempo_espera[22]" at LCD_Top.v(78) File: /home/samuelcruz/Proyectos Digital/Proyecto Final/LCD/LCD_Top.v Line: 78
+Info (10041): Inferred latch for "tiempo_espera[23]" at LCD_Top.v(78) File: /home/samuelcruz/Proyectos Digital/Proyecto Final/LCD/LCD_Top.v Line: 78
+Info (10041): Inferred latch for "tiempo_espera[24]" at LCD_Top.v(78) File: /home/samuelcruz/Proyectos Digital/Proyecto Final/LCD/LCD_Top.v Line: 78
+Info (10041): Inferred latch for "tiempo_espera[25]" at LCD_Top.v(78) File: /home/samuelcruz/Proyectos Digital/Proyecto Final/LCD/LCD_Top.v Line: 78
+Info (10041): Inferred latch for "tiempo_espera[26]" at LCD_Top.v(78) File: /home/samuelcruz/Proyectos Digital/Proyecto Final/LCD/LCD_Top.v Line: 78
+Info (10041): Inferred latch for "tiempo_espera[27]" at LCD_Top.v(78) File: /home/samuelcruz/Proyectos Digital/Proyecto Final/LCD/LCD_Top.v Line: 78
+Info (10041): Inferred latch for "tiempo_espera[28]" at LCD_Top.v(78) File: /home/samuelcruz/Proyectos Digital/Proyecto Final/LCD/LCD_Top.v Line: 78
+Info (10041): Inferred latch for "tiempo_espera[29]" at LCD_Top.v(78) File: /home/samuelcruz/Proyectos Digital/Proyecto Final/LCD/LCD_Top.v Line: 78
+Info (10041): Inferred latch for "mensaje.100" at LCD_Top.v(78) File: /home/samuelcruz/Proyectos Digital/Proyecto Final/LCD/LCD_Top.v Line: 78
+Info (10041): Inferred latch for "mensaje.011" at LCD_Top.v(78) File: /home/samuelcruz/Proyectos Digital/Proyecto Final/LCD/LCD_Top.v Line: 78
+Info (10041): Inferred latch for "mensaje.010" at LCD_Top.v(78) File: /home/samuelcruz/Proyectos Digital/Proyecto Final/LCD/LCD_Top.v Line: 78
+Info (10041): Inferred latch for "mensaje.001" at LCD_Top.v(78) File: /home/samuelcruz/Proyectos Digital/Proyecto Final/LCD/LCD_Top.v Line: 78
+Info (10041): Inferred latch for "mensaje.000" at LCD_Top.v(78) File: /home/samuelcruz/Proyectos Digital/Proyecto Final/LCD/LCD_Top.v Line: 78
+Warning (12125): Using design file Reset_Delay.v, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
+    Info (12023): Found entity 1: Reset_Delay File: /home/samuelcruz/Proyectos Digital/Proyecto Final/LCD/Reset_Delay.v Line: 2
+Info (12128): Elaborating entity "Reset_Delay" for hierarchy "Reset_Delay:r0" File: /home/samuelcruz/Proyectos Digital/Proyecto Final/LCD/LCD_Top.v Line: 74
+Warning (10230): Verilog HDL assignment warning at Reset_Delay.v(11): truncated value with size 32 to match size of target (20) File: /home/samuelcruz/Proyectos Digital/Proyecto Final/LCD/Reset_Delay.v Line: 11
+Warning (12125): Using design file LEDs.v, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
+    Info (12023): Found entity 1: LEDs File: /home/samuelcruz/Proyectos Digital/Proyecto Final/LCD/LEDs.v Line: 1
+Info (12128): Elaborating entity "LEDs" for hierarchy "LEDs:Integrado" File: /home/samuelcruz/Proyectos Digital/Proyecto Final/LCD/LCD_Top.v Line: 75
+Warning (12125): Using design file sensor.v, which is not specified as a design file for the current project, but contains definitions for 4 design units and 4 entities in project
+    Info (12023): Found entity 1: ContadorConTrigger File: /home/samuelcruz/Proyectos Digital/Proyecto Final/LCD/sensor.v Line: 5
+    Info (12023): Found entity 2: ContadorConEcho File: /home/samuelcruz/Proyectos Digital/Proyecto Final/LCD/sensor.v Line: 24
+    Info (12023): Found entity 3: ControlLed File: /home/samuelcruz/Proyectos Digital/Proyecto Final/LCD/sensor.v Line: 43
+    Info (12023): Found entity 4: sensor File: /home/samuelcruz/Proyectos Digital/Proyecto Final/LCD/sensor.v Line: 85
+Info (12128): Elaborating entity "sensor" for hierarchy "sensor:Distancia" File: /home/samuelcruz/Proyectos Digital/Proyecto Final/LCD/LCD_Top.v Line: 76
+Info (12128): Elaborating entity "ContadorConTrigger" for hierarchy "sensor:Distancia|ContadorConTrigger:ContadorConTrigger_i0" File: /home/samuelcruz/Proyectos Digital/Proyecto Final/LCD/sensor.v Line: 98
+Warning (10230): Verilog HDL assignment warning at sensor.v(15): truncated value with size 32 to match size of target (20) File: /home/samuelcruz/Proyectos Digital/Proyecto Final/LCD/sensor.v Line: 15
+Info (12128): Elaborating entity "ContadorConEcho" for hierarchy "sensor:Distancia|ContadorConEcho:ContadorConEcho_i1" File: /home/samuelcruz/Proyectos Digital/Proyecto Final/LCD/sensor.v Line: 104
+Warning (10230): Verilog HDL assignment warning at sensor.v(34): truncated value with size 32 to match size of target (20) File: /home/samuelcruz/Proyectos Digital/Proyecto Final/LCD/sensor.v Line: 34
+Info (12128): Elaborating entity "ControlLed" for hierarchy "sensor:Distancia|ControlLed:ControlLed_i2" File: /home/samuelcruz/Proyectos Digital/Proyecto Final/LCD/sensor.v Line: 112
+Warning (10240): Verilog HDL Always Construct warning at sensor.v(60): inferring latch(es) for variable "led1", which holds its previous value in one or more paths through the always construct File: /home/samuelcruz/Proyectos Digital/Proyecto Final/LCD/sensor.v Line: 60
+Warning (10240): Verilog HDL Always Construct warning at sensor.v(60): inferring latch(es) for variable "led2", which holds its previous value in one or more paths through the always construct File: /home/samuelcruz/Proyectos Digital/Proyecto Final/LCD/sensor.v Line: 60
+Warning (10240): Verilog HDL Always Construct warning at sensor.v(60): inferring latch(es) for variable "led3", which holds its previous value in one or more paths through the always construct File: /home/samuelcruz/Proyectos Digital/Proyecto Final/LCD/sensor.v Line: 60
+Info (10041): Inferred latch for "led3" at sensor.v(60) File: /home/samuelcruz/Proyectos Digital/Proyecto Final/LCD/sensor.v Line: 60
+Info (10041): Inferred latch for "led2" at sensor.v(60) File: /home/samuelcruz/Proyectos Digital/Proyecto Final/LCD/sensor.v Line: 60
+Info (10041): Inferred latch for "led1" at sensor.v(60) File: /home/samuelcruz/Proyectos Digital/Proyecto Final/LCD/sensor.v Line: 60
+Warning (10229): Verilog HDL Expression warning at LCD_TEST.v(125): truncated literal to match 18 bits File: /home/samuelcruz/Proyectos Digital/Proyecto Final/LCD/LCD_TEST.v Line: 125
+Warning (12125): Using design file LCD_TEST.v, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
+    Info (12023): Found entity 1: LCD_TEST File: /home/samuelcruz/Proyectos Digital/Proyecto Final/LCD/LCD_TEST.v Line: 2
+Info (12128): Elaborating entity "LCD_TEST" for hierarchy "LCD_TEST:u5" File: /home/samuelcruz/Proyectos Digital/Proyecto Final/LCD/LCD_Top.v Line: 336
+Warning (10230): Verilog HDL assignment warning at LCD_TEST.v(126): truncated value with size 32 to match size of target (18) File: /home/samuelcruz/Proyectos Digital/Proyecto Final/LCD/LCD_TEST.v Line: 126
+Warning (10230): Verilog HDL assignment warning at LCD_TEST.v(134): truncated value with size 32 to match size of target (6) File: /home/samuelcruz/Proyectos Digital/Proyecto Final/LCD/LCD_TEST.v Line: 134
+Warning (12125): Using design file LCD_Controller.v, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
+    Info (12023): Found entity 1: LCD_Controller File: /home/samuelcruz/Proyectos Digital/Proyecto Final/LCD/LCD_Controller.v Line: 1
+Info (12128): Elaborating entity "LCD_Controller" for hierarchy "LCD_TEST:u5|LCD_Controller:u0" File: /home/samuelcruz/Proyectos Digital/Proyecto Final/LCD/LCD_TEST.v Line: 230
+Warning (10230): Verilog HDL assignment warning at LCD_Controller.v(69): truncated value with size 32 to match size of target (5) File: /home/samuelcruz/Proyectos Digital/Proyecto Final/LCD/LCD_Controller.v Line: 69
+Warning (13034): The following nodes have both tri-state and non-tri-state drivers
+    Warning (13035): Inserted always-enabled tri-state buffer between "LCD_DATA[0]" and its non-tri-state driver. File: /home/samuelcruz/Proyectos Digital/Proyecto Final/LCD/LCD_Top.v Line: 54
+    Warning (13035): Inserted always-enabled tri-state buffer between "LCD_DATA[1]" and its non-tri-state driver. File: /home/samuelcruz/Proyectos Digital/Proyecto Final/LCD/LCD_Top.v Line: 54
+    Warning (13035): Inserted always-enabled tri-state buffer between "LCD_DATA[2]" and its non-tri-state driver. File: /home/samuelcruz/Proyectos Digital/Proyecto Final/LCD/LCD_Top.v Line: 54
+    Warning (13035): Inserted always-enabled tri-state buffer between "LCD_DATA[3]" and its non-tri-state driver. File: /home/samuelcruz/Proyectos Digital/Proyecto Final/LCD/LCD_Top.v Line: 54
+    Warning (13035): Inserted always-enabled tri-state buffer between "LCD_DATA[4]" and its non-tri-state driver. File: /home/samuelcruz/Proyectos Digital/Proyecto Final/LCD/LCD_Top.v Line: 54
+    Warning (13035): Inserted always-enabled tri-state buffer between "LCD_DATA[5]" and its non-tri-state driver. File: /home/samuelcruz/Proyectos Digital/Proyecto Final/LCD/LCD_Top.v Line: 54
+    Warning (13035): Inserted always-enabled tri-state buffer between "LCD_DATA[6]" and its non-tri-state driver. File: /home/samuelcruz/Proyectos Digital/Proyecto Final/LCD/LCD_Top.v Line: 54
+    Warning (13035): Inserted always-enabled tri-state buffer between "LCD_DATA[7]" and its non-tri-state driver. File: /home/samuelcruz/Proyectos Digital/Proyecto Final/LCD/LCD_Top.v Line: 54
+Warning (13012): Latch tiempo_espera[29] has unsafe behavior File: /home/samuelcruz/Proyectos Digital/Proyecto Final/LCD/LCD_Top.v Line: 78
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal tiempo_espera[29] File: /home/samuelcruz/Proyectos Digital/Proyecto Final/LCD/LCD_Top.v Line: 78
+Warning (13012): Latch tiempo_espera[28] has unsafe behavior File: /home/samuelcruz/Proyectos Digital/Proyecto Final/LCD/LCD_Top.v Line: 78
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal tiempo_espera[29] File: /home/samuelcruz/Proyectos Digital/Proyecto Final/LCD/LCD_Top.v Line: 78
+Warning (13012): Latch tiempo_espera[27] has unsafe behavior File: /home/samuelcruz/Proyectos Digital/Proyecto Final/LCD/LCD_Top.v Line: 78
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal tiempo_espera[29] File: /home/samuelcruz/Proyectos Digital/Proyecto Final/LCD/LCD_Top.v Line: 78
+Warning (13012): Latch tiempo_espera[26] has unsafe behavior File: /home/samuelcruz/Proyectos Digital/Proyecto Final/LCD/LCD_Top.v Line: 78
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal tiempo_espera[29] File: /home/samuelcruz/Proyectos Digital/Proyecto Final/LCD/LCD_Top.v Line: 78
+Warning (13012): Latch tiempo_espera[25] has unsafe behavior File: /home/samuelcruz/Proyectos Digital/Proyecto Final/LCD/LCD_Top.v Line: 78
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal tiempo_espera[29] File: /home/samuelcruz/Proyectos Digital/Proyecto Final/LCD/LCD_Top.v Line: 78
+Warning (13012): Latch tiempo_espera[24] has unsafe behavior File: /home/samuelcruz/Proyectos Digital/Proyecto Final/LCD/LCD_Top.v Line: 78
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal tiempo_espera[29] File: /home/samuelcruz/Proyectos Digital/Proyecto Final/LCD/LCD_Top.v Line: 78
+Warning (13012): Latch tiempo_espera[23] has unsafe behavior File: /home/samuelcruz/Proyectos Digital/Proyecto Final/LCD/LCD_Top.v Line: 78
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal tiempo_espera[29] File: /home/samuelcruz/Proyectos Digital/Proyecto Final/LCD/LCD_Top.v Line: 78
+Warning (13012): Latch tiempo_espera[22] has unsafe behavior File: /home/samuelcruz/Proyectos Digital/Proyecto Final/LCD/LCD_Top.v Line: 78
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal tiempo_espera[29] File: /home/samuelcruz/Proyectos Digital/Proyecto Final/LCD/LCD_Top.v Line: 78
+Warning (13012): Latch tiempo_espera[21] has unsafe behavior File: /home/samuelcruz/Proyectos Digital/Proyecto Final/LCD/LCD_Top.v Line: 78
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal tiempo_espera[29] File: /home/samuelcruz/Proyectos Digital/Proyecto Final/LCD/LCD_Top.v Line: 78
+Warning (13012): Latch tiempo_espera[20] has unsafe behavior File: /home/samuelcruz/Proyectos Digital/Proyecto Final/LCD/LCD_Top.v Line: 78
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal tiempo_espera[29] File: /home/samuelcruz/Proyectos Digital/Proyecto Final/LCD/LCD_Top.v Line: 78
+Warning (13012): Latch tiempo_espera[19] has unsafe behavior File: /home/samuelcruz/Proyectos Digital/Proyecto Final/LCD/LCD_Top.v Line: 78
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal tiempo_espera[29] File: /home/samuelcruz/Proyectos Digital/Proyecto Final/LCD/LCD_Top.v Line: 78
+Warning (13012): Latch tiempo_espera[18] has unsafe behavior File: /home/samuelcruz/Proyectos Digital/Proyecto Final/LCD/LCD_Top.v Line: 78
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal tiempo_espera[29] File: /home/samuelcruz/Proyectos Digital/Proyecto Final/LCD/LCD_Top.v Line: 78
+Warning (13012): Latch tiempo_espera[17] has unsafe behavior File: /home/samuelcruz/Proyectos Digital/Proyecto Final/LCD/LCD_Top.v Line: 78
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal tiempo_espera[29] File: /home/samuelcruz/Proyectos Digital/Proyecto Final/LCD/LCD_Top.v Line: 78
+Warning (13012): Latch tiempo_espera[16] has unsafe behavior File: /home/samuelcruz/Proyectos Digital/Proyecto Final/LCD/LCD_Top.v Line: 78
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal tiempo_espera[29] File: /home/samuelcruz/Proyectos Digital/Proyecto Final/LCD/LCD_Top.v Line: 78
+Warning (13012): Latch tiempo_espera[15] has unsafe behavior File: /home/samuelcruz/Proyectos Digital/Proyecto Final/LCD/LCD_Top.v Line: 78
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal tiempo_espera[29] File: /home/samuelcruz/Proyectos Digital/Proyecto Final/LCD/LCD_Top.v Line: 78
+Warning (13012): Latch tiempo_espera[14] has unsafe behavior File: /home/samuelcruz/Proyectos Digital/Proyecto Final/LCD/LCD_Top.v Line: 78
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal tiempo_espera[29] File: /home/samuelcruz/Proyectos Digital/Proyecto Final/LCD/LCD_Top.v Line: 78
+Warning (13012): Latch tiempo_espera[13] has unsafe behavior File: /home/samuelcruz/Proyectos Digital/Proyecto Final/LCD/LCD_Top.v Line: 78
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal tiempo_espera[29] File: /home/samuelcruz/Proyectos Digital/Proyecto Final/LCD/LCD_Top.v Line: 78
+Warning (13012): Latch tiempo_espera[12] has unsafe behavior File: /home/samuelcruz/Proyectos Digital/Proyecto Final/LCD/LCD_Top.v Line: 78
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal tiempo_espera[29] File: /home/samuelcruz/Proyectos Digital/Proyecto Final/LCD/LCD_Top.v Line: 78
+Warning (13012): Latch tiempo_espera[11] has unsafe behavior File: /home/samuelcruz/Proyectos Digital/Proyecto Final/LCD/LCD_Top.v Line: 78
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal tiempo_espera[29] File: /home/samuelcruz/Proyectos Digital/Proyecto Final/LCD/LCD_Top.v Line: 78
+Warning (13012): Latch tiempo_espera[10] has unsafe behavior File: /home/samuelcruz/Proyectos Digital/Proyecto Final/LCD/LCD_Top.v Line: 78
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal tiempo_espera[29] File: /home/samuelcruz/Proyectos Digital/Proyecto Final/LCD/LCD_Top.v Line: 78
+Warning (13012): Latch tiempo_espera[9] has unsafe behavior File: /home/samuelcruz/Proyectos Digital/Proyecto Final/LCD/LCD_Top.v Line: 78
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal tiempo_espera[29] File: /home/samuelcruz/Proyectos Digital/Proyecto Final/LCD/LCD_Top.v Line: 78
+Warning (13012): Latch tiempo_espera[8] has unsafe behavior File: /home/samuelcruz/Proyectos Digital/Proyecto Final/LCD/LCD_Top.v Line: 78
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal tiempo_espera[29] File: /home/samuelcruz/Proyectos Digital/Proyecto Final/LCD/LCD_Top.v Line: 78
+Warning (13012): Latch tiempo_espera[7] has unsafe behavior File: /home/samuelcruz/Proyectos Digital/Proyecto Final/LCD/LCD_Top.v Line: 78
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal tiempo_espera[29] File: /home/samuelcruz/Proyectos Digital/Proyecto Final/LCD/LCD_Top.v Line: 78
+Warning (13012): Latch tiempo_espera[6] has unsafe behavior File: /home/samuelcruz/Proyectos Digital/Proyecto Final/LCD/LCD_Top.v Line: 78
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal tiempo_espera[29] File: /home/samuelcruz/Proyectos Digital/Proyecto Final/LCD/LCD_Top.v Line: 78
+Warning (13012): Latch tiempo_espera[5] has unsafe behavior File: /home/samuelcruz/Proyectos Digital/Proyecto Final/LCD/LCD_Top.v Line: 78
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal tiempo_espera[29] File: /home/samuelcruz/Proyectos Digital/Proyecto Final/LCD/LCD_Top.v Line: 78
+Warning (13012): Latch tiempo_espera[4] has unsafe behavior File: /home/samuelcruz/Proyectos Digital/Proyecto Final/LCD/LCD_Top.v Line: 78
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal tiempo_espera[29] File: /home/samuelcruz/Proyectos Digital/Proyecto Final/LCD/LCD_Top.v Line: 78
+Warning (13012): Latch tiempo_espera[3] has unsafe behavior File: /home/samuelcruz/Proyectos Digital/Proyecto Final/LCD/LCD_Top.v Line: 78
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal tiempo_espera[29] File: /home/samuelcruz/Proyectos Digital/Proyecto Final/LCD/LCD_Top.v Line: 78
+Warning (13012): Latch tiempo_espera[2] has unsafe behavior File: /home/samuelcruz/Proyectos Digital/Proyecto Final/LCD/LCD_Top.v Line: 78
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal tiempo_espera[29] File: /home/samuelcruz/Proyectos Digital/Proyecto Final/LCD/LCD_Top.v Line: 78
+Warning (13012): Latch tiempo_espera[1] has unsafe behavior File: /home/samuelcruz/Proyectos Digital/Proyecto Final/LCD/LCD_Top.v Line: 78
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal tiempo_espera[29] File: /home/samuelcruz/Proyectos Digital/Proyecto Final/LCD/LCD_Top.v Line: 78
+Warning (13012): Latch tiempo_espera[0] has unsafe behavior File: /home/samuelcruz/Proyectos Digital/Proyecto Final/LCD/LCD_Top.v Line: 78
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal tiempo_espera[29] File: /home/samuelcruz/Proyectos Digital/Proyecto Final/LCD/LCD_Top.v Line: 78
+Warning (13009): TRI or OPNDRN buffers permanently enabled
+    Warning (13010): Node "LCD_DATA[0]~synth" File: /home/samuelcruz/Proyectos Digital/Proyecto Final/LCD/LCD_Top.v Line: 54
+    Warning (13010): Node "LCD_DATA[1]~synth" File: /home/samuelcruz/Proyectos Digital/Proyecto Final/LCD/LCD_Top.v Line: 54
+    Warning (13010): Node "LCD_DATA[2]~synth" File: /home/samuelcruz/Proyectos Digital/Proyecto Final/LCD/LCD_Top.v Line: 54
+    Warning (13010): Node "LCD_DATA[3]~synth" File: /home/samuelcruz/Proyectos Digital/Proyecto Final/LCD/LCD_Top.v Line: 54
+    Warning (13010): Node "LCD_DATA[4]~synth" File: /home/samuelcruz/Proyectos Digital/Proyecto Final/LCD/LCD_Top.v Line: 54
+    Warning (13010): Node "LCD_DATA[5]~synth" File: /home/samuelcruz/Proyectos Digital/Proyecto Final/LCD/LCD_Top.v Line: 54
+    Warning (13010): Node "LCD_DATA[6]~synth" File: /home/samuelcruz/Proyectos Digital/Proyecto Final/LCD/LCD_Top.v Line: 54
+    Warning (13010): Node "LCD_DATA[7]~synth" File: /home/samuelcruz/Proyectos Digital/Proyecto Final/LCD/LCD_Top.v Line: 54
+Warning (13024): Output pins are stuck at VCC or GND
+    Warning (13410): Pin "LCD_RW" is stuck at GND File: /home/samuelcruz/Proyectos Digital/Proyecto Final/LCD/LCD_Top.v Line: 64
+Info (286030): Timing-Driven Synthesis is running
+Info (17049): 8 registers lost all their fanouts during netlist optimizations.
+Info (144001): Generated suppressed messages file /home/samuelcruz/Proyectos Digital/Proyecto Final/LCD/output_files/LCD_Top.map.smsg
+Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
+    Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
+Info (21057): Implemented 454 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 4 input pins
+    Info (21059): Implemented 9 output pins
+    Info (21060): Implemented 8 bidirectional pins
+    Info (21061): Implemented 433 logic cells
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 109 warnings
+    Info: Peak virtual memory: 382 megabytes
+    Info: Processing ended: Tue Nov 28 01:37:38 2023
+    Info: Elapsed time: 00:00:10
+    Info: Total CPU time (on all processors): 00:00:13
+
+
++------------------------------------------+
+; Analysis & Synthesis Suppressed Messages ;
++------------------------------------------+
+The suppressed messages can be found in /home/samuelcruz/Proyectos Digital/Proyecto Final/LCD/output_files/LCD_Top.map.smsg.
+
+
