@@ -105,16 +105,16 @@ Ofrecer una herramienta para tratar de reducir la cantidad de siniestros viales 
 
 
 ## Presupuesto
-|      Elemento                       |   Precio    |
-| :---------------------------------: | :---------: |
-|            FPGA                     |  \$679.058  |
-|          Sensor MQ3                 |  \$13.000   |
-|        Breadboard                   |  \$58.806   |
-| Breadboard jumper wires             |  \$23.043   |
-|            LCD i2c                  |  \$19.000   |
-|               Relex                  |  \$45.225   |
-|         Sensor HC-SR04               |  \$14.000   |
-|            **Total**                 | **\$ 852.132** |
+| Elemento                             | Precio      |
+| ------------------------------------ | ----------- |
+| FPGA                                 | \$679.058   |
+| Sensor MQ3| \$13.000 |
+| Breadboard                      | \$58.806 |
+| Breadboard jumper wires           | \$23.043  |
+| LCD i2c                    | \$19.000     |
+| Relex          | \$45.225    |
+| Sensor HC-SR04            | \$14.000    |
+| **Total**                            | **\$ 852.132** |
 
 
 ## Esquemas
