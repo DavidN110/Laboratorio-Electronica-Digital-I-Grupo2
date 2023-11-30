@@ -221,6 +221,11 @@ top
 <p align="center">
    <img src="../Proyecto/imagenes/foto5.jpg" alt="Texto alternativo" width="450"><br>  
 
+## Simulacion
+
+<p align="center">
+   <img src="../Proyecto/imagenes/simulacion.jpg" alt="Texto alternativo" width="450"><br>  
+
 ## Conclusiones
 
 El proyecto realizado permite constatar y cumplir los objetivos tratados con fé de que esta propuesta cumpla la función de ser una opción que apoye la disminución de los sinestros viales, mediante la implementación de tegnología y sensores que prueben la sobriedad del piloto. Se proporciona un presupuesto detallado con los elementos necesarios para la implementación del proyecto que incluye componentes como FPGA, sensores, LCD, relé, entre otros. Los esquemas y las imágenes contribuyen a la comprensión visual de la solución propuesta. 
