@@ -121,13 +121,12 @@ Ofrecer una herramienta para tratar de reducir la cantidad de siniestros viales 
 
 
 ## Esquemas
-
+Proyecto visto como caja negra.  
 <p align="center">
-   <img src="../Proyecto/imagenes/maquina.png" alt="Texto alternativo" width="1000"><br>
-Proyecto visto como caja negra.
-<p align="center">
-   <img src="../Proyecto/imagenes/Diagrama en blanco (1).png" alt="Texto alternativo" width="1000"><br>
+   <img src="../Proyecto/imagenes/maquina.png" alt="Texto alternativo" width="1000"><br>  
 ASM del proyecto.  
+<p align="center">
+   <img src="../Proyecto/imagenes/Diagrama en blanco (1).png" alt="Texto alternativo" width="1000"><br>  
   
 ## Marco-Teórico
 
@@ -189,28 +188,28 @@ Tiene una frecuencia de 50Mhz y es un dispositivo lógico programable desarrolla
 ## RTL's
 <p align="center">ContadorConEcho
 <p align="center">
-  <img src="../Proyecto/imagenes/ContadorConEcho.png" alt="Texto alternativo" width="450"><br>
+  <img src="../Proyecto/imagenes/ContadorConEcho.png" alt="Texto alternativo" width="1000"><br>
 ContadorConTrigger
 <p align="center">
-   <img src="../Proyecto/imagenes/ContadorConTrigger.png" alt="Texto alternativo" width="450"><br>
+   <img src="../Proyecto/imagenes/ContadorConTrigger.png" alt="Texto alternativo" width="1000"><br>
 ControlLed
 <p align="center">
-   <img src="../Proyecto/imagenes/ControlLed.png" alt="Texto alternativo" width="450"><br>
+   <img src="../Proyecto/imagenes/ControlLed.png" alt="Texto alternativo" width="1000"><br>
 LCD_Controller
 <p align="center">
-   <img src="../Proyecto/imagenes/LCD_Controller.png" alt="Texto alternativo" width="450"><br>
+   <img src="../Proyecto/imagenes/LCD_Controller.png" alt="Texto alternativo" width="1000"><br>
 LED´s
 <p align="center">
-   <img src="../Proyecto/imagenes/LEDs.png" alt="Texto alternativo" width="450"><br>
+   <img src="../Proyecto/imagenes/LEDs.png" alt="Texto alternativo" width="1000"><br>
 Reset_Delay
 <p align="center">
-   <img src="../Proyecto/imagenes/Reset_Delay.png" alt="Texto alternativo" width="450"><br>
+   <img src="../Proyecto/imagenes/Reset_Delay.png" alt="Texto alternativo" width="1000"><br>
 Sonido
 <p align="center">
-   <img src="../Proyecto/imagenes/Sonido.png" alt="Texto alternativo" width="450"><br>
+   <img src="../Proyecto/imagenes/Sonido.png" alt="Texto alternativo" width="1000"><br>
 top
 <p align="center">
-   <img src="../Proyecto/imagenes/top.png" alt="Texto alternativo" width="450"><br>  
+   <img src="../Proyecto/imagenes/top.png" alt="Texto alternativo" width="1000"><br>  
 
 ## Montaje
 <p align="center">
@@ -227,9 +226,9 @@ top
 ## Simulacion
 
 <p align="center">
-   <img src="../Proyecto/imagenes/simulacion.jpg" alt="Texto alternativo" width="450"><br>  
+   <img src="../Proyecto/imagenes/simulacion.jpg" alt="Texto alternativo" width="1000"><br>  
 <p align="center">
-   <img src="../Proyecto/imagenes/S1.png" alt="Texto alternativo" width="450"><br>  
+   <img src="../Proyecto/imagenes/S1.png" alt="Texto alternativo" width="1000"><br>  
 
 ## Conclusiones
 
