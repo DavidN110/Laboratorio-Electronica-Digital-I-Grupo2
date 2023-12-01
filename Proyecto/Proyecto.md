@@ -228,6 +228,8 @@ top
 
 <p align="center">
    <img src="../Proyecto/imagenes/simulacion.jpg" alt="Texto alternativo" width="450"><br>  
+<p align="center">
+   <img src="../Proyecto/imagenes/S1.png" alt="Texto alternativo" width="450"><br>  
 
 ## Conclusiones
 
