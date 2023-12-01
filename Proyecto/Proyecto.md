@@ -222,9 +222,10 @@ top
    <img src="../Proyecto/imagenes/foto5.jpg" alt="Texto alternativo" width="450"><br>  
 
 ## Simulacion
-
+**Simulación de Top**
 <p align="center">
    <img src="../Proyecto/imagenes/simulacion.jpg" alt="Texto alternativo" width="1000"><br>  
+**Simulación de Hc-sr04**
 <p align="center">
    <img src="../Proyecto/imagenes/S1.png" alt="Texto alternativo" width="1000"><br>  
 
