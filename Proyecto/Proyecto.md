@@ -123,10 +123,10 @@ Ofrecer una herramienta para tratar de reducir la cantidad de siniestros viales 
 ## Esquemas
 
 <p align="center">
-   <img src="../Proyecto/imagenes/maquina.png" alt="Texto alternativo" width="450"><br>
+   <img src="../Proyecto/imagenes/maquina.png" alt="Texto alternativo" width="1000"><br>
 Proyecto visto como caja negra.
 <p align="center">
-   <img src="../Proyecto/imagenes/Diagrama en blanco (1).png" alt="Texto alternativo" width="450"><br>
+   <img src="../Proyecto/imagenes/Diagrama en blanco (1).png" alt="Texto alternativo" width="1000"><br>
 ASM del proyecto.  
   
 ## Marco-Teórico
