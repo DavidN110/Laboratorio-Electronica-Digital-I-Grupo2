@@ -236,6 +236,9 @@ El proyecto realizado permite constatar y cumplir los objetivos tratados con fé
 
 Para mejorar el prototipo a versiones posteriores, se plantea introducir sistemas más precisos de detección de alcohol y sensor de proximidad, se podría compaginar aun más la idea para que este dispositivo se incluya dentro de los sistemas del carro como activa acción en busca de la reducción de los siniestros viales.
 
+Video de funcionamiento 
+https://www.youtube.com/watch?v=WXJvglPjBSM&ab_channel=SantiagoAlejandroOchoa
+
 ## Referencias
 
 [1] [Datasheet del Sensor MQ-3](https://www.sparkfun.com/datasheets/Sensors/MQ-3.pdf)
