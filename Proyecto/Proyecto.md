@@ -215,8 +215,6 @@ top
 <p align="center">
    <img src="../Proyecto/imagenes/foto1.jpg" alt="Texto alternativo" width="450"><br>
 <p align="center">
-   <img src="../Proyecto/imagenes/foto2.jpg" alt="Texto alternativo" width="450"><br>
-<p align="center">
    <img src="../Proyecto/imagenes/foto3.jpg" alt="Texto alternativo" width="450"><br>
 <p align="center">
    <img src="../Proyecto/imagenes/foto4.jpg" alt="Texto alternativo" width="450"><br>
