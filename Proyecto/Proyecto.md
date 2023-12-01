@@ -186,7 +186,7 @@ Tiene una frecuencia de 50Mhz y es un dispositivo lógico programable desarrolla
 <p align="center">
    <img src="../Proyecto/imagenes/fpga.jpg" alt="Texto alternativo" width="450"><br>
   
-## RTL
+## RTL´s
 <p align="center">ContadorConEcho
 <p align="center">
   <img src="../Proyecto/imagenes/ContadorConEcho.png" alt="Texto alternativo" width="1000"><br>
