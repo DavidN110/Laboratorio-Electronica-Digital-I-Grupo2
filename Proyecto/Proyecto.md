@@ -1,7 +1,7 @@
 <p align="center">
 <strong> Laboratorio Electrónica Digital I<strong><br>
 <p align="center">  
-<strong> Proyecto Final: Sistema de Alcoholímetro <strong><br><br>
+<strong> Proyecto Final: Sistema de Alcoholímetro para vehículos de motor<strong><br><br>
 <p align="center">  
 <strong> Samuel Alejandro Cruz Saavedra<strong><br>
 <p align="center">  
