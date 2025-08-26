@@ -127,17 +127,18 @@ ASM del proyecto.
   
 ```mermaid
 flowchart TD
-    A([Inicio\nLCD: Acomódese mejor\nc=0])
+    A([Inicio LCD: Acomódese mejor
+    c=0])
     B{Hc-sr04 > 20.58cm}
     C{c}
-    D[LCD: Bienvenido\nsople por favor]
+    D[LCD: Bienvenido sople por favor]
     E{sonido}
     F[c = c+1]
     G{Mq3}
     H[Rele = 1]
-    I[LCD: Sin alcohol\nacceso concedido]
+    I[LCD: Sin alcohol acceso concedido]
     J[Rele = 0]
-    K[LCD: alcohol detectado\nacceso denegado]
+    K[LCD: Alcohol detectado acceso denegado]
     L{c = 5*10^8}
 
     %% Flujo principal
