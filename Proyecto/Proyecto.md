@@ -1,7 +1,7 @@
 <p align="center">
 <strong> Laboratorio Electrónica Digital I<strong><br>
 <p align="center">  
-<strong> Proyecto Final: Sistema de Alcoholímetro para vehículos de motor<strong><br><br>
+<strong> Proyecto Final: Sistema de alcoholímetro para vehículos de motor eléctrico <strong><br><br>
 <p align="center">  
 <strong> Samuel Alejandro Cruz Saavedra<strong><br>
 <p align="center">  
@@ -93,8 +93,7 @@ Los productos electrónicos están cambiando rápidamente en el campo de la auto
 
 Las empresas de automóviles realizan grandes inversiones cada año para mejorar los sistemas de seguridad de los vehículos, asegurándose de que, año tras año, estos se vuelvan más seguros. Sin embargo, es común que las personas compren vehículos sin comprender completamente cómo funcionan estos sistemas, y por lo tanto, rara vez los utilizan como criterio de compra (El airbag, s. f.).
 
-
-## solucion a implementar:
+## Solucion a implementar:
 
 Implementación de tecnologías que impidan la posibilidad de que una persona en estado de embriaguez conduzca o que alerte de este estado para recordar la importancia de la situación, reiteración de políticas públicas que fomenten una cultura de responsabilidad en la movilidad, en el diálogo con otros actores viales.
 
@@ -111,8 +110,8 @@ Ofrecer una herramienta para tratar de reducir la cantidad de siniestros viales 
 ## Presupuesto
 | Elemento                             | Precio      |
 | ------------------------------------ | ----------- |
-| FPGA                                 | \$679.058   |
-| Sensor MQ3| \$13.000 |
+| FPGA Altera Cyclone IV               | \$679.058   |
+| Sensor MQ3                           | \$13.000 |
 | Breadboard                      | \$58.806 |
 | Breadboard jumper wires           | \$23.043  |
 | LCD 16x2                    | \$19.000     |
