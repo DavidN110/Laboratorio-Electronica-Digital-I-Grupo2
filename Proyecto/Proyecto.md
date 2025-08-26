@@ -97,7 +97,6 @@ Las empresas de automóviles realizan grandes inversiones cada año para mejorar
 
 Implementación de tecnologías que impidan la posibilidad de que una persona en estado de embriaguez conduzca o que alerte de este estado para recordar la importancia de la situación, reiteración de políticas públicas que fomenten una cultura de responsabilidad en la movilidad, en el diálogo con otros actores viales.
 
-
 ## Objetivo Principal
 Ofrecer una herramienta para tratar de reducir la cantidad de siniestros viales a causa de conductores en estado de embriaguez, por medio de la detección de conductores en dicho estado y posterior bloqueo del encendido del vehículo.
 
@@ -124,9 +123,52 @@ Ofrecer una herramienta para tratar de reducir la cantidad de siniestros viales 
 Proyecto visto como caja negra.  
 <p align="center">
    <img src="../Proyecto/imagenes/maquina.png" alt="Texto alternativo" width="1000"><br>  
-ASM del proyecto.  
-<p align="center">
-   <img src="../Proyecto/imagenes/Diagrama en blanco (1).png" alt="Texto alternativo" width="1000"><br>  
+ASM del proyecto.
+  
+```mermaid
+flowchart TD
+    A([Inicio\nLCD: Acomódese mejor\nc=0])
+    B{Hc-sr04 > 20.58cm}
+    C{c}
+    D[LCD: Bienvenido\nsople por favor]
+    E{sonido}
+    F[c = c+1]
+    G{Mq3}
+    H[Rele = 1]
+    I[LCD: Sin alcohol\nacceso concedido]
+    J[Rele = 0]
+    K[LCD: alcohol detectado\nacceso denegado]
+    L{c = 5*10^8}
+
+    %% Flujo principal
+    A --> B
+    B -- 0 --> A
+    B -- 1 --> C
+
+    %% Rama de c
+    C -- 0 --> D
+    D --> E
+    E -- 0 --> D
+    E -- 1 --> F
+    F --> G
+
+    %% Rama cuando c=1
+    C -- 1 --> F
+
+    %% Sensor MQ3
+    G -- 0 --> H
+    G -- 1 --> K
+    K --> J
+
+    %% Rele
+    H --> I
+    I --> F
+
+    %% Condición de límite c
+    F --> L
+    L -- 0 --> F
+    L -- 1 --> A
+```
   
 ## Marco-Teórico
 
